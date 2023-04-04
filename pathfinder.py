@@ -391,7 +391,7 @@ def pathfinder(source, goal, adjust, profile):
 
     # retrieve map from database
     graph = osmnx.graph_from_xml(
-        'C://Users//kjqb4//Documents//GitHub Projects//design-project//Pathfinder_API//marikina_complete.osm', simplify=False)
+        'marikina_complete.osm', simplify=False)
 
     # get all edges for weight adjustment
     nodes, edges = osmnx.graph_to_gdfs(graph)
@@ -526,7 +526,7 @@ def text_to_speech_safest(source, goal, adjust, profile):
 
     # retrieve map from database
     graph = osmnx.graph_from_xml(
-        'C://Users//kjqb4//Documents//GitHub Projects//design-project//Pathfinder_API//marikina_complete.osm', simplify=False)
+        'marikina_complete.osm', simplify=False)
 
     # get all edges for weight adjustment
     nodes, edges = osmnx.graph_to_gdfs(graph)
@@ -593,7 +593,7 @@ def text_to_speech_fastest(source, goal):
 
     # retrieve map from database
     graph = osmnx.graph_from_xml(
-        'C://Users//kjqb4//Documents//GitHub Projects//design-project//Pathfinder_API//marikina_complete.osm', simplify=False)
+        'marikina_complete.osm', simplify=False)
 
     # get all edges for weight adjustment
     nodes, edges = osmnx.graph_to_gdfs(graph)
