@@ -450,14 +450,18 @@ def pathfinder(source, goal, adjust, profile):
         adjusted_profile
     )
 
+    swap = False
+
     if compare_route['average'] < compare_shortest_route['average']:
         temp = route
         route = shortest_route
         shortest_route = temp
+        swap = True
 
     if compare_route['average'] == compare_shortest_route['average']:
         response = {
             'time': datetime.now(),
+            'swap': swap,
             'origin': [origin['y'], origin['x']],
             'destination': [destination['y'], destination['x']],
             'optimized_route': {
@@ -479,6 +483,7 @@ def pathfinder(source, goal, adjust, profile):
     else:
         response = {
             'time': datetime.now(),
+            'swap': swap,
             'origin': [origin['y'], origin['x']],
             'destination': [destination['y'], destination['x']],
             'optimized_route': {
@@ -545,8 +550,7 @@ def text_to_speech_safest(source, goal, adjust, profile):
     weather_condition = api_response['weather'][0]['id']
 
     # retrieve map from database
-    graph = osmnx.graph_from_xml(
-        'C://Users//kjqb4//Documents//GitHub Projects//design-project//Pathfinder_API//marikina_complete.osm', simplify=False)
+    graph = osmnx.graph_from_xml('marikina_complete.osm', simplify=False)
 
     # get all edges for weight adjustment
     nodes, edges = osmnx.graph_to_gdfs(graph)
@@ -613,8 +617,7 @@ def text_to_speech_fastest(source, goal):
     }
 
     # retrieve map from database
-    graph = osmnx.graph_from_xml(
-        'C://Users//kjqb4//Documents//GitHub Projects//design-project//Pathfinder_API//marikina_complete.osm', simplify=False)
+    graph = osmnx.graph_from_xml('marikina_complete.osm', simplify=False)
 
     # get all edges for weight adjustment
     nodes, edges = osmnx.graph_to_gdfs(graph)
