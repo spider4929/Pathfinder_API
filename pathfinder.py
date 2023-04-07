@@ -97,7 +97,9 @@ def api_profile(weather, profile, adjust):
     new_profile = profile
 
     if adjust:
-        now = datetime.now().hour
+        now = datetime.now().hour + 8
+        if now >= 24:
+            now = now - 24
 
         if weather not in [202, 212, 221, 502, 503, 504]:
             new_profile.pop("not_flood_hazard")
@@ -390,8 +392,7 @@ def pathfinder(source, goal, adjust, profile):
     weather_condition = api_response['weather'][0]['id']
 
     # retrieve map from database
-    graph = osmnx.graph_from_xml(
-        'marikina_complete.osm', simplify=False)
+    graph = osmnx.graph_from_xml('marikina_complete.osm', simplify=False)
 
     # get all edges for weight adjustment
     nodes, edges = osmnx.graph_to_gdfs(graph)
@@ -526,7 +527,7 @@ def text_to_speech_safest(source, goal, adjust, profile):
 
     # retrieve map from database
     graph = osmnx.graph_from_xml(
-        'marikina_complete.osm', simplify=False)
+        'C://Users//kjqb4//Documents//GitHub Projects//design-project//Pathfinder_API//marikina_complete.osm', simplify=False)
 
     # get all edges for weight adjustment
     nodes, edges = osmnx.graph_to_gdfs(graph)
@@ -593,7 +594,7 @@ def text_to_speech_fastest(source, goal):
 
     # retrieve map from database
     graph = osmnx.graph_from_xml(
-        'marikina_complete.osm', simplify=False)
+        'C://Users//kjqb4//Documents//GitHub Projects//design-project//Pathfinder_API//marikina_complete.osm', simplify=False)
 
     # get all edges for weight adjustment
     nodes, edges = osmnx.graph_to_gdfs(graph)
