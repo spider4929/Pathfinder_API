@@ -184,7 +184,7 @@ def getBearingString(degrees, name):
 
 def getManeuever(heading, true_bearing):
     relative_bearing = abs(true_bearing - heading)
-    if relative_bearing <= 15 or relative_bearing >= 345:
+    if relative_bearing <= 45 or relative_bearing >= 315:
         return 'straight'
     return 'turn'
 
