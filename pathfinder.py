@@ -435,60 +435,83 @@ def pathfinder(source, goal, adjust, profile):
     shortest_route = shortest_route[1]
 
     compare_route = getSafetyFactorCoverage(
-                getRouteDirections(route, nodes, graph, list(
-                    adjusted_profile.keys())),
-                getRouteLength(route, graph),
-                safety_factors,
-                adjusted_profile
-            )
-    
+        getRouteDirections(route, nodes, graph, list(
+            adjusted_profile.keys())),
+        getRouteLength(route, graph),
+        safety_factors,
+        adjusted_profile
+    )
+
     compare_shortest_route = getSafetyFactorCoverage(
-                getRouteDirections(shortest_route, nodes, graph,
-                                   list(adjusted_profile.keys())),
-                getRouteLength(shortest_route, graph),
-                safety_factors,
-                adjusted_profile
-            )
+        getRouteDirections(shortest_route, nodes, graph,
+                           list(adjusted_profile.keys())),
+        getRouteLength(shortest_route, graph),
+        safety_factors,
+        adjusted_profile
+    )
 
     if compare_route['average'] < compare_shortest_route['average']:
         temp = route
         route = shortest_route
         shortest_route = temp
 
-    response = {
-        'time': datetime.now(),
-        'origin': [origin['y'], origin['x']],
-        'destination': [destination['y'], destination['x']],
-        'optimized_route': {
-            'coverage': getSafetyFactorCoverage(
-                getRouteDirections(route, nodes, graph, list(
-                    adjusted_profile.keys())),
-                getRouteLength(route, graph),
-                safety_factors,
-                adjusted_profile
-            ),
-            'length': getRouteLength(route, graph),
-            'coordinates': getCoordinates(route, nodes, origin, destination),
-            'steps': getRouteDirections(route, nodes, graph, list(adjusted_profile.keys()))
-        },
-        'shortest_route': {
-            'coverage': getSafetyFactorCoverage(
-                getRouteDirections(shortest_route, nodes, graph,
-                                   list(adjusted_profile.keys())),
-                getRouteLength(shortest_route, graph),
-                safety_factors,
-                adjusted_profile
-            ),
-            'length': getRouteLength(shortest_route, graph),
-            'coordinates': getCoordinates(shortest_route, nodes, origin, destination),
-            'steps': getRouteDirections(shortest_route, nodes, graph, list(adjusted_profile.keys()))
+    if compare_route['average'] == compare_shortest_route['average']:
+        response = {
+            'time': datetime.now(),
+            'origin': [origin['y'], origin['x']],
+            'destination': [destination['y'], destination['x']],
+            'optimized_route': {
+                'coverage': getSafetyFactorCoverage(
+                    getRouteDirections(route, nodes, graph, list(
+                        adjusted_profile.keys())),
+                    getRouteLength(route, graph),
+                    safety_factors,
+                    adjusted_profile
+                ),
+                'length': getRouteLength(route, graph),
+                'coordinates': getCoordinates(route, nodes, origin, destination),
+                'steps': getRouteDirections(route, nodes, graph, list(adjusted_profile.keys()))
+            }
+
         }
 
-    }
+        return response, 200
+    else:
+        response = {
+            'time': datetime.now(),
+            'origin': [origin['y'], origin['x']],
+            'destination': [destination['y'], destination['x']],
+            'optimized_route': {
+                'coverage': getSafetyFactorCoverage(
+                    getRouteDirections(route, nodes, graph, list(
+                        adjusted_profile.keys())),
+                    getRouteLength(route, graph),
+                    safety_factors,
+                    adjusted_profile
+                ),
+                'length': getRouteLength(route, graph),
+                'coordinates': getCoordinates(route, nodes, origin, destination),
+                'steps': getRouteDirections(route, nodes, graph, list(adjusted_profile.keys()))
+            },
+            'shortest_route': {
+                'coverage': getSafetyFactorCoverage(
+                    getRouteDirections(shortest_route, nodes, graph,
+                                       list(adjusted_profile.keys())),
+                    getRouteLength(shortest_route, graph),
+                    safety_factors,
+                    adjusted_profile
+                ),
+                'length': getRouteLength(shortest_route, graph),
+                'coordinates': getCoordinates(shortest_route, nodes, origin, destination),
+                'steps': getRouteDirections(shortest_route, nodes, graph, list(adjusted_profile.keys()))
+            }
 
-    return response, 200
+        }
+
+        return response, 200
 
 ##### text-to-speech for safest route ####
+
 
 def text_to_speech_safest(source, goal, adjust, profile):
 
@@ -569,6 +592,7 @@ def text_to_speech_safest(source, goal, adjust, profile):
     return response, 200
 
 ##### text-to-speech for fastest route ####
+
 
 def text_to_speech_fastest(source, goal):
 
