@@ -196,16 +196,12 @@ def getTurnDirection(heading, true_bearing, name):
     if relative_bearing < 0:
         relative_bearing += 360
     instruction = None
-    if relative_bearing <= 15 or relative_bearing >= 345:
+    if relative_bearing <= 45 or relative_bearing >= 315:
         instruction = 'Continue Straight '
-    if relative_bearing > 15 and relative_bearing < 45:
-        instruction = 'Turn slightly right '
     if relative_bearing >= 45 and relative_bearing < 180:
         instruction = 'Turn Right '
     if relative_bearing > 180 and relative_bearing <= 315:
         instruction = 'Turn Left '
-    if relative_bearing > 315 and relative_bearing < 345:
-        instruction = 'Turn slightly left '
     if name == '':
         return instruction
     return instruction + 'onto ' + name
