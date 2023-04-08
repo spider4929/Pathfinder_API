@@ -415,7 +415,7 @@ def pathfinder(source, goal, adjust, profile):
 
     # checks if coordinates passed is too far from area covered by map
     if origin_node_id[1] >= 250 or destination_node_id[1] >= 250:
-        return "Source or destination invalid", 400
+        return { 'msg': "Source or destination invalid" }, 400
     else:
         pass
 
