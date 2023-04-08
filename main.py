@@ -38,7 +38,7 @@ def find_path():
 
     route = pathfinder([y_orig, x_orig], [y_dest, x_dest], adjust, user_pref)
 
-    print('Success')
+    print('/route/ Success')
 
     return route
 
@@ -73,7 +73,7 @@ def steps_with_coords_safest():
     route = text_to_speech_safest(
         [y_orig, x_orig], [y_dest, x_dest], adjust, user_pref)
 
-    print('Success')
+    print('/steps_with_coords_safest/ Success')
 
     return route
 
@@ -93,7 +93,7 @@ def steps_with_coords_fastest():
     route = text_to_speech_fastest(
         [y_orig, x_orig], [y_dest, x_dest])
     
-    print('Success')
+    print('/steps_with_coords_fastest/ Success')
 
     return route
 
