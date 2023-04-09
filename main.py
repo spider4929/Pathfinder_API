@@ -30,13 +30,7 @@ def find_path():
         else:
             user_pref[item['name']] = item['value']/5
 
-    try:
-        if args['adjust']:
-            adjust = False
-    except:
-        adjust = True
-
-    route = pathfinder([y_orig, x_orig], [y_dest, x_dest], adjust, user_pref)
+    route = pathfinder([y_orig, x_orig], [y_dest, x_dest], user_pref)
 
     print('/route/ Success')
 
@@ -64,14 +58,8 @@ def steps_with_coords_safest():
         else:
             user_pref[item['name']] = item['value']/5
 
-    try:
-        if args['adjust']:
-            adjust = False
-    except:
-        adjust = True
-
     route = text_to_speech_safest(
-        [y_orig, x_orig], [y_dest, x_dest], adjust, user_pref)
+        [y_orig, x_orig], [y_dest, x_dest], user_pref)
 
     print('/steps_with_coords_safest/ Success')
 

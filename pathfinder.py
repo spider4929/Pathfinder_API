@@ -92,21 +92,19 @@ def _weight_function(G, weight):
     return lambda u, v, data: data.get(weight, 1)
 
 
-def api_profile(weather, profile, adjust):
+def api_profile(weather, profile):
 
     new_profile = profile
 
-    if adjust:
-        now = datetime.now().hour + 8
-        if now >= 24:
-            now = now - 24
+    now = datetime.now().hour + 8
+    if now >= 24:
+        now = now - 24
 
-        if weather not in [202, 212, 221, 502, 503, 504]:
-            new_profile.pop("not_flood_hazard")
-        if now not in [19, 20, 21, 22, 23, 0, 1, 2, 3, 4, 5]:
-            new_profile.pop("lighting")
-    else:
-        pass
+    if weather not in [202, 212, 221, 502, 503, 504]:
+        new_profile.pop("not_flood_hazard")
+    if now not in [19, 20, 21, 22, 23, 0, 1, 2, 3, 4, 5]:
+        new_profile.pop("lighting")
+
     return new_profile
 
 
@@ -356,7 +354,7 @@ def getSafetyFactorCoverage(steps, length, safety_factors, profile):
 ##### main pathfinding function ####
 
 
-def pathfinder(source, goal, adjust, profile):
+def pathfinder(source, goal, profile):
 
     #### SETTINGS ####
 
@@ -396,7 +394,7 @@ def pathfinder(source, goal, adjust, profile):
     nodes, edges = osmnx.graph_to_gdfs(graph)
 
     # adjust weights profile depending on user pref and time & weather conditions
-    adjusted_profile = api_profile(weather_condition, profile, adjust)
+    adjusted_profile = api_profile(weather_condition, profile)
 
     # create category "weight" for use in path finding
     edges['weight'] = edges.apply(
@@ -521,7 +519,7 @@ def pathfinder(source, goal, adjust, profile):
 ##### text-to-speech for safest route ####
 
 
-def text_to_speech_safest(source, goal, adjust, profile):
+def text_to_speech_safest(source, goal, profile):
 
     #### SETTINGS ####
 
@@ -559,7 +557,7 @@ def text_to_speech_safest(source, goal, adjust, profile):
     nodes, edges = osmnx.graph_to_gdfs(graph)
 
     # adjust weights profile depending on user pref and time & weather conditions
-    adjusted_profile = api_profile(weather_condition, profile, adjust)
+    adjusted_profile = api_profile(weather_condition, profile)
 
     # create category "weight" for use in path finding
     edges['weight'] = edges.apply(
@@ -578,7 +576,7 @@ def text_to_speech_safest(source, goal, adjust, profile):
 
     # checks if coordinates passed is too far from area covered by map
     if origin_node_id[1] >= 250 or destination_node_id[1] >= 250:
-        return "Source or destination invalid", 400
+        return { 'msg': "Source or destination invalid" }, 400
     else:
         pass
 
@@ -632,7 +630,7 @@ def text_to_speech_fastest(source, goal):
 
     # checks if coordinates passed is too far from area covered by map
     if origin_node_id[1] >= 250 or destination_node_id[1] >= 250:
-        return "Source or destination invalid", 400
+        return { 'msg': "Source or destination invalid" }, 400
     else:
         pass
 
