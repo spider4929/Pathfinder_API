@@ -388,7 +388,7 @@ def pathfinder(source, goal, profile):
     # retrieve map from database
     # graph = osmnx.graph_from_xml(
     #     'C:\\Users\\kjqb4\\Documents\\GitHub Projects\\design-project\\Pathfinder_API\\marikina_complete.osm', simplify=False)
-    graph = osmnx.graph_from_xml('marikina_complete.osm', simplify=False)
+    graph = osmnx.graph_from_xml('marikina_complete.osm', simplify=True)
 
     # get all edges for weight adjustment
     nodes, edges = osmnx.graph_to_gdfs(graph)
