@@ -1334,7 +1334,7 @@
   <node id='-165603' lat='14.6591304' lon='121.1080145' />
   <node id='-165604' lat='14.6592699' lon='121.1081865' />
   <node id='-165605' lat='14.6594733' lon='121.1084593' />
-  <node id='-165606' lat='14.65952259489' lon='121.10850866686' />
+  <node id='-165606' action='modify' lat='14.6595063768' lon='121.10851067852' />
   <node id='-165607' lat='14.643247' lon='121.1199367' />
   <node id='-165608' lat='14.6432202' lon='121.119913' />
   <node id='-165609' lat='14.6431903' lon='121.1198922' />
@@ -1461,7 +1461,6 @@
   <node id='-165730' lat='14.66219074334' lon='121.11235052213' />
   <node id='-165731' lat='14.6558251' lon='121.1071476' />
   <node id='-165732' lat='14.65588' lon='121.1076225' />
-  <node id='-165733' lat='14.65593139494' lon='121.10798813251' />
   <node id='-165734' lat='14.6552359' lon='121.1287437' />
   <node id='-165735' lat='14.655628' lon='121.1285456' />
   <node id='-165736' lat='14.6559057' lon='121.1128617' />
@@ -1571,7 +1570,6 @@
   <node id='-165840' lat='14.64844987316' lon='121.1150078497' />
   <node id='-165841' lat='14.6570472' lon='121.1070017' />
   <node id='-165842' lat='14.6564475' lon='121.1070684' />
-  <node id='-165843' lat='14.6553321' lon='121.1072024' />
   <node id='-165844' lat='14.66252719398' lon='121.12090890539' />
   <node id='-165845' lat='14.6617814' lon='121.1251581' />
   <node id='-165846' lat='14.65178671504' lon='121.1116106' />
@@ -2065,7 +2063,6 @@
   <node id='-166334' lat='14.6556518' lon='121.1054377' />
   <node id='-166335' lat='14.65641' lon='121.1057575' />
   <node id='-166336' lat='14.6566806' lon='121.1050091' />
-  <node id='-166337' lat='14.6562806' lon='121.1049945' />
   <node id='-166338' lat='14.6553369' lon='121.1049421' />
   <node id='-166339' lat='14.6548745' lon='121.1049086' />
   <node id='-166340' lat='14.6548566' lon='121.1049128' />
@@ -2481,9 +2478,8 @@
   <node id='-166750' lat='14.6579144' lon='121.1150986' />
   <node id='-166751' lat='14.6582244' lon='121.115309' />
   <node id='-166752' lat='14.6582803' lon='121.115368' />
-  <node id='-166753' lat='14.65657589493' lon='121.10820773251' />
-  <node id='-166754' lat='14.65679429493' lon='121.10828443251' />
-  <node id='-166755' lat='14.6575627737' lon='121.1084878871' />
+  <node id='-166753' action='modify' lat='14.65655902789' lon='121.10812056072' />
+  <node id='-166755' action='modify' lat='14.6575342296' lon='121.10852074416' />
   <node id='-166756' lat='14.65224060753' lon='121.12482297239' />
   <node id='-166757' lat='14.6431324' lon='121.1179443' />
   <node id='-166758' lat='14.6431703' lon='121.1181414' />
@@ -3149,7 +3145,7 @@
   <node id='-167420' lat='14.6441225' lon='121.1206895' />
   <node id='-167421' lat='14.6573227' lon='121.1319313' />
   <node id='-167422' lat='14.6576662' lon='121.1331001' />
-  <node id='-167423' lat='14.6545408' lon='121.1058005' />
+  <node id='-167423' action='modify' lat='14.65460826878' lon='121.10571869263' />
   <node id='-167424' lat='14.6547545' lon='121.1055625' />
   <node id='-167425' lat='14.6547975' lon='121.1055411' />
   <node id='-167426' lat='14.6549004' lon='121.1055411' />
@@ -3162,7 +3158,7 @@
   <node id='-167433' lat='14.6552935' lon='121.1065509' />
   <node id='-167434' lat='14.6552564' lon='121.1066207' />
   <node id='-167435' lat='14.6551858' lon='121.1066696' />
-  <node id='-167436' lat='14.655101' lon='121.1067154' />
+  <node id='-167436' action='modify' lat='14.65516198124' lon='121.10668321349' />
   <node id='-167437' lat='14.6394276' lon='121.1257732' />
   <node id='-167438' lat='14.6399508' lon='121.1255672' />
   <node id='-167439' lat='14.6407992' lon='121.1252309' />
@@ -3283,7 +3279,6 @@
   <node id='-167554' lat='14.6370637' lon='121.1285325' />
   <node id='-167555' lat='14.6371489' lon='121.1284733' />
   <node id='-167556' lat='14.6384663' lon='121.1279873' />
-  <node id='-167557' lat='14.6541786' lon='121.1054553' />
   <node id='-167558' lat='14.6543577' lon='121.1050776' />
   <node id='-167559' lat='14.6544539' lon='121.1048624' />
   <node id='-167560' lat='14.6594385' lon='121.1271983' />
@@ -3848,8 +3843,7 @@
   <node id='-168119' lat='14.63843089074' lon='121.11240282521' />
   <node id='-168120' lat='14.63839974901' lon='121.11276894674' />
   <node id='-168121' lat='14.66281542315' lon='121.10675125337' />
-  <node id='-168122' lat='14.66298082316' lon='121.10630385337' />
-  <node id='-168123' lat='14.66302602316' lon='121.10618415337' />
+  <node id='-168122' action='modify' lat='14.66297206553' lon='121.10627300797' />
   <node id='-168124' lat='14.659009' lon='121.1278882' />
   <node id='-168125' lat='14.6575718' lon='121.1319092' />
   <node id='-168126' lat='14.6576936' lon='121.1322737' />
@@ -3942,7 +3936,6 @@
   <node id='-168213' lat='14.6429432' lon='121.1203247' />
   <node id='-168214' lat='14.6429743' lon='121.1203481' />
   <node id='-168215' lat='14.6491794' lon='121.1239762' />
-  <node id='-168216' lat='14.6601023' lon='121.1048858' />
   <node id='-168217' lat='14.6598747' lon='121.1053812' />
   <node id='-168218' lat='14.64914208678' lon='121.11212119326' />
   <node id='-168219' lat='14.6551404' lon='121.1194168' />
@@ -4234,7 +4227,7 @@
   <node id='-168505' lat='14.66265036532' lon='121.10733960321' />
   <node id='-168506' lat='14.66269674101' lon='121.10724225506' />
   <node id='-168507' lat='14.66288746291' lon='121.1067768918' />
-  <node id='-168508' lat='14.66308207692' lon='121.10622569785' />
+  <node id='-168508' action='modify' lat='14.66303699136' lon='121.10630985216' />
   <node id='-168509' lat='14.65160629727' lon='121.11276083128' />
   <node id='-168510' lat='14.65161069726' lon='121.11286903128' />
   <node id='-168511' lat='14.65161769726' lon='121.11311363128' />
@@ -4748,7 +4741,7 @@
   <node id='-169015' lat='14.63743694956' lon='121.08722090453' />
   <node id='-169016' lat='14.6492705401' lon='121.10497712955' />
   <node id='-169017' lat='14.6678311' lon='121.1071243' />
-  <node id='-169018' lat='14.66674468032' lon='121.10888376698' />
+  <node id='-169018' action='modify' lat='14.6667375446' lon='121.10891729459' />
   <node id='-169019' lat='14.6515566' lon='121.1093417' />
   <node id='-169020' lat='14.6257517' lon='121.083631' />
   <node id='-169021' lat='14.6213324' lon='121.0769212' />
@@ -4906,7 +4899,7 @@
   <node id='-169173' lat='14.6253207' lon='121.0757745' />
   <node id='-169174' lat='14.66283454092' lon='121.10607769121' />
   <node id='-169175' lat='14.6686275' lon='121.0998691' />
-  <node id='-169176' lat='14.65744351727' lon='121.10840269633' />
+  <node id='-169176' action='modify' lat='14.6574746563' lon='121.10847377487' />
   <node id='-169177' lat='14.6475308' lon='121.1098269' />
   <node id='-169178' lat='14.6186797' lon='121.0782208' />
   <node id='-169179' lat='14.63379072516' lon='121.0838198635' />
@@ -4980,7 +4973,6 @@
   <node id='-169247' lat='14.6416913' lon='121.091956' />
   <node id='-169248' lat='14.6264141' lon='121.0942035' />
   <node id='-169249' lat='14.6418617' lon='121.0931451' />
-  <node id='-169250' lat='14.65632590732' lon='121.10523692224' />
   <node id='-169251' lat='14.6467446' lon='121.091469' />
   <node id='-169252' lat='14.6312343' lon='121.0951663' />
   <node id='-169253' lat='14.6678148' lon='121.1011798' />
@@ -5520,7 +5512,7 @@
   <node id='-169787' lat='14.6239303' lon='121.0844433' />
   <node id='-169788' lat='14.63254618803' lon='121.08308884296' />
   <node id='-169789' lat='14.6369529' lon='121.0823618' />
-  <node id='-169790' lat='14.65596193109' lon='121.10399371199' />
+  <node id='-169790' action='modify' lat='14.65595155134' lon='121.10399102978' />
   <node id='-169791' lat='14.6366111' lon='121.0974631' />
   <node id='-169792' lat='14.6353261' lon='121.0817022' />
   <node id='-169793' lat='14.6411863' lon='121.0835323' />
@@ -5940,7 +5932,6 @@
   <node id='-170204' lat='14.6577166' lon='121.0975668' />
   <node id='-170205' lat='14.62970324726' lon='121.10191002354' />
   <node id='-170206' lat='14.6521088' lon='121.0937757' />
-  <node id='-170207' lat='14.6624092' lon='121.1076745' />
   <node id='-170208' lat='14.64945673176' lon='121.10216416352' />
   <node id='-170209' lat='14.6515958' lon='121.094297' />
   <node id='-170210' lat='14.62965523518' lon='121.09624117479' />
@@ -6057,7 +6048,7 @@
   <node id='-170321' lat='14.6511793' lon='121.0974917' />
   <node id='-170322' lat='14.6357009' lon='121.0943393' />
   <node id='-170323' lat='14.6513615' lon='121.0904375' />
-  <node id='-170324' lat='14.65598019964' lon='121.10811347533' />
+  <node id='-170324' action='modify' lat='14.65594970913' lon='121.1081054287' />
   <node id='-170325' lat='14.63995683021' lon='121.09429657325' />
   <node id='-170326' lat='14.6704764' lon='121.1200104' />
   <node id='-170327' lat='14.63124312332' lon='121.09697171614' />
@@ -6231,7 +6222,6 @@
   <node id='-170491' lat='14.6683872' lon='121.1119415' />
   <node id='-170492' lat='14.6472328' lon='121.0992955' />
   <node id='-170493' lat='14.6400558' lon='121.0926352' />
-  <node id='-170494' lat='14.65639227689' lon='121.10522701549' />
   <node id='-170495' lat='14.6470937' lon='121.107479' />
   <node id='-170496' lat='14.6362929' lon='121.0997238' />
   <node id='-170497' lat='14.6347989' lon='121.0838168' />
@@ -6246,7 +6236,6 @@
   <node id='-170506' lat='14.6274037' lon='121.0805255' />
   <node id='-170507' lat='14.63889542235' lon='121.08782440156' />
   <node id='-170508' lat='14.6326178' lon='121.0976666' />
-  <node id='-170509' lat='14.65585196919' lon='121.10365973066' />
   <node id='-170510' lat='14.6238665' lon='121.1021167' />
   <node id='-170511' lat='14.6461286' lon='121.0914205' />
   <node id='-170512' lat='14.6720807' lon='121.1061771' />
@@ -6531,7 +6520,6 @@
   <node id='-170787' lat='14.6371088' lon='121.0823946' />
   <node id='-170788' lat='14.6513303' lon='121.0917381' />
   <node id='-170789' lat='14.6572469' lon='121.1014832' />
-  <node id='-170790' lat='14.6619632' lon='121.1088581' />
   <node id='-170791' lat='14.63237503821' lon='121.08748644456' />
   <node id='-170792' lat='14.65102655295' lon='121.09412245891' />
   <node id='-170793' lat='14.62954493711' lon='121.09624251589' />
@@ -7064,7 +7052,6 @@
   </node>
   <node id='-171309' lat='14.6407955' lon='121.0969515' />
   <node id='-171310' lat='14.65639374233' lon='121.10354416005' />
-  <node id='-171311' lat='14.65599270632' lon='121.1038551669' />
   <node id='-171312' lat='14.64272905553' lon='121.09915405445' />
   <node id='-171313' lat='14.6523074' lon='121.0946642' />
   <node id='-171314' lat='14.63646895426' lon='121.08522534102' />
@@ -7131,7 +7118,6 @@
   <node id='-171375' lat='14.6311433' lon='121.0899557' />
   <node id='-171376' lat='14.65041883163' lon='121.10444739327' />
   <node id='-171377' lat='14.6195854' lon='121.0789355' />
-  <node id='-171378' lat='14.6620441' lon='121.1084381' />
   <node id='-171379' lat='14.63244381141' lon='121.08777746424' />
   <node id='-171380' lat='14.6513868' lon='121.0941985' />
   <node id='-171381' lat='14.649556' lon='121.0905543' />
@@ -7297,7 +7283,7 @@
   <node id='-171533' lat='14.6575576' lon='121.0997696' />
   <node id='-171534' lat='14.6454916' lon='121.0911202' />
   <node id='-171535' lat='14.63712552933' lon='121.0974052535' />
-  <node id='-171536' lat='14.65593771765' lon='121.10783828027' />
+  <node id='-171536' action='modify' lat='14.65589879359' lon='121.10783291585' />
   <node id='-171537' lat='14.6216542' lon='121.0793956' />
   <node id='-171538' lat='14.6689144' lon='121.1108622' />
   <node id='-171539' lat='14.636685' lon='121.1073121' />
@@ -7705,7 +7691,6 @@
   <node id='-171933' lat='14.6720076' lon='121.1160617' />
   <node id='-171934' lat='14.6452255' lon='121.097034' />
   <node id='-171935' lat='14.6503966' lon='121.0980449' />
-  <node id='-171936' lat='14.65763588996' lon='121.1086295283' />
   <node id='-171937' lat='14.6270948' lon='121.0933009' />
   <node id='-171938' lat='14.6321383' lon='121.0958782' />
   <node id='-171939' lat='14.6252193' lon='121.0954392' />
@@ -8198,7 +8183,7 @@
   <node id='-172418' lat='14.6378687' lon='121.0825498' />
   <node id='-172419' lat='14.6712876' lon='121.1092599' />
   <node id='-172420' lat='14.6519898' lon='121.0937377' />
-  <node id='-172421' lat='14.6626196' lon='121.1072237' />
+  <node id='-172421' action='modify' lat='14.66270263543' lon='121.1072672859' />
   <node id='-172422' lat='14.64923615549' lon='121.10249340467' />
   <node id='-172423' lat='14.6516264' lon='121.0943605' />
   <node id='-172424' lat='14.6480699' lon='121.0903273' />
@@ -8483,7 +8468,6 @@
   <node id='-172703' lat='14.6511895' lon='121.1043947' />
   <node id='-172704' lat='14.6218936' lon='121.0769329' />
   <node id='-172705' lat='14.6399224' lon='121.0926752' />
-  <node id='-172706' lat='14.65621543794' lon='121.10445222779' />
   <node id='-172707' lat='14.6444172' lon='121.0984426' />
   <node id='-172708' lat='14.65151781235' lon='121.11326113209' />
   <node id='-172709' lat='14.63472247113' lon='121.0841180914' />
@@ -8781,7 +8765,6 @@
   <node id='-173003' lat='14.6372095' lon='121.0824158' />
   <node id='-173004' lat='14.6516237' lon='121.0918564' />
   <node id='-173005' lat='14.6519428' lon='121.0937231' />
-  <node id='-173006' lat='14.6628271' lon='121.1067593' />
   <node id='-173007' lat='14.6516255' lon='121.094419' />
   <node id='-173008' lat='14.62945410337' lon='121.09624117479' />
   <node id='-173009' lat='14.64277251299' lon='121.09752801202' />
@@ -8873,14 +8856,14 @@
   <node id='-173095' lat='14.6303754192' lon='121.08509659231' />
   <node id='-173096' lat='14.64022808353' lon='121.0942903339' />
   <node id='-173097' lat='14.63295595149' lon='121.09331236442' />
-  <node id='-173098' lat='14.65582076225' lon='121.10789544757' />
+  <node id='-173098' action='modify' lat='14.655831142' lon='121.10788270708' />
   <node id='-173099' lat='14.6489919' lon='121.0971166' />
   <node id='-173100' lat='14.6726924' lon='121.1100669' />
   <node id='-173101' lat='14.6470915' lon='121.1088807' />
   <node id='-173102' lat='14.6473405' lon='121.1055692' />
   <node id='-173103' lat='14.6362655' lon='121.0843404' />
   <node id='-173104' lat='14.621094' lon='121.0961284' />
-  <node id='-173105' lat='14.65581635685' lon='121.10345788819' />
+  <node id='-173105' action='modify' lat='14.65581441065' lon='121.10344447714' />
   <node id='-173106' lat='14.6573183' lon='121.0979361' />
   <node id='-173107' lat='14.64282247887' lon='121.09484776787' />
   <node id='-173108' lat='14.6700319' lon='121.1100153' />
@@ -9251,7 +9234,7 @@
   <node id='-173474' lat='14.6382331' lon='121.103247' />
   <node id='-173475' lat='14.6214498' lon='121.1036393' />
   <node id='-173476' lat='14.6552377' lon='121.1091305' />
-  <node id='-173477' lat='14.6647427' lon='121.1082693' />
+  <node id='-173477' action='modify' lat='14.66473621292' lon='121.10826460613' />
   <node id='-173478' lat='14.64568649243' lon='121.11069494738' />
   <node id='-173479' lat='14.6658316' lon='121.1019593' />
   <node id='-173480' lat='14.65074320668' lon='121.10611304507' />
@@ -9355,7 +9338,6 @@
   <node id='-173578' lat='14.6374464' lon='121.0824643' />
   <node id='-173579' lat='14.6518948' lon='121.0919614' />
   <node id='-173580' lat='14.6196393' lon='121.0788566' />
-  <node id='-173581' lat='14.6622172' lon='121.108087' />
   <node id='-173582' lat='14.63250739417' lon='121.08811274037' />
   <node id='-173583' lat='14.6515525' lon='121.0942556' />
   <node id='-173584' lat='14.6495448' lon='121.0898362' />
@@ -9498,7 +9480,7 @@
   <node id='-173721' lat='14.64167851582' lon='121.09415184277' />
   <node id='-173722' lat='14.6684797' lon='121.1021677' />
   <node id='-173723' lat='14.63645670272' lon='121.09615658946' />
-  <node id='-173724' lat='14.6638192' lon='121.1078133' />
+  <node id='-173724' action='modify' lat='14.66382698453' lon='121.10782201718' />
   <node id='-173725' lat='14.6357773' lon='121.0937098' />
   <node id='-173726' lat='14.6509835' lon='121.0914517' />
   <node id='-173727' lat='14.6325896' lon='121.0954938' />
@@ -9510,7 +9492,7 @@
   <node id='-173733' lat='14.6572604' lon='121.0996342' />
   <node id='-173734' lat='14.64933217107' lon='121.09806641869' />
   <node id='-173735' lat='14.6543081' lon='121.1015298' />
-  <node id='-173736' lat='14.65596205037' lon='121.10799809707' />
+  <node id='-173736' action='modify' lat='14.65591274657' lon='121.10796054614' />
   <node id='-173737' lat='14.66815545854' lon='121.11090500777' />
   <node id='-173738' lat='14.64422677091' lon='121.10146629024' />
   <node id='-173739' lat='14.625733' lon='121.0754514' />
@@ -9869,7 +9851,7 @@
   <node id='-174088' lat='14.63787942191' lon='121.09691172704' />
   <node id='-174089' lat='14.6307958437' lon='121.08819722995' />
   <node id='-174090' lat='14.6362918' lon='121.0822689' />
-  <node id='-174091' lat='14.65592356156' lon='121.10347884145' />
+  <node id='-174091' action='modify' lat='14.65588334003' lon='121.10345134881' />
   <node id='-174092' lat='14.648481' lon='121.109514' />
   <node id='-174093' lat='14.64249682829' lon='121.09972064676' />
   <node id='-174094' lat='14.6324862' lon='121.0955599' />
@@ -9888,7 +9870,6 @@
   <node id='-174107' lat='14.6499597' lon='121.0923206' />
   <node id='-174108' lat='14.6455801' lon='121.0915788' />
   <node id='-174109' lat='14.6245159' lon='121.0748325' />
-  <node id='-174110' lat='14.65689224671' lon='121.10839494154' />
   <node id='-174111' lat='14.6288804' lon='121.0945366' />
   <node id='-174112' lat='14.6475958' lon='121.0993291' />
   <node id='-174113' lat='14.6667147' lon='121.1035403' />
@@ -10425,7 +10406,6 @@
   <node id='-174644' lat='14.62883838577' lon='121.08225337791' />
   <node id='-174645' lat='14.6421376' lon='121.108884' />
   <node id='-174646' lat='14.62014733835' lon='121.09825014934' />
-  <node id='-174647' lat='14.65677680621' lon='121.10835375737' />
   <node id='-174648' lat='14.626991' lon='121.1029414' />
   <node id='-174649' lat='14.6248095' lon='121.0892035' />
   <node id='-174650' lat='14.656643' lon='121.093257' />
@@ -10454,7 +10434,6 @@
   <node id='-174673' lat='14.62989270413' lon='121.08811675966' />
   <node id='-174674' lat='14.63292909801' lon='121.08270164446' />
   <node id='-174675' lat='14.65685823653' lon='121.1036065194' />
-  <node id='-174676' lat='14.65591927826' lon='121.10355916638' />
   <node id='-174677' lat='14.64272487908' lon='121.09898037204' />
   <node id='-174678' lat='14.6521174' lon='121.0952712' />
   <node id='-174679' lat='14.6237884' lon='121.0976598' />
@@ -10717,7 +10696,7 @@
   <node id='-174937' lat='14.62379898131' lon='121.09401493996' />
   <node id='-174938' lat='14.6232681' lon='121.0958949' />
   <node id='-174939' lat='14.6509347' lon='121.0967105' />
-  <node id='-174940' lat='14.65604227024' lon='121.10392220976' />
+  <node id='-174940' action='modify' lat='14.65603059303' lon='121.10398188891' />
   <node id='-174941' lat='14.6196254' lon='121.0783903' />
   <node id='-174942' lat='14.63405024492' lon='121.08485251397' />
   <node id='-174943' lat='14.6507386' lon='121.0970179' />
@@ -10981,7 +10960,6 @@
   <node id='-175202' lat='14.6337504' lon='121.0959805' />
   <node id='-175203' lat='14.6297744' lon='121.1019365' />
   <node id='-175204' lat='14.6518258' lon='121.0936615' />
-  <node id='-175205' lat='14.6629925' lon='121.1063119' />
   <node id='-175206' lat='14.6515957' lon='121.0944971' />
   <node id='-175207' lat='14.62974994638' lon='121.09623622241' />
   <node id='-175208' lat='14.65002503903' lon='121.09787933461' />
@@ -11084,7 +11062,6 @@
   <node id='-175305' lat='14.6729061' lon='121.1068433' />
   <node id='-175306' lat='14.6639835' lon='121.1034184' />
   <node id='-175307' lat='14.64998472974' lon='121.09789428615' />
-  <node id='-175308' lat='14.65693277846' lon='121.10840772751' />
   <node id='-175309' lat='14.6268704' lon='121.0931642' />
   <node id='-175310' lat='14.6321914' lon='121.0958665' />
   <node id='-175311' lat='14.62736654552' lon='121.09704400817' />
@@ -11265,7 +11242,6 @@
   <node id='-175486' lat='14.6679332' lon='121.1138927' />
   <node id='-175487' lat='14.6472429' lon='121.099127' />
   <node id='-175488' lat='14.6529025877' lon='121.10388109857' />
-  <node id='-175489' lat='14.65635242738' lon='121.1049971217' />
   <node id='-175490' lat='14.6446346' lon='121.0967242' />
   <node id='-175491' lat='14.65168778408' lon='121.11358165607' />
   <node id='-175492' lat='14.656386' lon='121.103117' />
@@ -11280,7 +11256,6 @@
   <node id='-175501' lat='14.6272363' lon='121.0802823' />
   <node id='-175502' lat='14.6270743' lon='121.0895193' />
   <node id='-175503' lat='14.6311128' lon='121.081062' />
-  <node id='-175504' lat='14.65583424461' lon='121.10347580089' />
   <node id='-175505' lat='14.6241846' lon='121.0991806' />
   <node id='-175506' lat='14.6513199' lon='121.0928676' />
   <node id='-175507' lat='14.6724066' lon='121.1060331' />
@@ -11862,6 +11837,16 @@
     <tag k='safety_factor' v='cctv' />
   </node>
   <node id='-189847' action='modify' lat='14.62981643378' lon='121.10172105787' />
+  <node id='-189901' action='modify' lat='14.66268879774' lon='121.10725892893' />
+  <node id='-189931' action='modify' lat='14.6629820754' lon='121.1062397279' />
+  <node id='-189932' action='modify' lat='14.66305216431' lon='121.10626336877' />
+  <node id='-190027' action='modify' lat='14.65694423426' lon='121.10829525919' />
+  <node id='-190028' action='modify' lat='14.65656531365' lon='121.10818642536' />
+  <node id='-190092' action='modify' lat='14.65585086977' lon='121.1034481118' />
+  <node id='-190095' action='modify' lat='14.6562841004' lon='121.10498932957' />
+  <node id='-190096' action='modify' lat='14.65598558896' lon='121.10398709346' />
+  <node id='-190097' action='modify' lat='14.65596359543' lon='121.10389910222' />
+  <node id='-190143' action='modify' lat='14.65797534804' lon='121.10819041595' />
   <way id='-113977' action='modify'>
     <nd ref='-164272' />
     <nd ref='-164273' />
@@ -12542,6 +12527,11 @@
     <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-114022' action='modify'>
+    <nd ref='-190092' />
+    <nd ref='-190097' />
+    <nd ref='-190096' />
+    <nd ref='-168611' />
+    <nd ref='-190095' />
     <nd ref='-164517' />
     <nd ref='-164518' />
     <nd ref='-164519' />
@@ -14046,6 +14036,7 @@
   <way id='-114117' action='modify'>
     <nd ref='-165073' />
     <nd ref='-165074' />
+    <nd ref='-190027' />
     <tag k='footway' v='crossing' />
     <tag k='highway' v='footway' />
   </way>
@@ -15546,6 +15537,7 @@
     <nd ref='-165540' />
     <nd ref='-165541' />
     <nd ref='-164364' />
+    <nd ref='-166832' />
     <tag k='cctv' v='0' />
     <tag k='footway' v='sidewalk' />
     <tag k='highway' v='footway' />
@@ -16250,20 +16242,6 @@
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
   </way>
-  <way id='-114268' action='modify'>
-    <nd ref='-165731' />
-    <nd ref='-165732' />
-    <nd ref='-165733' />
-    <tag k='cctv' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='Paraiso Street' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
   <way id='-114269' action='modify'>
     <nd ref='-165734' />
     <nd ref='-165735' />
@@ -16615,21 +16593,6 @@
     <nd ref='-165840' />
     <tag k='footway' v='crossing' />
     <tag k='highway' v='footway' />
-  </way>
-  <way id='-114295' action='modify'>
-    <nd ref='-165841' />
-    <nd ref='-165842' />
-    <nd ref='-165731' />
-    <nd ref='-165843' />
-    <tag k='cctv' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='Pilapil Street' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-114296' action='modify'>
     <nd ref='-164743' />
@@ -18144,7 +18107,7 @@
   </way>
   <way id='-114388' action='modify'>
     <nd ref='-166336' />
-    <nd ref='-166337' />
+    <nd ref='-190095' />
     <nd ref='-166338' />
     <nd ref='-166339' />
     <nd ref='-166340' />
@@ -18919,9 +18882,6 @@
     <nd ref='-165545' />
     <nd ref='-166476' />
     <nd ref='-165642' />
-    <nd ref='-166477' />
-    <nd ref='-166478' />
-    <nd ref='-171260' />
     <tag k='cctv' v='0' />
     <tag k='footway' v='sidewalk' />
     <tag k='highway' v='footway' />
@@ -19775,23 +19735,6 @@
     <tag k='highway' v='footway' />
     <tag k='landmark' v='0' />
     <tag k='lighting' v='1' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
-  <way id='-114495' action='modify'>
-    <nd ref='-165733' />
-    <nd ref='-164501' />
-    <nd ref='-166753' />
-    <nd ref='-166754' />
-    <nd ref='-165074' />
-    <nd ref='-166755' />
-    <tag k='cctv' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='Paraluman Street' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
@@ -20895,6 +20838,7 @@
     <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-114565' action='modify'>
+    <nd ref='-190028' />
     <nd ref='-166753' />
     <nd ref='-167068' />
     <nd ref='-167069' />
@@ -22190,6 +22134,7 @@
     <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-114643' action='modify'>
+    <nd ref='-171167' />
     <nd ref='-167423' />
     <nd ref='-167424' />
     <nd ref='-167425' />
@@ -22204,6 +22149,7 @@
     <nd ref='-167434' />
     <nd ref='-167435' />
     <nd ref='-167436' />
+    <nd ref='-172257' />
     <tag k='cctv' v='0' />
     <tag k='footway' v='sidewalk' />
     <tag k='highway' v='footway' />
@@ -22404,6 +22350,7 @@
     <tag k='highway' v='footway' />
   </way>
   <way id='-114657' action='modify'>
+    <nd ref='-190143' />
     <nd ref='-167197' />
     <nd ref='-167068' />
     <tag k='cctv' v='0' />
@@ -22598,20 +22545,6 @@
     <tag k='landmark' v='0' />
     <tag k='lighting' v='1' />
     <tag k='name' v='Austin' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
-  <way id='-114668' action='modify'>
-    <nd ref='-167557' />
-    <nd ref='-167558' />
-    <nd ref='-167559' />
-    <tag k='cctv' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='A. De Leon Street' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
@@ -22832,12 +22765,6 @@
     <nd ref='-167622' />
     <nd ref='-167623' />
     <nd ref='-167624' />
-    <nd ref='-165644' />
-    <nd ref='-167625' />
-    <nd ref='-167626' />
-    <nd ref='-167627' />
-    <nd ref='-167628' />
-    <nd ref='-165029' />
     <tag k='cctv' v='0' />
     <tag k='footway' v='sidewalk' />
     <tag k='highway' v='footway' />
@@ -24481,34 +24408,6 @@
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
   </way>
-  <way id='-114795' action='modify'>
-    <nd ref='-167219' />
-    <nd ref='-167985' />
-    <nd ref='-167166' />
-    <nd ref='-167986' />
-    <nd ref='-167987' />
-    <nd ref='-167988' />
-    <nd ref='-167989' />
-    <nd ref='-167990' />
-    <nd ref='-167991' />
-    <nd ref='-167992' />
-    <nd ref='-167770' />
-    <nd ref='-167993' />
-    <nd ref='-167994' />
-    <nd ref='-167995' />
-    <nd ref='-167996' />
-    <nd ref='-167997' />
-    <nd ref='-165733' />
-    <tag k='cctv' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='Paraiso Street' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
   <way id='-114796' action='modify'>
     <nd ref='-166487' />
     <nd ref='-164289' />
@@ -25010,7 +24909,7 @@
     <nd ref='-164307' />
     <nd ref='-168121' />
     <nd ref='-168122' />
-    <nd ref='-168123' />
+    <nd ref='-189931' />
     <tag k='cctv' v='0' />
     <tag k='footway' v='sidewalk' />
     <tag k='highway' v='footway' />
@@ -25651,22 +25550,6 @@
     <tag k='highway' v='footway' />
     <tag k='landmark' v='0' />
     <tag k='lighting' v='1' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
-  <way id='-114875' action='modify'>
-    <nd ref='-168216' />
-    <nd ref='-168217' />
-    <nd ref='-166833' />
-    <nd ref='-164365' />
-    <nd ref='-167926' />
-    <tag k='cctv' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='Haiti Street' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
@@ -26514,6 +26397,7 @@
     <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-114930' action='modify'>
+    <nd ref='-170324' />
     <nd ref='-167997' />
     <nd ref='-164500' />
     <nd ref='-168394' />
@@ -27317,10 +27201,6 @@
     <nd ref='-168499' />
     <nd ref='-168500' />
     <nd ref='-168501' />
-    <nd ref='-165646' />
-    <nd ref='-168502' />
-    <nd ref='-168503' />
-    <nd ref='-165026' />
     <tag k='cctv' v='0' />
     <tag k='footway' v='sidewalk' />
     <tag k='highway' v='footway' />
@@ -27353,10 +27233,12 @@
     <nd ref='-166085' />
     <nd ref='-168501' />
     <nd ref='-168505' />
+    <nd ref='-189901' />
     <nd ref='-168506' />
     <nd ref='-164306' />
     <nd ref='-168507' />
     <nd ref='-168508' />
+    <nd ref='-189932' />
     <tag k='cctv' v='0' />
     <tag k='footway' v='sidewalk' />
     <tag k='highway' v='footway' />
@@ -28014,20 +27896,6 @@
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
   </way>
-  <way id='-115033' action='modify'>
-    <nd ref='-168611' />
-    <nd ref='-166337' />
-    <nd ref='-164517' />
-    <tag k='cctv' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='General B. G. Molina Street' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
   <way id='-115034' action='modify'>
     <nd ref='-164394' />
     <nd ref='-168108' />
@@ -28546,7 +28414,8 @@
     <nd ref='-169735' />
     <nd ref='-171844' />
     <nd ref='-173105' />
-    <nd ref='-175504' />
+    <nd ref='-190092' />
+    <nd ref='-174091' />
     <tag k='cctv' v='0' />
     <tag k='done' v='1' />
     <tag k='footway' v='sidewalk' />
@@ -28763,12 +28632,6 @@
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
-  </way>
-  <way id='-115084' action='modify'>
-    <nd ref='-174647' />
-    <nd ref='-174110' />
-    <tag k='footway' v='crossing' />
-    <tag k='highway' v='footway' />
   </way>
   <way id='-115085' action='modify'>
     <nd ref='-175175' />
@@ -30459,23 +30322,6 @@
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
   </way>
-  <way id='-115198' action='modify'>
-    <nd ref='-168864' />
-    <nd ref='-172706' />
-    <nd ref='-174903' />
-    <nd ref='-175489' />
-    <nd ref='-170494' />
-    <tag k='cctv' v='0' />
-    <tag k='done' v='1' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='General B. G. Molina Street' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
   <way id='-115199' action='modify'>
     <nd ref='-172779' />
     <nd ref='-171475' />
@@ -30622,12 +30468,6 @@
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
-  </way>
-  <way id='-115208' action='modify'>
-    <nd ref='-174091' />
-    <nd ref='-175504' />
-    <tag k='footway' v='crossing' />
-    <tag k='highway' v='footway' />
   </way>
   <way id='-115209' action='modify'>
     <nd ref='-170565' />
@@ -31374,30 +31214,6 @@
     <tag k='lighting' v='1' />
     <tag k='name' v='Cancer Street' />
     <tag k='not_flood_hazard' v='0' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
-  <way id='-115262' action='modify'>
-    <nd ref='-167618' />
-    <nd ref='-167619' />
-    <nd ref='-167620' />
-    <nd ref='-167621' />
-    <nd ref='-167622' />
-    <nd ref='-167623' />
-    <nd ref='-173581' />
-    <nd ref='-167625' />
-    <nd ref='-167626' />
-    <nd ref='-167627' />
-    <nd ref='-167628' />
-    <nd ref='-165029' />
-    <tag k='cctv' v='0' />
-    <tag k='done' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='France Street' />
-    <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
   </way>
@@ -33624,6 +33440,7 @@
   <way id='-115407' action='modify'>
     <nd ref='-168626' />
     <nd ref='-174903' />
+    <nd ref='-168611' />
     <tag k='cctv' v='0' />
     <tag k='done' v='0' />
     <tag k='footway' v='sidewalk' />
@@ -35164,20 +34981,6 @@
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
   </way>
-  <way id='-115506' action='modify'>
-    <nd ref='-169790' />
-    <nd ref='-168611' />
-    <tag k='cctv' v='0' />
-    <tag k='done' v='1' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='General B. G. Molina Street' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
   <way id='-115507' action='modify'>
     <nd ref='-174140' />
     <nd ref='-174724' />
@@ -35540,6 +35343,7 @@
     <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-115530' action='modify'>
+    <nd ref='-190097' />
     <nd ref='-169415' />
     <nd ref='-171633' />
     <nd ref='-175778' />
@@ -36039,6 +35843,8 @@
     <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-115562' action='modify'>
+    <nd ref='-169790' />
+    <nd ref='-190096' />
     <nd ref='-174940' />
     <nd ref='-168864' />
     <tag k='footway' v='crossing' />
@@ -37549,12 +37355,6 @@
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
   </way>
-  <way id='-115659' action='modify'>
-    <nd ref='-169415' />
-    <nd ref='-169790' />
-    <tag k='footway' v='crossing' />
-    <tag k='highway' v='footway' />
-  </way>
   <way id='-115660' action='modify'>
     <nd ref='-174599' />
     <nd ref='-171000' />
@@ -37997,21 +37797,6 @@
     <tag k='landmark' v='0' />
     <tag k='lighting' v='1' />
     <tag k='not_flood_hazard' v='0' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
-  <way id='-115689' action='modify'>
-    <nd ref='-168611' />
-    <nd ref='-166337' />
-    <nd ref='-169250' />
-    <tag k='cctv' v='0' />
-    <tag k='done' v='1' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='General B. G. Molina Street' />
-    <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
   </way>
@@ -38755,12 +38540,15 @@
     <nd ref='-173736' />
     <nd ref='-175298' />
     <nd ref='-175633' />
+    <nd ref='-190028' />
     <nd ref='-171925' />
+    <nd ref='-190027' />
     <nd ref='-175621' />
     <nd ref='-174127' />
     <nd ref='-174711' />
     <nd ref='-169712' />
     <nd ref='-169176' />
+    <nd ref='-166755' />
     <tag k='cctv' v='0' />
     <tag k='done' v='1' />
     <tag k='footway' v='sidewalk' />
@@ -39033,7 +38821,6 @@
     <tag k='pwd_friendly' v='1' />
   </way>
   <way id='-115755' action='modify'>
-    <nd ref='-166337' />
     <nd ref='-166338' />
     <nd ref='-166339' />
     <nd ref='-166340' />
@@ -40383,26 +40170,6 @@
     <tag k='landmark' v='0' />
     <tag k='lighting' v='1' />
     <tag k='name' v='Narra Street' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
-  <way id='-115848' action='modify'>
-    <nd ref='-168497' />
-    <nd ref='-168498' />
-    <nd ref='-168499' />
-    <nd ref='-168500' />
-    <nd ref='-170207' />
-    <nd ref='-168502' />
-    <nd ref='-168503' />
-    <nd ref='-165026' />
-    <tag k='cctv' v='0' />
-    <tag k='done' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='Finland Street' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
@@ -44430,21 +44197,6 @@
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
   </way>
-  <way id='-116113' action='modify'>
-    <nd ref='-170324' />
-    <nd ref='-172265' />
-    <nd ref='-174647' />
-    <tag k='cctv' v='0' />
-    <tag k='done' v='1' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='Paraluman Street' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
   <way id='-116114' action='modify'>
     <nd ref='-170642' />
     <nd ref='-171448' />
@@ -44813,32 +44565,6 @@
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
   </way>
-  <way id='-116138' action='modify'>
-    <nd ref='-171167' />
-    <nd ref='-167424' />
-    <nd ref='-167425' />
-    <nd ref='-167426' />
-    <nd ref='-167427' />
-    <nd ref='-167428' />
-    <nd ref='-167429' />
-    <nd ref='-167430' />
-    <nd ref='-167431' />
-    <nd ref='-167432' />
-    <nd ref='-167433' />
-    <nd ref='-167434' />
-    <nd ref='-167435' />
-    <nd ref='-172257' />
-    <tag k='cctv' v='0' />
-    <tag k='done' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='A. de Guzman Street' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
   <way id='-116139' action='modify'>
     <nd ref='-169034' />
     <nd ref='-170281' />
@@ -45082,25 +44808,6 @@
     <tag k='highway' v='footway' />
     <tag k='landmark' v='0' />
     <tag k='lighting' v='1' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
-  <way id='-116156' action='modify'>
-    <nd ref='-172421' />
-    <nd ref='-165025' />
-    <nd ref='-166114' />
-    <nd ref='-166832' />
-    <nd ref='-166833' />
-    <nd ref='-165381' />
-    <nd ref='-166834' />
-    <tag k='cctv' v='0' />
-    <tag k='done' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='B. T. Soliven Avenue' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
@@ -48823,26 +48530,6 @@
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
   </way>
-  <way id='-116410' action='modify'>
-    <nd ref='-170790' />
-    <nd ref='-171378' />
-    <nd ref='-173581' />
-    <nd ref='-170207' />
-    <nd ref='-172421' />
-    <nd ref='-173006' />
-    <nd ref='-175205' />
-    <nd ref='-174665' />
-    <tag k='cctv' v='0' />
-    <tag k='done' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='Spain Street' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
   <way id='-116411' action='modify'>
     <nd ref='-174799' />
     <nd ref='-170005' />
@@ -50062,7 +49749,7 @@
     <nd ref='-173458' />
     <nd ref='-170079' />
     <nd ref='-172293' />
-    <nd ref='-173006' />
+    <nd ref='-168507' />
     <tag k='cctv' v='0' />
     <tag k='done' v='0' />
     <tag k='footway' v='sidewalk' />
@@ -52863,6 +52550,7 @@
     <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-116679' action='modify'>
+    <nd ref='-189901' />
     <nd ref='-172421' />
     <nd ref='-173724' />
     <nd ref='-173477' />
@@ -53540,20 +53228,6 @@
     <tag k='name' v='A. Bonifacio Avenue' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
-  <way id='-116727' action='modify'>
-    <nd ref='-166336' />
-    <nd ref='-175489' />
-    <tag k='cctv' v='0' />
-    <tag k='done' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='Bankaan' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-116728' action='modify'>
@@ -55203,12 +54877,6 @@
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
   </way>
-  <way id='-116837' action='modify'>
-    <nd ref='-175308' />
-    <nd ref='-175621' />
-    <tag k='footway' v='crossing' />
-    <tag k='highway' v='footway' />
-  </way>
   <way id='-116838' action='modify'>
     <nd ref='-170102' />
     <nd ref='-172703' />
@@ -55318,21 +54986,6 @@
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
   </way>
-  <way id='-116845' action='modify'>
-    <nd ref='-174110' />
-    <nd ref='-175308' />
-    <nd ref='-171936' />
-    <tag k='cctv' v='0' />
-    <tag k='done' v='1' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='Paraluman Street' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
   <way id='-116846' action='modify'>
     <nd ref='-175109' />
     <nd ref='-170110' />
@@ -55392,22 +55045,6 @@
     <tag k='landmark' v='0' />
     <tag k='lighting' v='1' />
     <tag k='name' v='Diamond' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
-  <way id='-116850' action='modify'>
-    <nd ref='-174091' />
-    <nd ref='-174676' />
-    <nd ref='-171311' />
-    <nd ref='-174940' />
-    <tag k='cctv' v='0' />
-    <tag k='done' v='1' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='General B. G. Molina Street' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
@@ -58726,7 +58363,7 @@
   <way id='-117072' action='modify'>
     <nd ref='-173939' />
     <nd ref='-170358' />
-    <nd ref='-173006' />
+    <nd ref='-168121' />
     <tag k='cctv' v='0' />
     <tag k='done' v='0' />
     <tag k='footway' v='sidewalk' />
@@ -61872,7 +61509,9 @@
     <nd ref='-174803' />
     <nd ref='-169805' />
     <nd ref='-175540' />
+    <nd ref='-189931' />
     <nd ref='-174665' />
+    <nd ref='-189932' />
     <nd ref='-171802' />
     <nd ref='-172646' />
     <nd ref='-173640' />
@@ -61914,21 +61553,6 @@
     <tag k='landmark' v='0' />
     <tag k='lighting' v='1' />
     <tag k='name' v='Brazil' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
-  <way id='-117284' action='modify'>
-    <nd ref='-175504' />
-    <nd ref='-170509' />
-    <nd ref='-169415' />
-    <tag k='cctv' v='0' />
-    <tag k='done' v='1' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='General B. G. Molina Street' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
@@ -62790,5 +62414,51 @@
     <nd ref='-175485' />
     <tag k='footway' v='crossing' />
     <tag k='highway' v='footway' />
+  </way>
+  <way id='-120676' action='modify'>
+    <nd ref='-166477' />
+    <nd ref='-166478' />
+    <nd ref='-171260' />
+    <tag k='cctv' v='0' />
+    <tag k='footway' v='sidewalk' />
+    <tag k='highway' v='footway' />
+    <tag k='landmark' v='0' />
+    <tag k='lighting' v='1' />
+    <tag k='name' v='Bagong Silang Street' />
+    <tag k='not_flood_hazard' v='1' />
+    <tag k='not_major_road' v='1' />
+    <tag k='pwd_friendly' v='0' />
+  </way>
+  <way id='-120699' action='modify'>
+    <nd ref='-165644' />
+    <nd ref='-167625' />
+    <nd ref='-167626' />
+    <nd ref='-167627' />
+    <nd ref='-167628' />
+    <nd ref='-165029' />
+    <tag k='cctv' v='0' />
+    <tag k='footway' v='sidewalk' />
+    <tag k='highway' v='footway' />
+    <tag k='landmark' v='0' />
+    <tag k='lighting' v='1' />
+    <tag k='name' v='France Street' />
+    <tag k='not_flood_hazard' v='1' />
+    <tag k='not_major_road' v='1' />
+    <tag k='pwd_friendly' v='0' />
+  </way>
+  <way id='-120723' action='modify'>
+    <nd ref='-165646' />
+    <nd ref='-168502' />
+    <nd ref='-168503' />
+    <nd ref='-165026' />
+    <tag k='cctv' v='0' />
+    <tag k='footway' v='sidewalk' />
+    <tag k='highway' v='footway' />
+    <tag k='landmark' v='0' />
+    <tag k='lighting' v='1' />
+    <tag k='name' v='Finland Street' />
+    <tag k='not_flood_hazard' v='1' />
+    <tag k='not_major_road' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
 </osm>
