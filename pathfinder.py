@@ -8,88 +8,6 @@ import requests
 
 #### FUNCTIONS ####
 
-def bidirectional_dijkstra(G, source, target, weight="weight"):
-    if source not in G or target not in G:
-        msg = f"Either source {source} or target {target} is not in G"
-        raise nx.NodeNotFound(msg)
-
-    if source == target:
-        return (0, [source])
-
-    weight = _weight_function(G, weight)
-    push = heappush
-    pop = heappop
-    # Init:  [Forward, Backward]
-    dists = [{}, {}]  # dictionary of final distances
-    paths = [{source: [source]}, {target: [target]}]  # dictionary of paths
-    fringe = [[], []]  # heap of (distance, node) for choosing node to expand
-    seen = [{source: 0}, {target: 0}]  # dict of distances to seen nodes
-    c = count()
-    # initialize fringe heap
-    push(fringe[0], (0, next(c), source))
-    push(fringe[1], (0, next(c), target))
-    # neighs for extracting correct neighbor information
-    if G.is_directed():
-        neighs = [G._succ, G._pred]
-    else:
-        neighs = [G._adj, G._adj]
-    # variables to hold shortest discovered path
-    # finaldist = 1e30000
-    finalpath = []
-    dir = 1
-    while fringe[0] and fringe[1]:
-        # choose direction
-        # dir == 0 is forward direction and dir == 1 is back
-        dir = 1 - dir
-        # extract closest to expand
-        (dist, _, v) = pop(fringe[dir])
-        if v in dists[dir]:
-            # Shortest path to v has already been found
-            continue
-        # update distance
-        dists[dir][v] = dist  # equal to seen[dir][v]
-        if v in dists[1 - dir]:
-            # if we have scanned v in both directions we are done
-            # we have now discovered the shortest path
-            return (finaldist, finalpath)
-
-        for w, d in neighs[dir][v].items():
-            # weight(v, w, d) for forward and weight(w, v, d) for back direction
-            cost = weight(v, w, d) if dir == 0 else weight(w, v, d)
-            if cost is None:
-                continue
-            vwLength = dists[dir][v] + cost
-            if w in dists[dir]:
-                if vwLength < dists[dir][w]:
-                    raise ValueError(
-                        "Contradictory paths found: negative weights?")
-            elif w not in seen[dir] or vwLength < seen[dir][w]:
-                # relaxing
-                seen[dir][w] = vwLength
-                push(fringe[dir], (vwLength, next(c), w))
-                paths[dir][w] = paths[dir][v] + [w]
-                if w in seen[0] and w in seen[1]:
-                    # see if this path is better than the already
-                    # discovered shortest path
-                    totaldist = seen[0][w] + seen[1][w]
-                    if finalpath == [] or finaldist > totaldist:
-                        finaldist = totaldist
-                        revpath = paths[1][w][:]
-                        revpath.reverse()
-                        finalpath = paths[0][w] + revpath[1:]
-    raise nx.NetworkXNoPath(f"No path between {source} and {target}.")
-
-
-def _weight_function(G, weight):
-    if callable(weight):
-        return weight
-    # If the weight keyword argument is not callable, we assume it is a
-    # string representing the edge attribute containing the weight of
-    # the edge.
-    if G.is_multigraph():
-        return lambda u, v, d: min(attr.get(weight, 1) for attr in d.values())
-    return lambda u, v, data: data.get(weight, 1)
-
 def api_profile(weather, profile):
     """Adjusts the current profile according to current weather and time conditions."""
     new_profile = profile
@@ -190,10 +108,11 @@ def getTurnDirection(heading, true_bearing, name):
         instruction = 'Turn Right '
     if relative_bearing > 180 and relative_bearing <= 315:
         instruction = 'Turn Left '
+    if isinstance(name, list):
+        name = ' '.join(name)
     if name == '':
         return instruction
     return instruction + 'onto ' + name
-
 
 def getRouteDirections(route, nodes, graph, safety_factors):
     """Generates the step-by-step instructions in a given 'route'.
@@ -418,14 +337,14 @@ def pathfinder(source, goal, profile):
     else:
         pass
 
-    route = bidirectional_dijkstra(
+    route = nx.bidirectional_dijkstra(
         final_graph,
         origin_node_id[0],
         destination_node_id[0],
         weight='weight'
     )
 
-    shortest_route = bidirectional_dijkstra(
+    shortest_route = nx.bidirectional_dijkstra(
         final_graph,
         origin_node_id[0],
         destination_node_id[0],
@@ -578,7 +497,7 @@ def text_to_speech_safest(source, goal, profile):
     else:
         pass
 
-    route = bidirectional_dijkstra(
+    route = nx.bidirectional_dijkstra(
         final_graph,
         origin_node_id[0],
         destination_node_id[0],
@@ -633,7 +552,7 @@ def text_to_speech_fastest(source, goal):
     else:
         pass
 
-    route = bidirectional_dijkstra(
+    route = nx.bidirectional_dijkstra(
         graph,
         origin_node_id[0],
         destination_node_id[0],
