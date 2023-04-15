@@ -180,9 +180,11 @@ def getRouteDirections(route, nodes, graph, safety_factors):
                                   nodes.filter(
                                       items=[route[count]], axis=0).x.item()
                               ]})
+            
+            safety_coverage_direction.append({
+                              'distance': distance,
+                              'factors_present': present_factors})
             continue
-
-        safety_coverage_direction = direction
 
         # If the step is any steps in between the first and last step
         if steps[0] != step and steps[-1] != step:
