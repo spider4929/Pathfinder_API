@@ -8,100 +8,19 @@ import requests
 
 #### FUNCTIONS ####
 
-
-def bidirectional_dijkstra(G, source, target, weight="weight"):
-    if source not in G or target not in G:
-        msg = f"Either source {source} or target {target} is not in G"
-        raise nx.NodeNotFound(msg)
-
-    if source == target:
-        return (0, [source])
-
-    weight = _weight_function(G, weight)
-    push = heappush
-    pop = heappop
-    # Init:  [Forward, Backward]
-    dists = [{}, {}]  # dictionary of final distances
-    paths = [{source: [source]}, {target: [target]}]  # dictionary of paths
-    fringe = [[], []]  # heap of (distance, node) for choosing node to expand
-    seen = [{source: 0}, {target: 0}]  # dict of distances to seen nodes
-    c = count()
-    # initialize fringe heap
-    push(fringe[0], (0, next(c), source))
-    push(fringe[1], (0, next(c), target))
-    # neighs for extracting correct neighbor information
-    if G.is_directed():
-        neighs = [G._succ, G._pred]
-    else:
-        neighs = [G._adj, G._adj]
-    # variables to hold shortest discovered path
-    # finaldist = 1e30000
-    finalpath = []
-    dir = 1
-    while fringe[0] and fringe[1]:
-        # choose direction
-        # dir == 0 is forward direction and dir == 1 is back
-        dir = 1 - dir
-        # extract closest to expand
-        (dist, _, v) = pop(fringe[dir])
-        if v in dists[dir]:
-            # Shortest path to v has already been found
-            continue
-        # update distance
-        dists[dir][v] = dist  # equal to seen[dir][v]
-        if v in dists[1 - dir]:
-            # if we have scanned v in both directions we are done
-            # we have now discovered the shortest path
-            return (finaldist, finalpath)
-
-        for w, d in neighs[dir][v].items():
-            # weight(v, w, d) for forward and weight(w, v, d) for back direction
-            cost = weight(v, w, d) if dir == 0 else weight(w, v, d)
-            if cost is None:
-                continue
-            vwLength = dists[dir][v] + cost
-            if w in dists[dir]:
-                if vwLength < dists[dir][w]:
-                    raise ValueError(
-                        "Contradictory paths found: negative weights?")
-            elif w not in seen[dir] or vwLength < seen[dir][w]:
-                # relaxing
-                seen[dir][w] = vwLength
-                push(fringe[dir], (vwLength, next(c), w))
-                paths[dir][w] = paths[dir][v] + [w]
-                if w in seen[0] and w in seen[1]:
-                    # see if this path is better than the already
-                    # discovered shortest path
-                    totaldist = seen[0][w] + seen[1][w]
-                    if finalpath == [] or finaldist > totaldist:
-                        finaldist = totaldist
-                        revpath = paths[1][w][:]
-                        revpath.reverse()
-                        finalpath = paths[0][w] + revpath[1:]
-    raise nx.NetworkXNoPath(f"No path between {source} and {target}.")
-
-
-def _weight_function(G, weight):
-    if callable(weight):
-        return weight
-    # If the weight keyword argument is not callable, we assume it is a
-    # string representing the edge attribute containing the weight of
-    # the edge.
-    if G.is_multigraph():
-        return lambda u, v, d: min(attr.get(weight, 1) for attr in d.values())
-    return lambda u, v, data: data.get(weight, 1)
-
-
 def api_profile(weather, profile):
-
+    """Adjusts the current profile according to current weather and time conditions."""
     new_profile = profile
 
     now = datetime.now().hour + 8
     if now >= 24:
         now = now - 24
 
+    # Removes 'flood_hazard' if weather is clear
     if weather not in [202, 212, 221, 502, 503, 504]:
         new_profile.pop("not_flood_hazard")
+
+    # Removes 'lighting' if time is day
     if now not in [19, 20, 21, 22, 23, 0, 1, 2, 3, 4, 5]:
         new_profile.pop("lighting")
 
@@ -109,6 +28,7 @@ def api_profile(weather, profile):
 
 
 def adjust_weight(length, row, profile):
+    """Returns the weight value for the given 'edge/row' parameters based on 'length' and 'profile'."""
     weight = length
     modifier = 1
     for safety_factor, user_preference in profile.items():
@@ -118,10 +38,8 @@ def adjust_weight(length, row, profile):
 
 #### PATH FINDING ####
 
-# Returns coordinates of route as an array of tuples
-
-
 def getCoordinates(route, nodes, origin, destination):
+    """Returns coordinates of route as an array of tuples."""
     final_coords = []
 
     final_coords.append({
@@ -143,25 +61,19 @@ def getCoordinates(route, nodes, origin, destination):
 
     return final_coords
 
-# Returns encoded polyline using the polyline library, requires input as an array of tuples
-
-
 def getPolyline(route, nodes):
+    """Returns encoded polyline using the polyline library, requires input as an array of tuples."""
     coordinates = getCoordinates(route, nodes)
     return polyline.encode(coordinates)
 
-# Function to return the total length of the route in meters
-
-
 def getRouteLength(route, graph):
+    """Function to return the total length of the route in meters."""
     route_length = osmnx.utils_graph.get_route_edge_attributes(
         graph, route, attribute='length')
     return round(sum(route_length))
 
-# Convert bearing value to readable instruction
-
-
 def getBearingString(degrees, name):
+    """Convert bearing value to readable instruction."""
     instruction = None
     if degrees < 45:
         instruction = 'Head North '
@@ -177,19 +89,15 @@ def getBearingString(degrees, name):
         return instruction
     return instruction + 'along ' + name
 
-# get maneuever type based on bearing relative_bearing
-
-
 def getManeuever(heading, true_bearing):
+    """Get maneuever type based on bearing relative_bearing."""
     relative_bearing = abs(true_bearing - heading)
     if relative_bearing <= 45 or relative_bearing >= 315:
         return 'straight'
     return 'turn'
 
-# Translate turn direction in bearings to string
-
-
 def getTurnDirection(heading, true_bearing, name):
+    """Translate turn direction in bearings to string."""
     relative_bearing = true_bearing - heading
     if relative_bearing < 0:
         relative_bearing += 360
@@ -206,6 +114,11 @@ def getTurnDirection(heading, true_bearing, name):
 
 
 def getRouteDirections(route, nodes, graph, safety_factors):
+    """Generates the step-by-step instructions in a given 'route'.
+    'nodes' are used to evaluate coordinates per step
+    'graph' are used to generate the bearing values to calculate for turn directions
+    'safety_factors' is the profile mask used to collect edge attributes of the 'route' in the 'graph'
+    """
     # generate edge bearings for graph
     bearings_graph = osmnx.bearing.add_edge_bearings(graph, precision=1)
     # Generate a dictionary of relevant keys of the route for directions
@@ -318,6 +231,9 @@ def getRouteDirections(route, nodes, graph, safety_factors):
 
 
 def getSafetyFactorCoverage(steps, length, safety_factors, profile):
+    """Evaluates the safety factor coverage for each safety factor for the route.
+    The calculation is based on the coverage of the safety factor (in m) divided by the total distance (in m) of the route.
+    """
     factor_coverage = {
         'not_flood_hazard': 0,
         'pwd_friendly': 0,
@@ -351,10 +267,13 @@ def getSafetyFactorCoverage(steps, length, safety_factors, profile):
 
     return factor_coverage
 
-##### main pathfinding function ####
-
-
 def pathfinder(source, goal, profile):
+    """Main pathfinding function
+    Takes 'source', 'goal' and 'profile' as parameters.
+    'source' is the source coordinates in [lng,lat]
+    'goal' is the destination coordinates in [lng,lat]
+    'profile' is the profile of safety factors to take into consideration
+    """
 
     #### SETTINGS ####
 
@@ -417,14 +336,14 @@ def pathfinder(source, goal, profile):
     else:
         pass
 
-    route = bidirectional_dijkstra(
+    route = nx.bidirectional_dijkstra(
         final_graph,
         origin_node_id[0],
         destination_node_id[0],
         weight='weight'
     )
 
-    shortest_route = bidirectional_dijkstra(
+    shortest_route = nx.bidirectional_dijkstra(
         final_graph,
         origin_node_id[0],
         destination_node_id[0],
@@ -516,11 +435,8 @@ def pathfinder(source, goal, profile):
 
         return response, 200
 
-##### text-to-speech for safest route ####
-
-
 def text_to_speech_safest(source, goal, profile):
-
+    """Text to speech instructions for safest route"""
     #### SETTINGS ####
 
     safety_factors = ['not_flood_hazard', 'pwd_friendly',
@@ -580,7 +496,7 @@ def text_to_speech_safest(source, goal, profile):
     else:
         pass
 
-    route = bidirectional_dijkstra(
+    route = nx.bidirectional_dijkstra(
         final_graph,
         origin_node_id[0],
         destination_node_id[0],
@@ -600,6 +516,7 @@ def text_to_speech_safest(source, goal, profile):
 
 
 def text_to_speech_fastest(source, goal):
+    """Text to speech instructions for fastest route"""
 
     #### SETTINGS ####
 
@@ -634,7 +551,7 @@ def text_to_speech_fastest(source, goal):
     else:
         pass
 
-    route = bidirectional_dijkstra(
+    route = nx.bidirectional_dijkstra(
         graph,
         origin_node_id[0],
         destination_node_id[0],
