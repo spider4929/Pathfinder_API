@@ -85,6 +85,8 @@ def getBearingString(degrees, name):
         instruction = 'Head West '
     else:
         instruction = 'Head North '
+    if isinstance(name, list):
+        name = ' '.join(name)
     if name == '':
         return instruction
     return instruction + 'along ' + name
