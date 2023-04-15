@@ -15962,25 +15962,6 @@
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
   </way>
-  <way id='-114243' action='modify'>
-    <nd ref='-165164' />
-    <nd ref='-165641' />
-    <nd ref='-165642' />
-    <nd ref='-165643' />
-    <nd ref='-165644' />
-    <nd ref='-165645' />
-    <nd ref='-165646' />
-    <nd ref='-165647' />
-    <tag k='cctv' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='Spain Street' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
   <way id='-114244' action='modify'>
     <nd ref='-164312' />
     <nd ref='-165648' />
@@ -19693,14 +19674,6 @@
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
-  </way>
-  <way id='-114483' action='modify'>
-    <nd ref='-165647' />
-    <nd ref='-166695' />
-    <tag k='footway' v='crossing' />
-    <tag k='highway' v='footway' />
-    <tag k='lighting' v='1' />
-    <tag k='not_major_road' v='0' />
   </way>
   <way id='-114484' action='modify'>
     <nd ref='-164694' />
@@ -25149,6 +25122,14 @@
     <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-114829' action='modify'>
+    <nd ref='-165164' />
+    <nd ref='-165641' />
+    <nd ref='-165642' />
+    <nd ref='-165643' />
+    <nd ref='-165644' />
+    <nd ref='-165645' />
+    <nd ref='-165646' />
+    <nd ref='-165647' />
     <nd ref='-166695' />
     <nd ref='-164307' />
     <nd ref='-168121' />
@@ -42915,6 +42896,7 @@
     <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-115994' action='modify'>
+    <nd ref='-166478' />
     <nd ref='-174734' />
     <nd ref='-169498' />
     <tag k='cctv' v='0' />
