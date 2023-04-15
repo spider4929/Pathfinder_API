@@ -1,5 +1,5 @@
 from flask import Flask, request
-from pathfinder import pathfinder, text_to_speech_safest, text_to_speech_fastest
+from pathfinder import pathfinder
 
 app = Flask(__name__)
 
