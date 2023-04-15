@@ -533,9 +533,12 @@ def text_to_speech_safest(source, goal, profile):
 
     route = route[1]
 
+    route_dir, route_safety_dir = getRouteDirections(
+        route, nodes, graph, list(adjusted_profile.keys()))
+
     response = {
         'coordinates': getCoordinates(route, nodes, origin, destination),
-        'steps': getRouteDirections(route, nodes, graph, list(adjusted_profile.keys()))
+        'steps': route_dir
     }
 
     return response, 200
@@ -587,9 +590,12 @@ def text_to_speech_fastest(source, goal):
 
     route = route[1]
 
+    shortest_route_dir, shortest_route_safety_dir = getRouteDirections(
+        route, nodes, graph, safety_factors)
+
     response = {
         'coordinates': getCoordinates(route, nodes, origin, destination),
-        'steps': getRouteDirections(route, nodes, graph, safety_factors)
+        'steps': shortest_route_dir
     }
 
     return response, 200
