@@ -8,6 +8,7 @@ import requests
 
 #### FUNCTIONS ####
 
+
 def api_profile(weather, profile):
     """Adjusts the current profile according to current weather and time conditions."""
     new_profile = profile
@@ -38,6 +39,7 @@ def adjust_weight(length, row, profile):
 
 #### PATH FINDING ####
 
+
 def getCoordinates(route, nodes, origin, destination):
     """Returns coordinates of route as an array of tuples."""
     final_coords = []
@@ -61,16 +63,19 @@ def getCoordinates(route, nodes, origin, destination):
 
     return final_coords
 
+
 def getPolyline(route, nodes):
     """Returns encoded polyline using the polyline library, requires input as an array of tuples."""
     coordinates = getCoordinates(route, nodes)
     return polyline.encode(coordinates)
+
 
 def getRouteLength(route, graph):
     """Function to return the total length of the route in meters."""
     route_length = osmnx.utils_graph.get_route_edge_attributes(
         graph, route, attribute='length')
     return round(sum(route_length))
+
 
 def getBearingString(degrees, name):
     """Convert bearing value to readable instruction."""
@@ -91,12 +96,14 @@ def getBearingString(degrees, name):
         return instruction
     return instruction + 'along ' + name
 
+
 def getManeuever(heading, true_bearing):
     """Get maneuever type based on bearing relative_bearing."""
     relative_bearing = abs(true_bearing - heading)
     if relative_bearing <= 45 or relative_bearing >= 315:
         return 'straight'
     return 'turn'
+
 
 def getTurnDirection(heading, true_bearing, name):
     """Translate turn direction in bearings to string."""
@@ -116,6 +123,7 @@ def getTurnDirection(heading, true_bearing, name):
         return instruction
     return instruction + 'onto ' + name
 
+
 def getRouteDirections(route, nodes, graph, safety_factors):
     """Generates the step-by-step instructions in a given 'route'.
     'nodes' are used to evaluate coordinates per step
@@ -128,6 +136,7 @@ def getRouteDirections(route, nodes, graph, safety_factors):
     steps = osmnx.utils_graph.get_route_edge_attributes(bearings_graph, route)
 
     direction = []
+    safety_coverage_direction = []
     instruction = None
     maneuever = None  # depart - first step, turn - for any step in between, arrive - last step
     distance = None
@@ -173,18 +182,14 @@ def getRouteDirections(route, nodes, graph, safety_factors):
                               ]})
             continue
 
+        safety_coverage_direction = direction
+
         # If the step is any steps in between the first and last step
         if steps[0] != step and steps[-1] != step:
             bearing_before = bearing_after
             bearing_after = step.get("bearing")
             maneuever = getManeuever(bearing_before, bearing_after)
 
-            if before_name == name and before_maneuever == maneuever:
-                direction[-1]["distance"] += distance
-                for factor in present_factors:
-                    if factor not in direction[-1]["factors_present"]:
-                        direction[-1]["factors_present"].append(factor)
-                continue
             if footway == 'crossing':
                 instruction = 'Cross the street'
             elif footway == 'footbridge':
@@ -192,6 +197,17 @@ def getRouteDirections(route, nodes, graph, safety_factors):
             else:
                 instruction = getTurnDirection(
                     bearing_before, bearing_after, name)
+
+            safety_coverage_direction.append({'distance': distance,
+                                              'factors_present': present_factors})
+
+            if before_name == name and before_maneuever == maneuever:
+                direction[-1]["distance"] += distance
+                for factor in present_factors:
+                    if factor not in direction[-1]["factors_present"]:
+                        direction[-1]["factors_present"].append(factor)
+                continue
+
             direction.append({'maneuever': maneuever,
                               'footway': footway,
                               'instruction': instruction,
@@ -215,6 +231,10 @@ def getRouteDirections(route, nodes, graph, safety_factors):
             maneuever = 'arrive'
             instruction = getTurnDirection(
                 bearing_before, bearing_after, name) + " and arrive at destination"
+            safety_coverage_direction.append({
+                'distance': distance,
+                'factors_present': present_factors,
+            })
             direction.append({'maneuever': maneuever,
                               'footway': footway,
                               'instruction': instruction,
@@ -230,7 +250,7 @@ def getRouteDirections(route, nodes, graph, safety_factors):
                                       items=[route[count]], axis=0).x.item()
                               ]})
 
-    return direction
+    return direction, safety_coverage_direction
 
 
 def getSafetyFactorCoverage(steps, length, safety_factors, profile):
@@ -269,6 +289,7 @@ def getSafetyFactorCoverage(steps, length, safety_factors, profile):
     factor_coverage['average'] = round(temp)
 
     return factor_coverage
+
 
 def pathfinder(source, goal, profile):
     """Main pathfinding function
@@ -335,7 +356,7 @@ def pathfinder(source, goal, profile):
 
     # checks if coordinates passed is too far from area covered by map
     if origin_node_id[1] >= 250 or destination_node_id[1] >= 250:
-        return { 'msg': "Source or destination invalid" }, 400
+        return {'msg': "Source or destination invalid"}, 400
     else:
         pass
 
@@ -356,17 +377,21 @@ def pathfinder(source, goal, profile):
     route = route[1]
     shortest_route = shortest_route[1]
 
+    route_dir, route_safety_dir = getRouteDirections(
+        route, nodes, graph, list(adjusted_profile.keys()))
+
+    shortest_route_dir, shortest_route_safety_dir = getRouteDirections(
+        shortest_route, nodes, graph, list(adjusted_profile.keys()))
+
     compare_route = getSafetyFactorCoverage(
-        getRouteDirections(route, nodes, graph, list(
-            adjusted_profile.keys())),
+        route_safety_dir,
         getRouteLength(route, graph),
         safety_factors,
         adjusted_profile
     )
 
     compare_shortest_route = getSafetyFactorCoverage(
-        getRouteDirections(shortest_route, nodes, graph,
-                           list(adjusted_profile.keys())),
+        shortest_route_safety_dir,
         getRouteLength(shortest_route, graph),
         safety_factors,
         adjusted_profile
@@ -374,11 +399,11 @@ def pathfinder(source, goal, profile):
 
     swap = False
 
-    if compare_route['average'] < compare_shortest_route['average']:
-        temp = route
-        route = shortest_route
-        shortest_route = temp
-        swap = True
+    # if compare_route['average'] < compare_shortest_route['average']:
+    #     temp = route
+    #     route = shortest_route
+    #     shortest_route = temp
+    #     swap = True
 
     if compare_route['average'] == compare_shortest_route['average']:
         response = {
@@ -388,15 +413,14 @@ def pathfinder(source, goal, profile):
             'destination': [destination['y'], destination['x']],
             'optimized_route': {
                 'coverage': getSafetyFactorCoverage(
-                    getRouteDirections(route, nodes, graph, list(
-                        adjusted_profile.keys())),
+                    route_safety_dir,
                     getRouteLength(route, graph),
                     safety_factors,
                     adjusted_profile
                 ),
                 'length': getRouteLength(route, graph),
                 'coordinates': getCoordinates(route, nodes, origin, destination),
-                'steps': getRouteDirections(route, nodes, graph, list(adjusted_profile.keys()))
+                'steps': route_dir
             },
             'shortest_route': {}
 
@@ -411,32 +435,31 @@ def pathfinder(source, goal, profile):
             'destination': [destination['y'], destination['x']],
             'optimized_route': {
                 'coverage': getSafetyFactorCoverage(
-                    getRouteDirections(route, nodes, graph, list(
-                        adjusted_profile.keys())),
+                    route_safety_dir,
                     getRouteLength(route, graph),
                     safety_factors,
                     adjusted_profile
                 ),
                 'length': getRouteLength(route, graph),
                 'coordinates': getCoordinates(route, nodes, origin, destination),
-                'steps': getRouteDirections(route, nodes, graph, list(adjusted_profile.keys()))
+                'steps': route_dir
             },
             'shortest_route': {
                 'coverage': getSafetyFactorCoverage(
-                    getRouteDirections(shortest_route, nodes, graph,
-                                       list(adjusted_profile.keys())),
+                    shortest_route_safety_dir,
                     getRouteLength(shortest_route, graph),
                     safety_factors,
                     adjusted_profile
                 ),
                 'length': getRouteLength(shortest_route, graph),
                 'coordinates': getCoordinates(shortest_route, nodes, origin, destination),
-                'steps': getRouteDirections(shortest_route, nodes, graph, list(adjusted_profile.keys()))
+                'steps': shortest_route_dir
             }
 
         }
 
         return response, 200
+
 
 def text_to_speech_safest(source, goal, profile):
     """Text to speech instructions for safest route"""
@@ -495,7 +518,7 @@ def text_to_speech_safest(source, goal, profile):
 
     # checks if coordinates passed is too far from area covered by map
     if origin_node_id[1] >= 250 or destination_node_id[1] >= 250:
-        return { 'msg': "Source or destination invalid" }, 400
+        return {'msg': "Source or destination invalid"}, 400
     else:
         pass
 
@@ -550,7 +573,7 @@ def text_to_speech_fastest(source, goal):
 
     # checks if coordinates passed is too far from area covered by map
     if origin_node_id[1] >= 250 or destination_node_id[1] >= 250:
-        return { 'msg': "Source or destination invalid" }, 400
+        return {'msg': "Source or destination invalid"}, 400
     else:
         pass
 
