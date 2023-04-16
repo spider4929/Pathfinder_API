@@ -6144,7 +6144,6 @@
   <node id='-170443' lat='14.6455402' lon='121.108702' />
   <node id='-170444' lat='14.63343618142' lon='121.08430408791' />
   <node id='-170445' lat='14.6400882' lon='121.1066027' />
-  <node id='-170446' lat='14.6323211' lon='121.0979298' />
   <node id='-170447' lat='14.67210606134' lon='121.10909020816' />
   <node id='-170448' lat='14.63738634272' lon='121.09727918968' />
   <node id='-170449' lat='14.6427038' lon='121.0893546' />
@@ -7443,7 +7442,7 @@
   <node id='-171717' lat='14.6248742' lon='121.0770094' />
   <node id='-171718' lat='14.6404051' lon='121.1042839' />
   <node id='-171719' lat='14.65648975542' lon='121.09405651554' />
-  <node id='-171720' lat='14.6324256' lon='121.0978867' />
+  <node id='-171720' action='modify' lat='14.63242689761' lon='121.09789139387' />
   <node id='-171721' lat='14.63615753265' lon='121.09224334225' />
   <node id='-171722' lat='14.6321974' lon='121.0822527' />
   <node id='-171723' lat='14.648136' lon='121.1078138' />
@@ -11253,7 +11252,6 @@
   <node id='-175542' lat='14.64186034632' lon='121.09348922901' />
   <node id='-175543' lat='14.6235035' lon='121.1016058' />
   <node id='-175544' lat='14.6534201' lon='121.1015319' />
-  <node id='-175545' lat='14.6324299' lon='121.097919' />
   <node id='-175546' lat='14.63624576845' lon='121.09103634819' />
   <node id='-175547' lat='14.6320986469' lon='121.07980593972' />
   <node id='-175548' lat='14.6452361' lon='121.0911476' />
@@ -28853,7 +28851,6 @@
   </way>
   <way id='-115098' action='modify'>
     <nd ref='-171720' />
-    <nd ref='-175545' />
     <nd ref='-170550' />
     <nd ref='-171131' />
     <nd ref='-173343' />
@@ -40603,7 +40600,6 @@
   </way>
   <way id='-115861' action='modify'>
     <nd ref='-169275' />
-    <nd ref='-170446' />
     <nd ref='-171026' />
     <nd ref='-173240' />
     <nd ref='-169113' />
@@ -46058,14 +46054,6 @@
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
-  </way>
-  <way id='-116225' action='modify'>
-    <nd ref='-175545' />
-    <nd ref='-170446' />
-    <tag k='footway' v='crossing' />
-    <tag k='highway' v='footway' />
-    <tag k='lighting' v='1' />
-    <tag k='not_major_road' v='1' />
   </way>
   <way id='-116226' action='modify'>
     <nd ref='-172548' />
@@ -63084,5 +63072,13 @@
     <tag k='highway' v='footway' />
     <tag k='lighting' v='1' />
     <tag k='not_major_road' v='0' />
+  </way>
+  <way id='-133501' action='modify'>
+    <nd ref='-171720' />
+    <nd ref='-169275' />
+    <tag k='footway' v='crossing' />
+    <tag k='highway' v='footway' />
+    <tag k='lighting' v='1' />
+    <tag k='not_major_road' v='1' />
   </way>
 </osm>
