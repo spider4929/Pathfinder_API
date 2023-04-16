@@ -383,20 +383,24 @@ def pathfinder(source, goal, profile):
     shortest_route_dir, shortest_route_safety_dir = getRouteDirections(
         shortest_route, nodes, graph, list(adjusted_profile.keys()))
 
-    compare_route = getSafetyFactorCoverage(
-        route_safety_dir,
-        getRouteLength(route, graph),
-        safety_factors,
-        adjusted_profile
-    )
 
-    compare_shortest_route = getSafetyFactorCoverage(
-        shortest_route_safety_dir,
-        getRouteLength(shortest_route, graph),
-        safety_factors,
-        adjusted_profile
-    )
+    try:
+        compare_route = getSafetyFactorCoverage(
+            route_safety_dir,
+            getRouteLength(route, graph),
+            safety_factors,
+            adjusted_profile
+        )
 
+        compare_shortest_route = getSafetyFactorCoverage(
+            shortest_route_safety_dir,
+            getRouteLength(shortest_route, graph),
+            safety_factors,
+            adjusted_profile
+        )
+    except:
+        print(origin,destination)
+    
     if compare_route['average'] == compare_shortest_route['average']:
         response = {
             'time': datetime.now(),
