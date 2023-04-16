@@ -400,7 +400,6 @@ def pathfinder(source, goal, profile):
     if compare_route['average'] == compare_shortest_route['average']:
         response = {
             'time': datetime.now(),
-            'swap': swap,
             'origin': [origin['y'], origin['x']],
             'destination': [destination['y'], destination['x']],
             'optimized_route': {
@@ -422,7 +421,6 @@ def pathfinder(source, goal, profile):
     else:
         response = {
             'time': datetime.now(),
-            'swap': swap,
             'origin': [origin['y'], origin['x']],
             'destination': [destination['y'], destination['x']],
             'optimized_route': {
