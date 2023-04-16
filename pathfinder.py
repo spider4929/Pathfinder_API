@@ -331,8 +331,6 @@ def pathfinder(source, goal, profile):
     weather_condition = api_response['weather'][0]['id']
 
     # retrieve map from database
-    # graph = osmnx.graph_from_xml(
-    #     'C:\\Users\\kjqb4\\Documents\\GitHub Projects\\design-project\\Pathfinder_API\\marikina_complete.osm', simplify=False)
     graph = osmnx.graph_from_xml('marikina_complete.osm', simplify=False)
 
     # get all edges for weight adjustment
@@ -398,14 +396,6 @@ def pathfinder(source, goal, profile):
         safety_factors,
         adjusted_profile
     )
-
-    swap = False
-
-    # if compare_route['average'] < compare_shortest_route['average']:
-    #     temp = route
-    #     route = shortest_route
-    #     shortest_route = temp
-    #     swap = True
 
     if compare_route['average'] == compare_shortest_route['average']:
         response = {
