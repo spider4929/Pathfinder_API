@@ -400,6 +400,7 @@ def pathfinder(source, goal, profile):
         )
     except:
         print(origin,destination)
+        return {'msg': "Route is invalid"}, 400
     
     if compare_route['average'] == compare_shortest_route['average']:
         response = {
