@@ -19663,6 +19663,8 @@
   <node id='-202073' action='modify' lat='14.62761897865' lon='121.08129677766' />
   <node id='-202116' action='modify' lat='14.62840350885' lon='121.0807907218' />
   <node id='-202117' action='modify' lat='14.62834082936' lon='121.08071542462' />
+  <node id='-202141' action='modify' lat='14.63210862797' lon='121.07843937477' />
+  <node id='-202151' action='modify' lat='14.63143816265' lon='121.0739399486' />
   <way id='-105445' action='modify'>
     <nd ref='-138454' />
     <nd ref='-138455' />
@@ -20775,7 +20777,6 @@
   <way id='-105518' action='modify'>
     <nd ref='-138838' />
     <nd ref='-138839' />
-    <nd ref='-138840' />
     <tag k='bridge' v='yes' />
     <tag k='footway' v='footbridge' />
     <tag k='highway' v='footway' />
@@ -32326,14 +32327,6 @@
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
   </way>
-  <way id='-106311' action='modify'>
-    <nd ref='-142642' />
-    <nd ref='-142643' />
-    <tag k='bridge' v='yes' />
-    <tag k='footway' v='footbridge' />
-    <tag k='highway' v='footway' />
-    <tag k='not_major_road' v='0' />
-  </way>
   <way id='-106312' action='modify'>
     <nd ref='-142644' />
     <nd ref='-139655' />
@@ -35023,8 +35016,10 @@
   <way id='-106509' action='modify'>
     <nd ref='-139557' />
     <nd ref='-138840' />
+    <nd ref='-138839' />
+    <nd ref='-202151' />
     <tag k='bridge' v='yes' />
-    <tag k='footway' v='footbridge' />
+    <tag k='footway' v='crossing' />
     <tag k='highway' v='footway' />
     <tag k='not_major_road' v='0' />
   </way>
@@ -36413,8 +36408,13 @@
   <way id='-106609' action='modify'>
     <nd ref='-139704' />
     <nd ref='-142643' />
+    <nd ref='-142642' />
+    <nd ref='-143665' />
+    <nd ref='-143666' />
+    <nd ref='-143667' />
+    <nd ref='-143668' />
     <tag k='bridge' v='yes' />
-    <tag k='footway' v='footbridge' />
+    <tag k='footway' v='crossing' />
     <tag k='highway' v='footway' />
     <tag k='not_major_road' v='0' />
   </way>
@@ -36769,17 +36769,6 @@
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
-  </way>
-  <way id='-106638' action='modify'>
-    <nd ref='-142642' />
-    <nd ref='-143665' />
-    <nd ref='-143666' />
-    <nd ref='-143667' />
-    <nd ref='-143668' />
-    <tag k='bridge' v='yes' />
-    <tag k='footway' v='footbridge' />
-    <tag k='highway' v='footway' />
-    <tag k='not_major_road' v='0' />
   </way>
   <way id='-106639' action='modify'>
     <nd ref='-143669' />
@@ -44752,46 +44741,47 @@
     <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-107178' action='modify'>
-    <nd ref='-143773' />
-    <nd ref='-142933' />
-    <nd ref='-139074' />
-    <nd ref='-143909' />
-    <nd ref='-144266' />
-    <nd ref='-142445' />
-    <nd ref='-144267' />
-    <nd ref='-140366' />
-    <nd ref='-140367' />
-    <nd ref='-143087' />
-    <nd ref='-139894' />
-    <nd ref='-139451' />
-    <nd ref='-141595' />
-    <nd ref='-141596' />
-    <nd ref='-141597' />
-    <nd ref='-141598' />
-    <nd ref='-141599' />
-    <nd ref='-139161' />
-    <nd ref='-141600' />
-    <nd ref='-139509' />
-    <nd ref='-141601' />
-    <nd ref='-141602' />
-    <nd ref='-141603' />
-    <nd ref='-141604' />
-    <nd ref='-141605' />
-    <nd ref='-141606' />
-    <nd ref='-141519' />
-    <nd ref='-139452' />
-    <nd ref='-139453' />
-    <nd ref='-143032' />
-    <nd ref='-143033' />
-    <nd ref='-143034' />
-    <nd ref='-142114' />
-    <nd ref='-141572' />
-    <nd ref='-140663' />
-    <nd ref='-143053' />
-    <nd ref='-145291' />
-    <nd ref='-145292' />
-    <nd ref='-144262' />
+    <nd ref='-202151' />
     <nd ref='-140793' />
+    <nd ref='-144262' />
+    <nd ref='-145292' />
+    <nd ref='-145291' />
+    <nd ref='-143053' />
+    <nd ref='-140663' />
+    <nd ref='-141572' />
+    <nd ref='-142114' />
+    <nd ref='-143034' />
+    <nd ref='-143033' />
+    <nd ref='-143032' />
+    <nd ref='-139453' />
+    <nd ref='-139452' />
+    <nd ref='-141519' />
+    <nd ref='-141606' />
+    <nd ref='-141605' />
+    <nd ref='-141604' />
+    <nd ref='-141603' />
+    <nd ref='-141602' />
+    <nd ref='-141601' />
+    <nd ref='-139509' />
+    <nd ref='-141600' />
+    <nd ref='-139161' />
+    <nd ref='-141599' />
+    <nd ref='-141598' />
+    <nd ref='-141597' />
+    <nd ref='-141596' />
+    <nd ref='-141595' />
+    <nd ref='-139451' />
+    <nd ref='-139894' />
+    <nd ref='-143087' />
+    <nd ref='-140367' />
+    <nd ref='-140366' />
+    <nd ref='-144267' />
+    <nd ref='-142445' />
+    <nd ref='-144266' />
+    <nd ref='-143909' />
+    <nd ref='-139074' />
+    <nd ref='-142933' />
+    <nd ref='-143773' />
     <tag k='cctv' v='1' />
     <tag k='footway' v='sidewalk' />
     <tag k='highway' v='primary' />
@@ -48207,6 +48197,7 @@
     <nd ref='-190394' />
     <nd ref='-190393' />
     <nd ref='-190392' />
+    <nd ref='-202141' />
     <nd ref='-190391' />
     <tag k='cctv' v='0' />
     <tag k='done' v='1' />
@@ -96158,7 +96149,7 @@
     <tag k='landmark' v='0' />
     <tag k='lighting' v='1' />
     <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
+    <tag k='not_major_road' v='0' />
     <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-134294' action='modify'>
@@ -96537,7 +96528,7 @@
     <tag k='landmark' v='0' />
     <tag k='lighting' v='1' />
     <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
+    <tag k='not_major_road' v='0' />
     <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-134323' action='modify'>
@@ -99168,5 +99159,12 @@
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
+  </way>
+  <way id='-134767' action='modify'>
+    <nd ref='-196477' />
+    <nd ref='-202141' />
+    <tag k='footway' v='crossing' />
+    <tag k='highway' v='footway' />
+    <tag k='not_major_road' v='0' />
   </way>
 </osm>
