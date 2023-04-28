@@ -19659,6 +19659,10 @@
   <node id='-202022' lat='14.6538455' lon='121.1296803' />
   <node id='-202023' lat='14.6333844' lon='121.1298607' />
   <node id='-202024' lat='14.6699957' lon='121.1166981' />
+  <node id='-202072' action='modify' lat='14.6276411997' lon='121.08134489696' />
+  <node id='-202073' action='modify' lat='14.62761897865' lon='121.08129677766' />
+  <node id='-202116' action='modify' lat='14.62840350885' lon='121.0807907218' />
+  <node id='-202117' action='modify' lat='14.62834082936' lon='121.08071542462' />
   <way id='-105445' action='modify'>
     <nd ref='-138454' />
     <nd ref='-138455' />
@@ -72704,7 +72708,9 @@
     <nd ref='-193405' />
     <nd ref='-195341' />
     <nd ref='-190775' />
+    <nd ref='-202073' />
     <nd ref='-197734' />
+    <nd ref='-202117' />
     <nd ref='-198941' />
     <nd ref='-197119' />
     <tag k='cctv' v='0' />
@@ -78764,12 +78770,14 @@
     <nd ref='-195404' />
     <nd ref='-200036' />
     <nd ref='-197595' />
+    <nd ref='-202116' />
     <nd ref='-200982' />
     <nd ref='-201899' />
     <nd ref='-199525' />
     <nd ref='-201240' />
     <nd ref='-196506' />
     <nd ref='-191083' />
+    <nd ref='-202072' />
     <nd ref='-194697' />
     <nd ref='-201019' />
     <nd ref='-199911' />
@@ -99133,6 +99141,30 @@
     <tag k='landmark' v='0' />
     <tag k='lighting' v='1' />
     <tag k='name' v='San Isidro' />
+    <tag k='not_flood_hazard' v='1' />
+    <tag k='not_major_road' v='1' />
+    <tag k='pwd_friendly' v='0' />
+  </way>
+  <way id='-134544' action='modify'>
+    <nd ref='-202072' />
+    <nd ref='-202073' />
+    <tag k='cctv' v='0' />
+    <tag k='footway' v='sidewalk' />
+    <tag k='highway' v='footway' />
+    <tag k='landmark' v='0' />
+    <tag k='lighting' v='1' />
+    <tag k='not_flood_hazard' v='1' />
+    <tag k='not_major_road' v='1' />
+    <tag k='pwd_friendly' v='0' />
+  </way>
+  <way id='-134736' action='modify'>
+    <nd ref='-202117' />
+    <nd ref='-202116' />
+    <tag k='cctv' v='0' />
+    <tag k='footway' v='sidewalk' />
+    <tag k='highway' v='footway' />
+    <tag k='landmark' v='0' />
+    <tag k='lighting' v='1' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
