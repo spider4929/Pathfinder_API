@@ -49849,7 +49849,7 @@
     <tag k='name' v='J.P. Rizal' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-131246' action='modify'>
     <nd ref='-198611' />
@@ -50748,7 +50748,7 @@
     <tag k='name' v='J.P. Rizal' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-131306' action='modify'>
     <nd ref='-195006' />
@@ -51597,7 +51597,7 @@
     <tag k='name' v='J.P. Rizal' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-131361' action='modify'>
     <nd ref='-197372' />
@@ -53088,7 +53088,7 @@
     <tag k='name' v='J.P. Rizal' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-131462' action='modify'>
     <nd ref='-194123' />
@@ -53801,7 +53801,7 @@
     <tag k='name' v='J.P. Rizal' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-131510' action='modify'>
     <nd ref='-192351' />
@@ -56542,7 +56542,7 @@
     <tag k='name' v='E. Rodriguez Avenue' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-131694' action='modify'>
     <nd ref='-199655' />
@@ -58258,7 +58258,7 @@
     <tag k='name' v='J.P. Rizal' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-131811' action='modify'>
     <nd ref='-195645' />
@@ -60011,7 +60011,7 @@
     <tag k='name' v='J.P. Rizal' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-131931' action='modify'>
     <nd ref='-200768' />
@@ -61889,7 +61889,7 @@
     <tag k='name' v='J.P. Rizal' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-132051' action='modify'>
     <nd ref='-194795' />
@@ -62137,7 +62137,7 @@
     <tag k='name' v='J.P. Rizal' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-132064' action='modify'>
     <nd ref='-197586' />
@@ -64344,7 +64344,7 @@
     <tag k='name' v='E. Rodriguez Avenue' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-132204' action='modify'>
     <nd ref='-193618' />
@@ -67539,7 +67539,7 @@
     <tag k='name' v='E. Rodriguez Avenue' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-132417' action='modify'>
     <nd ref='-191659' />
@@ -69279,7 +69279,7 @@
     <tag k='name' v='E. Rodriguez Avenue' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-132532' action='modify'>
     <nd ref='-200663' />
@@ -70116,7 +70116,7 @@
     <tag k='name' v='J.P. Rizal' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-132585' action='modify'>
     <nd ref='-191432' />
@@ -71476,7 +71476,7 @@
     <tag k='name' v='E. Rodriguez Avenue' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-132677' action='modify'>
     <nd ref='-200835' />
@@ -72029,7 +72029,7 @@
     <tag k='name' v='J.P. Rizal' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-132720' action='modify'>
     <nd ref='-194881' />
@@ -76959,7 +76959,7 @@
     <tag k='name' v='E. Rodriguez Avenue' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-133044' action='modify'>
     <nd ref='-194206' />
@@ -78312,7 +78312,7 @@
     <tag k='name' v='E. Rodriguez Avenue' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-133129' action='modify'>
     <nd ref='-197663' />
@@ -80451,7 +80451,7 @@
     <tag k='name' v='E. Rodriguez Avenue' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-133270' action='modify'>
     <nd ref='-191702' />
@@ -80914,7 +80914,7 @@
     <tag k='name' v='J.P. Rizal' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-133303' action='modify'>
     <nd ref='-191010' />
@@ -81619,7 +81619,7 @@
     <tag k='name' v='J.P. Rizal' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-133346' action='modify'>
     <nd ref='-197004' />
@@ -81668,7 +81668,7 @@
     <tag k='name' v='J.P. Rizal' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-133349' action='modify'>
     <nd ref='-201591' />
@@ -83110,7 +83110,7 @@
     <tag k='name' v='E. Rodriguez Avenue' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-133445' action='modify'>
     <nd ref='-200703' />
@@ -83496,7 +83496,7 @@
     <tag k='name' v='J.P. Rizal' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-133469' action='modify'>
     <nd ref='-201784' />
@@ -84540,7 +84540,7 @@
     <tag k='name' v='E. Rodriguez Avenue' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-133534' action='modify'>
     <nd ref='-199702' />
@@ -86192,7 +86192,7 @@
     <tag k='name' v='J.P. Rizal' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-133638' action='modify'>
     <nd ref='-198910' />
@@ -88698,7 +88698,7 @@
     <tag k='name' v='E. Rodriguez Avenue' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-133807' action='modify'>
     <nd ref='-196830' />
@@ -88809,7 +88809,7 @@
     <tag k='name' v='E. Rodriguez Avenue' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-133815' action='modify'>
     <nd ref='-201473' />
@@ -91786,7 +91786,7 @@
     <tag k='name' v='J.P. Rizal' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-134004' action='modify'>
     <nd ref='-192790' />
@@ -94700,7 +94700,7 @@
     <tag k='name' v='J.P. Rizal' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-134197' action='modify'>
     <nd ref='-199194' />
@@ -94771,7 +94771,7 @@
     <tag k='name' v='J.P. Rizal' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-134201' action='modify'>
     <nd ref='-192509' />
@@ -96108,7 +96108,7 @@
     <tag k='name' v='J.P. Rizal' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-134291' action='modify'>
     <nd ref='-194999' />
