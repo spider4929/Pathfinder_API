@@ -11926,7 +11926,6 @@
   <node id='-194451' lat='14.6198523' lon='121.078546' />
   <node id='-194452' lat='14.6219003' lon='121.0769295' />
   <node id='-194453' lat='14.6644931' lon='121.1125568' />
-  <node id='-194454' lat='14.647873' lon='121.097554' />
   <node id='-194455' lat='14.64044698048' lon='121.11683530919' />
   <node id='-194456' lat='14.6645561' lon='121.1060474' />
   <node id='-194457' lat='14.66737315199' lon='121.12759391779' />
@@ -14228,7 +14227,6 @@
   <node id='-196726' lat='14.6557306' lon='121.1062155' />
   <node id='-196727' lat='14.6382134' lon='121.0823009' />
   <node id='-196728' lat='14.65330774277' lon='121.11866915827' />
-  <node id='-196729' lat='14.6479504' lon='121.0975926' />
   <node id='-196730' lat='14.656844' lon='121.0967709' />
   <node id='-196731' lat='14.6483948' lon='121.0919648' />
   <node id='-196732' lat='14.62879463328' lon='121.09674562977' />
@@ -19613,6 +19611,8 @@
   <node id='-202808' action='modify' lat='14.65152314342' lon='121.1124518496' />
   <node id='-202851' action='modify' lat='14.65143741318' lon='121.11255703916' />
   <node id='-202877' action='modify' lat='14.6515688317' lon='121.11338028345' />
+  <node id='-202906' action='modify' lat='14.64805123149' lon='121.09723531033' />
+  <node id='-202926' action='modify' lat='14.64790407003' lon='121.09753659565' />
   <way id='-105445' action='modify'>
     <nd ref='-138454' />
     <nd ref='-138455' />
@@ -74805,19 +74805,6 @@
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
   </way>
-  <way id='-132913' action='modify'>
-    <nd ref='-194198' />
-    <nd ref='-193994' />
-    <tag k='cctv' v='0' />
-    <tag k='done' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
   <way id='-132914' action='modify'>
     <nd ref='-197570' />
     <nd ref='-200187' />
@@ -75802,8 +75789,7 @@
     <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-132978' action='modify'>
-    <nd ref='-196729' />
-    <nd ref='-194454' />
+    <nd ref='-202926' />
     <nd ref='-197853' />
     <nd ref='-190497' />
     <nd ref='-193994' />
@@ -75813,6 +75799,8 @@
     <nd ref='-191652' />
     <nd ref='-197954' />
     <nd ref='-190485' />
+    <nd ref='-202926' />
+    <nd ref='-202906' />
     <tag k='cctv' v='0' />
     <tag k='done' v='0' />
     <tag k='footway' v='sidewalk' />
@@ -90594,6 +90582,7 @@
     <nd ref='-200864' />
     <nd ref='-201309' />
     <nd ref='-192456' />
+    <nd ref='-202906' />
     <nd ref='-192585' />
     <nd ref='-196197' />
     <nd ref='-200849' />
