@@ -22,7 +22,8 @@ def api_profile(weather, profile):
         new_profile.pop("not_flood_hazard")
 
     # Removes 'lighting' if time is day
-    if now not in [19, 20, 21, 22, 23, 0, 1, 2, 3, 4, 5]:
+    #if now not in [18, 19, 20, 21, 22, 23, 0, 1, 2, 3, 4, 5, 6]:
+    if now in [18, 19, 20, 21, 22, 23, 0, 1, 2, 3, 4, 5]:
         new_profile.pop("lighting")
 
     return new_profile
