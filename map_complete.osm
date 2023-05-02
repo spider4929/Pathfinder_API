@@ -49180,7 +49180,7 @@
     <tag k='name' v='V. Gomez Street' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-131190' action='modify'>
     <nd ref='-199370' />
@@ -53829,7 +53829,7 @@
     <tag k='name' v='V. Gomez Street' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-131493' action='modify'>
     <nd ref='-194673' />
@@ -68493,7 +68493,7 @@
     <tag k='name' v='V. Gomez Street' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-132441' action='modify'>
     <nd ref='-200646' />
@@ -81770,7 +81770,7 @@
     <tag k='name' v='V. Gomez Street' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-133307' action='modify'>
     <nd ref='-191350' />
@@ -96111,7 +96111,7 @@
     <tag k='name' v='V. Gomez Street' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-134224' action='modify'>
     <nd ref='-200855' />
