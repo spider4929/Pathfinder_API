@@ -24,7 +24,7 @@ def api_profile(weather, profile):
 
     # Removes 'lighting' if time is day
     #if now not in [19, 20, 21, 22, 23, 0, 1, 2, 3, 4, 5]:
-    if now in [19, 20, 21, 22, 23, 0, 1, 2, 3, 4, 5]:
+    if now in [18, 19, 20, 21, 22, 23, 0, 1, 2, 3, 4, 5]:
         new_profile.pop("lighting")
 
     return new_profile
