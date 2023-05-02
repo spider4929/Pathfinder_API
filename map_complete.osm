@@ -48433,7 +48433,7 @@
     <tag k='name' v='A. Bonifacio Avenue' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-131141' action='modify'>
     <nd ref='-195532' />
@@ -51490,7 +51490,7 @@
     <tag k='name' v='A. Bonifacio Avenue' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-131335' action='modify'>
     <nd ref='-198581' />
@@ -53574,7 +53574,7 @@
     <tag k='name' v='A. Bonifacio Avenue' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-131475' action='modify'>
     <nd ref='-201928' />
@@ -54378,7 +54378,7 @@
     <tag k='name' v='A. Bonifacio Avenue' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-131532' action='modify'>
     <nd ref='-196553' />
@@ -57939,7 +57939,7 @@
     <tag k='name' v='A. Bonifacio Avenue' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-131767' action='modify'>
     <nd ref='-198052' />
@@ -74532,7 +74532,7 @@
     <tag k='name' v='A. Bonifacio Avenue' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-132839' action='modify'>
     <nd ref='-194270' />
@@ -78249,7 +78249,7 @@
     <tag k='name' v='A. Bonifacio Avenue' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-133079' action='modify'>
     <nd ref='-200696' />
@@ -80067,7 +80067,7 @@
     <tag k='name' v='A. Bonifacio Avenue' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-133194' action='modify'>
     <nd ref='-194594' />
@@ -85830,7 +85830,7 @@
     <tag k='name' v='A. Bonifacio Avenue' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-133562' action='modify'>
     <nd ref='-192881' />
@@ -88736,7 +88736,7 @@
     <tag k='name' v='A. Bonifacio Avenue' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-133746' action='modify'>
     <nd ref='-200631' />
