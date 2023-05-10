@@ -1,5 +1,6 @@
 from flask import Flask, request
 from pathfinder import pathfinder
+from datetime import datetime
 
 app = Flask(__name__)
 
@@ -32,7 +33,9 @@ def find_path():
 
     route = pathfinder([y_orig, x_orig], [y_dest, x_dest], user_pref)
 
-    print('/route/ Success')
+    now = datetime.now()
+
+    print(f'/route/ Success - {now}')
 
     return route
 
