@@ -325,14 +325,14 @@ def report_update_graph(graph, edges, origin, destination):
 
     client.close()
 
-    nearest_edges = osmnx.nearest_edges(
-            graph, lon_coords, lat_coords, interpolate=None)
-
-    i = 0
-
     if not reports:
         pass
     else:
+        nearest_edges = osmnx.nearest_edges(
+            graph, lon_coords, lat_coords, interpolate=None)
+
+        i = 0
+
         for report in reports:
             if 'closed' in report['category']:
                 edges.loc[(nearest_edges[i][0], nearest_edges[i][1]), 'closed'] = '1'
@@ -387,12 +387,12 @@ def pathfinder(source, goal, profile):
     weather_condition = api_response['weather'][0]['id']
 
     # retrieve map from database
-    # graph = osmnx.graph_from_xml('C:\\Users\\kjqb4\\Documents\\GitHub Projects\\design-project\\Pathfinder_API\\map_complete.osm', simplify=False)
-    graph = osmnx.graph_from_xml('map_complete.osm', simplify=False)
+    graph = osmnx.graph_from_xml('C:\\Users\\kjqb4\\Documents\\GitHub Projects\\design-project\\Pathfinder_API\\map_complete.osm', simplify=False)
+    #graph = osmnx.graph_from_xml('map_complete.osm', simplify=False)
 
     # get all edges for weight adjustment
     nodes, edges = osmnx.graph_to_gdfs(graph)
-    
+    edges.sort_index()
 
     # adjust weights profile depending on user pref and time & weather conditions
     adjusted_profile = api_profile(weather_condition, profile)
