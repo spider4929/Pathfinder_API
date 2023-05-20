@@ -14,6 +14,7 @@ from haversine import haversine
 def api_profile(weather, profile):
     """Adjusts the current profile according to current weather and time conditions."""
     new_profile = profile
+    case = [True, True]
 
     now = datetime.now().hour + 8
     if now >= 24:
@@ -22,12 +23,14 @@ def api_profile(weather, profile):
     # Removes 'flood_hazard' if weather is clear
     if weather not in [201, 202, 211, 212, 221, 501, 502, 503, 504, 511, 521, 522, 531]:
         new_profile.pop("not_flood_hazard")
+        case[0] = False
 
     # Removes 'lighting' if time is day
     if now not in [18, 19, 20, 21, 22, 23, 0, 1, 2, 3, 4, 5, 6]:
         new_profile.pop("lighting")
+        case[1] = False
 
-    return new_profile
+    return new_profile, case
 
 
 def adjust_weight(length, row, profile):
@@ -395,7 +398,7 @@ def pathfinder(source, goal, profile):
     edges.sort_index()
 
     # adjust weights profile depending on user pref and time & weather conditions
-    adjusted_profile = api_profile(weather_condition, profile)
+    adjusted_profile, conditions = api_profile(weather_condition, profile)
 
     # adjust safety factors on edges based on reports
     edges = report_update_graph(graph, edges, origin, destination)
@@ -467,6 +470,7 @@ def pathfinder(source, goal, profile):
             'time': datetime.now(),
             'origin': [origin['y'], origin['x']],
             'destination': [destination['y'], destination['x']],
+            'conditions': {'weather': conditions[0], 'lighting': conditions[1]},
             'optimized_route': {
                 'coverage': getSafetyFactorCoverage(
                     route_safety_dir,
@@ -488,6 +492,7 @@ def pathfinder(source, goal, profile):
             'time': datetime.now(),
             'origin': [origin['y'], origin['x']],
             'destination': [destination['y'], destination['x']],
+            'conditions': {'weather': conditions[0], 'lighting': conditions[1]},
             'optimized_route': {
                 'coverage': getSafetyFactorCoverage(
                     route_safety_dir,
