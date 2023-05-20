@@ -392,7 +392,7 @@ def pathfinder(source, goal, profile):
 
     # get all edges for weight adjustment
     nodes, edges = osmnx.graph_to_gdfs(graph)
-    edges.sort_index()
+    
 
     # adjust weights profile depending on user pref and time & weather conditions
     adjusted_profile = api_profile(weather_condition, profile)
