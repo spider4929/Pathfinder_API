@@ -323,18 +323,21 @@ def report_update_graph(graph, edges, origin, destination):
 
     client.close()
 
-    for report in reports:
-        nearest_edge = osmnx.nearest_edges(
-            graph, report['coordinates']['longitude'], report['coordinates']['latitude'], interpolate=None)
-        print(nearest_edge)
-        if 'closed' in report['category']:
-            edges.loc[[nearest_edge[0], nearest_edge[1]], 'closed'] = 1
-        elif 'not' in report['category']:
-            category = report['category'][4:]
-            edges.loc[[nearest_edge[0], nearest_edge[1]], category] = 0
-        else:
-            category = report['category']
-            edges.loc[[nearest_edge[0], nearest_edge[1]], category] = 1
+    if not reports:
+        pass
+    else:
+        for report in reports:
+            nearest_edge = osmnx.nearest_edges(
+                graph, report['coordinates']['longitude'], report['coordinates']['latitude'], interpolate=None)
+            print(nearest_edge)
+            if 'closed' in report['category']:
+                edges.loc[[nearest_edge[0], nearest_edge[1]], 'closed'] = 1
+            elif 'not' in report['category']:
+                category = report['category'][4:]
+                edges.loc[[nearest_edge[0], nearest_edge[1]], category] = 0
+            else:
+                category = report['category']
+                edges.loc[[nearest_edge[0], nearest_edge[1]], category] = 1
     
     return edges
 
@@ -386,7 +389,7 @@ def pathfinder(source, goal, profile):
     adjusted_profile = api_profile(weather_condition, profile)
 
     # adjust safety factors on edges based on reports
-    # edges = report_update_graph(graph, edges, origin, destination)
+    edges = report_update_graph(graph, edges, origin, destination)
 
     # create category "weight" for use in path finding
     edges['weight'] = edges.apply(
