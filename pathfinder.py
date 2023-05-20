@@ -386,7 +386,7 @@ def pathfinder(source, goal, profile):
     adjusted_profile = api_profile(weather_condition, profile)
 
     # adjust safety factors on edges based on reports
-    edges = report_update_graph(graph, edges, origin, destination)
+    # edges = report_update_graph(graph, edges, origin, destination)
 
     # create category "weight" for use in path finding
     edges['weight'] = edges.apply(
