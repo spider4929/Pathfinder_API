@@ -47633,18 +47633,6 @@
     <tag k='not_major_road' v='0' />
   </way>
   <way id='-146605' action='modify'>
-    <nd ref='-233906' />
-    <nd ref='-235386' />
-    <nd ref='-231978' />
-    <nd ref='-234905' />
-    <nd ref='-232025' />
-    <nd ref='-231545' />
-    <nd ref='-232887' />
-    <nd ref='-232888' />
-    <nd ref='-235863' />
-    <nd ref='-230897' />
-    <nd ref='-230898' />
-    <nd ref='-230899' />
     <nd ref='-230900' />
     <nd ref='-235488' />
     <nd ref='-235432' />
@@ -104116,5 +104104,37 @@
     <tag k='not_flood_hazard' v='0' />
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
+  </way>
+  <way id='-152801' action='modify'>
+    <nd ref='-233906' />
+    <nd ref='-235386' />
+    <nd ref='-231978' />
+    <nd ref='-234905' />
+    <nd ref='-232025' />
+    <nd ref='-231545' />
+    <nd ref='-232887' />
+    <nd ref='-232888' />
+    <nd ref='-235863' />
+    <nd ref='-230897' />
+    <nd ref='-230898' />
+    <tag k='cctv' v='1' />
+    <tag k='footway' v='sidewalk' />
+    <tag k='highway' v='primary' />
+    <tag k='landmark' v='0' />
+    <tag k='lighting' v='1' />
+    <tag k='name' v='Aurora Boulevard' />
+    <tag k='not_flood_hazard' v='1' />
+    <tag k='not_major_road' v='0' />
+    <tag k='pwd_friendly' v='1' />
+  </way>
+  <way id='-152802' action='modify'>
+    <nd ref='-230898' />
+    <nd ref='-230899' />
+    <nd ref='-230900' />
+    <tag k='footway' v='crossing' />
+    <tag k='highway' v='footway' />
+    <tag k='lighting' v='1' />
+    <tag k='not_flood_hazard' v='1' />
+    <tag k='not_major_road' v='0' />
   </way>
 </osm>
