@@ -6,7 +6,7 @@ from itertools import count
 from datetime import datetime
 import requests
 import pymongo
-import haversine
+from haversine import haversine
 
 #### FUNCTIONS ####
 
