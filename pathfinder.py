@@ -5,6 +5,8 @@ from heapq import heappop, heappush
 from itertools import count
 from datetime import datetime
 import requests
+import pymongo
+import haversine
 
 #### FUNCTIONS ####
 
@@ -33,7 +35,9 @@ def adjust_weight(length, row, profile):
     weight = length
     modifier = 1
     for safety_factor, user_preference in profile.items():
-        if row[safety_factor] == '0':
+        if row['closed'] == '1':
+            modifier = 99
+        elif row[safety_factor] == '0':
             modifier += user_preference
     return weight * modifier
 
@@ -180,10 +184,10 @@ def getRouteDirections(route, nodes, graph, safety_factors):
                                   nodes.filter(
                                       items=[route[count]], axis=0).x.item()
                               ]})
-            
+
             safety_coverage_direction.append({
-                              'distance': distance,
-                              'factors_present': present_factors})
+                'distance': distance,
+                'factors_present': present_factors})
             continue
 
         # If the step is any steps in between the first and last step
@@ -293,6 +297,40 @@ def getSafetyFactorCoverage(steps, length, safety_factors, profile):
     return factor_coverage
 
 
+def report_update_graph(graph, edges, origin, destination):
+    client = pymongo.MongoClient(
+        "mongodb+srv://team-5-design-project:WJh3Yqe7bLgGwTEr@pathfinder.9orhde9.mongodb.net/?retryWrites=true&w=majority")
+
+    db = client["test"]
+
+    collection = db["reports"]
+    db_report = collection.find()
+    origin = (origin['y'], origin['x'])
+    dest = (destination['y'], destination['x'])
+    threshold = haversine(origin, dest)
+
+    client.close()
+
+    for report in db_report:
+        coords = (report['coordinates']['latitude'], report['coordinates']['longitude'])
+        if haversine(origin, coords) >= threshold:
+            pass
+        else:
+            nearest_edge = osmnx.nearest_edges(
+                graph, report['coordinates']['longitude'], report['coordinates']['latitude'], interpolate=None)
+            print(nearest_edge)
+            if 'closed' in report['category']:
+                edges.loc[[nearest_edge[0], nearest_edge[1]], 'closed'] = 1
+            elif 'not' in report['category']:
+                category = report['category'][4:]
+                edges.loc[[nearest_edge[0], nearest_edge[1]], category] = 0
+            else:
+                category = report['category']
+                edges.loc[[nearest_edge[0], nearest_edge[1]], category] = 1
+    
+    return edges
+
+
 def pathfinder(source, goal, profile):
     """Main pathfinding function
     Takes 'source', 'goal' and 'profile' as parameters.
@@ -339,6 +377,9 @@ def pathfinder(source, goal, profile):
     # adjust weights profile depending on user pref and time & weather conditions
     adjusted_profile = api_profile(weather_condition, profile)
 
+    # adjust safety factors on edges based on reports
+    edges = report_update_graph(graph, edges, origin, destination)
+
     # create category "weight" for use in path finding
     edges['weight'] = edges.apply(
         lambda row: adjust_weight(row['length'], row, adjusted_profile), axis=1
@@ -383,7 +424,6 @@ def pathfinder(source, goal, profile):
     shortest_route_dir, shortest_route_safety_dir = getRouteDirections(
         shortest_route, nodes, graph, list(adjusted_profile.keys()))
 
-
     try:
         compare_route = getSafetyFactorCoverage(
             route_safety_dir,
@@ -399,9 +439,9 @@ def pathfinder(source, goal, profile):
             adjusted_profile
         )
     except:
-        print(origin,destination)
+        print(origin, destination)
         return {'msg': "Route is invalid"}, 400
-    
+
     if compare_route['average'] == compare_shortest_route['average']:
         response = {
             'time': datetime.now(),
