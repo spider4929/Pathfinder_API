@@ -39,6 +39,9 @@ def adjust_weight(length, row, profile):
             modifier = 99
         elif row[safety_factor] == '0':
             modifier += user_preference
+        # print(row)
+        # if row[safety_factor] == '0':
+        #     modifier += user_preference
     return weight * modifier
 
 #### PATH FINDING ####
@@ -348,7 +351,7 @@ def pathfinder(source, goal, profile):
 
     safety_factors = ['not_flood_hazard', 'pwd_friendly',
                       'cctv', 'landmark', 'lighting', 'not_major_road']
-    osmnx.settings.useful_tags_way = safety_factors + ['name', 'footway']
+    osmnx.settings.useful_tags_way = safety_factors + ['name', 'footway', 'closed']
 
     # comes from application request
     origin = {
@@ -374,7 +377,7 @@ def pathfinder(source, goal, profile):
     weather_condition = api_response['weather'][0]['id']
 
     # retrieve map from database
-    graph = osmnx.graph_from_xml('map_complete.osm', simplify=False)
+    graph = osmnx.graph_from_xml('C:\\Users\\kjqb4\\Documents\\GitHub Projects\\design-project\\Pathfinder_API\\map_complete.osm', simplify=False)
 
     # get all edges for weight adjustment
     nodes, edges = osmnx.graph_to_gdfs(graph)
