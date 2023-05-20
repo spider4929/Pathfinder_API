@@ -36,12 +36,10 @@ def adjust_weight(length, row, profile):
     modifier = 1
     for safety_factor, user_preference in profile.items():
         if row['closed'] == '1':
-            modifier = 99
+            modifier = 999
+            break
         elif row[safety_factor] == '0':
             modifier += user_preference
-        # print(row)
-        # if row[safety_factor] == '0':
-        #     modifier += user_preference
     return weight * modifier
 
 #### PATH FINDING ####
@@ -313,6 +311,8 @@ def report_update_graph(graph, edges, origin, destination):
     threshold = haversine(origin, dest)
 
     reports = []
+    lat_coords = []
+    lon_coords = []
 
     for report in db_report:
         coords = (report['coordinates']['latitude'], report['coordinates']['longitude'])
@@ -320,24 +320,31 @@ def report_update_graph(graph, edges, origin, destination):
             pass
         else:
             reports.append(report)
+            lat_coords.append(report['coordinates']['latitude'])
+            lon_coords.append(report['coordinates']['longitude'])
 
     client.close()
+
+    nearest_edges = osmnx.nearest_edges(
+            graph, lon_coords, lat_coords, interpolate=None)
+
+    i = 0
 
     if not reports:
         pass
     else:
         for report in reports:
-            nearest_edge = osmnx.nearest_edges(
-                graph, report['coordinates']['longitude'], report['coordinates']['latitude'], interpolate=None)
-            print(nearest_edge)
             if 'closed' in report['category']:
-                edges.loc[[nearest_edge[0], nearest_edge[1]], 'closed'] = 1
+                edges.loc[(nearest_edges[i][0], nearest_edges[i][1]), 'closed'] = '1'
+                i += 1
             elif 'not' in report['category']:
                 category = report['category'][4:]
-                edges.loc[[nearest_edge[0], nearest_edge[1]], category] = 0
+                edges.loc[(nearest_edges[i][0], nearest_edges[i][1]), category] = '0'
+                i += 1
             else:
                 category = report['category']
-                edges.loc[[nearest_edge[0], nearest_edge[1]], category] = 1
+                edges.loc[(nearest_edges[i][0], nearest_edges[i][1]), category] = '1'
+                i += 1
     
     return edges
 
@@ -380,7 +387,8 @@ def pathfinder(source, goal, profile):
     weather_condition = api_response['weather'][0]['id']
 
     # retrieve map from database
-    graph = osmnx.graph_from_xml('map_complete.osm', simplify=False)
+    graph = osmnx.graph_from_xml('C:\\Users\\kjqb4\\Documents\\GitHub Projects\\design-project\\Pathfinder_API\\map_complete.osm', simplify=False)
+    # graph = osmnx.graph_from_xml('map_complete.osm', simplify=False)
 
     # get all edges for weight adjustment
     nodes, edges = osmnx.graph_to_gdfs(graph)
