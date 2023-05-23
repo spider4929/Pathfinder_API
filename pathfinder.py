@@ -360,7 +360,7 @@ def get_nearest_edge(y_coord, x_coord):
             graph, x_coord, y_coord, interpolate=None)
     
     response = {
-        'edges': f'nearest_edges'
+        'edges': f'{nearest_edges}'
     }
 
     return response, 200
