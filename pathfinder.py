@@ -353,14 +353,14 @@ def report_update_graph(graph, edges, origin, destination):
 
 def get_nearest_edge(y_coord, x_coord):
 
-    # graph = osmnx.graph_from_xml('C:\\Users\\kjqb4\\Documents\\GitHub Projects\\design-project\\Pathfinder_API\\map_complete.osm', simplify=False)
-    graph = osmnx.graph_from_xml('map_complete.osm', simplify=False)
+    graph = osmnx.graph_from_xml('C:\\Users\\kjqb4\\Documents\\GitHub Projects\\design-project\\Pathfinder_API\\map_complete.osm', simplify=False)
+    # graph = osmnx.graph_from_xml('map_complete.osm', simplify=False)
     
     nearest_edges = osmnx.nearest_edges(
             graph, x_coord, y_coord, interpolate=None)
     
     response = {
-        'edges': nearest_edges
+        'edges': f'nearest_edges'
     }
 
     return response, 200

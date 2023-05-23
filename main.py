@@ -39,7 +39,7 @@ def find_path():
 
     return route
 
-@app.route("/route/get_nearest_edge/", methods=["POST"])
+@app.route("/get_nearest_edge/", methods=["POST"])
 def nearest_edge():
     args = request.get_json()
     coords = args['coords']
