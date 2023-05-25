@@ -314,8 +314,6 @@ def report_update_graph(graph, edges, origin, destination):
     threshold = haversine(origin, dest)
 
     reports = []
-    lat_coords = []
-    lon_coords = []
 
     for report in db_report:
         coords = (report['coordinates']['latitude'], report['coordinates']['longitude'])
@@ -323,32 +321,25 @@ def report_update_graph(graph, edges, origin, destination):
             pass
         else:
             reports.append(report)
-            lat_coords.append(report['coordinates']['latitude'])
-            lon_coords.append(report['coordinates']['longitude'])
 
     client.close()
 
     if not reports:
         pass
     else:
-        nearest_edges = osmnx.nearest_edges(
-            graph, lon_coords, lat_coords, interpolate=None)
-
-        i = 0
-
         for report in reports:
-            if 'closed' in report['category']:
-                edges.loc[(nearest_edges[i][0], nearest_edges[i][1]), 'closed'] = '1'
-                i += 1
+            if 'closure' in report['category']:
+                nearest_edge = eval(report['edges'])
+                edges.loc[(nearest_edge[0], nearest_edge[1]), 'closed'] = '1'
             elif 'not' in report['category']:
+                nearest_edge = eval(report['edges'])
                 category = report['category'][4:]
-                edges.loc[(nearest_edges[i][0], nearest_edges[i][1]), category] = '0'
-                i += 1
+                edges.loc[(nearest_edge[0], nearest_edge[1]), category] = '0'
             else:
+                nearest_edge = eval(report['edges'])
                 category = report['category']
-                edges.loc[(nearest_edges[i][0], nearest_edges[i][1]), category] = '1'
-                i += 1
-    
+                edges.loc[(nearest_edge[0], nearest_edge[1]), category] = '1'
+
     return edges
 
 def get_nearest_edge(y_coord, x_coord):
