@@ -8377,7 +8377,6 @@
   <node id='-238555' lat='14.65593771765' lon='121.10783828027' />
   <node id='-238556' lat='14.63412939708' lon='121.10192075238' />
   <node id='-238557' lat='14.64530402241' lon='121.12375929818' />
-  <node id='-238558' lat='14.633616' lon='121.098548' />
   <node id='-238559' lat='14.64090534676' lon='121.12201988563' />
   <node id='-238560' lat='14.656386' lon='121.103117' />
   <node id='-238561' lat='14.64079876679' lon='121.1034993517' />
@@ -10864,7 +10863,6 @@
   <node id='-241004' lat='14.6680127' lon='121.1002494' />
   <node id='-241005' lat='14.66684579481' lon='121.12822278036' />
   <node id='-241006' lat='14.63647040483' lon='121.08272960675' />
-  <node id='-241007' lat='14.6237414' lon='121.074347' />
   <node id='-241008' lat='14.6594385' lon='121.1271983' />
   <node id='-241009' lat='14.6684307' lon='121.111888' />
   <node id='-241010' lat='14.63894472869' lon='121.09816968307' />
@@ -12743,7 +12741,6 @@
   <node id='-242836' lat='14.6473119' lon='121.1103328' />
   <node id='-242837' lat='14.6350469' lon='121.0910024' />
   <node id='-242838' lat='14.6571301' lon='121.100701' />
-  <node id='-242839' lat='14.623737' lon='121.0744293' />
   <node id='-242840' lat='14.66686136957' lon='121.10848282178' />
   <node id='-242841' lat='14.6702865' lon='121.102686' />
   <node id='-242842' lat='14.64954332992' lon='121.11438127791' />
@@ -17257,7 +17254,6 @@
   <node id='-247257' lat='14.6303731' lon='121.0958691' />
   <node id='-247258' lat='14.6326925' lon='121.0961736' />
   <node id='-247259' lat='14.64650315064' lon='121.1024580185' />
-  <node id='-247260' lat='14.6541786' lon='121.1054553' />
   <node id='-247261' lat='14.6345704' lon='121.0886376' />
   <node id='-247262' lat='14.64035' lon='121.0924542' />
   <node id='-247263' lat='14.6517955' lon='121.1309583' />
@@ -19434,7 +19430,6 @@
   <node id='-249409' lat='14.6581418' lon='121.1004076' />
   <node id='-249410' action='modify' lat='14.636782968' lon='121.10153116151' />
   <node id='-249411' lat='14.6570004' lon='121.1337172' />
-  <node id='-249412' lat='14.6329862' lon='121.0986221' />
   <node id='-249413' lat='14.6488119' lon='121.1235709' />
   <node id='-249414' lat='14.6441108' lon='121.0986409' />
   <node id='-249415' lat='14.65261151209' lon='121.11383446686' />
@@ -50943,20 +50938,6 @@
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
   </way>
-  <way id='-146689' action='modify'>
-    <nd ref='-245337' />
-    <nd ref='-244851' />
-    <tag k='cctv' v='0' />
-    <tag k='closed' v='0' />
-    <tag k='footway' v='footbridge' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='Emerald Footbridge' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
   <way id='-146690' action='modify'>
     <nd ref='-248205' />
     <nd ref='-246035' />
@@ -51723,19 +51704,6 @@
     <tag k='landmark' v='0' />
     <tag k='lighting' v='1' />
     <tag k='name' v='Opal' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
-  <way id='-146732' action='modify'>
-    <nd ref='-240727' />
-    <nd ref='-239300' />
-    <tag k='cctv' v='0' />
-    <tag k='closed' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='1' />
-    <tag k='lighting' v='1' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
@@ -53262,24 +53230,6 @@
     <tag k='landmark' v='0' />
     <tag k='lighting' v='1' />
     <tag k='name' v='Major S. Dizon Street' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
-  <way id='-146826' action='modify'>
-    <nd ref='-239716' />
-    <nd ref='-248618' />
-    <nd ref='-241706' />
-    <nd ref='-241865' />
-    <nd ref='-239700' />
-    <tag k='cctv' v='0' />
-    <tag k='closed' v='0' />
-    <tag k='done' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='2nd Avenue' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
@@ -63931,23 +63881,6 @@
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
   </way>
-  <way id='-147482' action='modify'>
-    <nd ref='-243204' />
-    <nd ref='-244979' />
-    <nd ref='-246748' />
-    <nd ref='-248514' />
-    <nd ref='-238734' />
-    <tag k='cctv' v='0' />
-    <tag k='closed' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='Kaolin Street' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
   <way id='-147483' action='modify'>
     <nd ref='-248178' />
     <nd ref='-242379' />
@@ -64423,21 +64356,6 @@
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
   </way>
-  <way id='-147511' action='modify'>
-    <nd ref='-249211' />
-    <nd ref='-238722' />
-    <nd ref='-247591' />
-    <nd ref='-243964' />
-    <tag k='cctv' v='0' />
-    <tag k='closed' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='1' />
-    <tag k='lighting' v='1' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
   <way id='-147512' action='modify'>
     <nd ref='-241246' />
     <nd ref='-246401' />
@@ -64868,20 +64786,6 @@
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
-  </way>
-  <way id='-147534' action='modify'>
-    <nd ref='-239300' />
-    <nd ref='-241285' />
-    <nd ref='-240225' />
-    <tag k='cctv' v='1' />
-    <tag k='closed' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='1' />
-    <tag k='lighting' v='1' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='1' />
   </way>
   <way id='-147535' action='modify'>
     <nd ref='-238048' />
@@ -66045,21 +65949,6 @@
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
   </way>
-  <way id='-147600' action='modify'>
-    <nd ref='-249211' />
-    <nd ref='-249051' />
-    <nd ref='-249085' />
-    <nd ref='-239300' />
-    <tag k='cctv' v='1' />
-    <tag k='closed' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='1' />
-    <tag k='lighting' v='1' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
   <way id='-147601' action='modify'>
     <nd ref='-249406' />
     <nd ref='-240726' />
@@ -67166,25 +67055,6 @@
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
   </way>
-  <way id='-147670' action='modify'>
-    <nd ref='-247788' />
-    <nd ref='-246629' />
-    <nd ref='-248395' />
-    <nd ref='-238615' />
-    <nd ref='-240378' />
-    <nd ref='-242157' />
-    <nd ref='-243925' />
-    <tag k='cctv' v='0' />
-    <tag k='closed' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='Bankaan' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
   <way id='-147671' action='modify'>
     <nd ref='-247566' />
     <nd ref='-243685' />
@@ -67489,21 +67359,6 @@
     <tag k='landmark' v='0' />
     <tag k='lighting' v='1' />
     <tag k='name' v='F. Balagtas Street' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
-  <way id='-147691' action='modify'>
-    <nd ref='-248958' />
-    <nd ref='-247131' />
-    <nd ref='-246566' />
-    <tag k='cctv' v='0' />
-    <tag k='closed' v='0' />
-    <tag k='footway' v='footbridge' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='Emerald Footbridge' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
@@ -67979,21 +67834,6 @@
     <tag k='name' v='General Ordoñez Street' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
-  <way id='-147721' action='modify'>
-    <nd ref='-243505' />
-    <nd ref='-245398' />
-    <nd ref='-248958' />
-    <tag k='cctv' v='0' />
-    <tag k='closed' v='0' />
-    <tag k='footway' v='footbridge' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='Emerald Footbridge' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-147722' action='modify'>
@@ -68871,19 +68711,6 @@
     <tag k='name' v='Katipunan Avenue' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
-  <way id='-147774' action='modify'>
-    <nd ref='-240125' />
-    <nd ref='-243610' />
-    <tag k='cctv' v='0' />
-    <tag k='closed' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='1' />
-    <tag k='lighting' v='1' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-147775' action='modify'>
@@ -70171,21 +69998,6 @@
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
   </way>
-  <way id='-147856' action='modify'>
-    <nd ref='-248124' />
-    <nd ref='-246091' />
-    <nd ref='-247987' />
-    <tag k='cctv' v='0' />
-    <tag k='closed' v='0' />
-    <tag k='footway' v='footbridge' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='Emerald Footbridge' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
   <way id='-147857' action='modify'>
     <nd ref='-245979' />
     <nd ref='-241891' />
@@ -70198,25 +70010,6 @@
     <tag k='landmark' v='0' />
     <tag k='lighting' v='1' />
     <tag k='name' v='Sandal Wood Street' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
-  <way id='-147858' action='modify'>
-    <nd ref='-242774' />
-    <nd ref='-247914' />
-    <nd ref='-239455' />
-    <nd ref='-244903' />
-    <nd ref='-245252' />
-    <nd ref='-243497' />
-    <nd ref='-242011' />
-    <tag k='cctv' v='0' />
-    <tag k='closed' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='1st Avenue' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
@@ -74812,23 +74605,6 @@
     <tag k='landmark' v='0' />
     <tag k='lighting' v='1' />
     <tag k='name' v='B. Santa Ana Street' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
-  <way id='-148133' action='modify'>
-    <nd ref='-244367' />
-    <nd ref='-246142' />
-    <nd ref='-247024' />
-    <nd ref='-247908' />
-    <nd ref='-238128' />
-    <tag k='cctv' v='0' />
-    <tag k='closed' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='Panama Street' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
@@ -79988,26 +79764,6 @@
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
   </way>
-  <way id='-148453' action='modify'>
-    <nd ref='-242109' />
-    <nd ref='-240727' />
-    <nd ref='-243610' />
-    <nd ref='-249412' />
-    <nd ref='-247094' />
-    <nd ref='-243964' />
-    <nd ref='-238558' />
-    <nd ref='-247345' />
-    <tag k='cctv' v='0' />
-    <tag k='closed' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='1' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='City Hall Road' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='1' />
-  </way>
   <way id='-148454' action='modify'>
     <nd ref='-239335' />
     <nd ref='-246251' />
@@ -81184,23 +80940,6 @@
     <tag k='landmark' v='0' />
     <tag k='lighting' v='1' />
     <tag k='name' v='Mount Everest Street' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
-  <way id='-148520' action='modify'>
-    <nd ref='-241258' />
-    <nd ref='-240848' />
-    <nd ref='-242628' />
-    <nd ref='-239185' />
-    <nd ref='-240952' />
-    <tag k='cctv' v='0' />
-    <tag k='closed' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='Zamora' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
@@ -86825,22 +86564,6 @@
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
   </way>
-  <way id='-148857' action='modify'>
-    <nd ref='-238376' />
-    <nd ref='-240141' />
-    <nd ref='-248260' />
-    <nd ref='-243398' />
-    <tag k='cctv' v='0' />
-    <tag k='closed' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='Arayat Street' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
   <way id='-148858' action='modify'>
     <nd ref='-246604' />
     <nd ref='-245369' />
@@ -89485,19 +89208,6 @@
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
   </way>
-  <way id='-149015' action='modify'>
-    <nd ref='-247094' />
-    <nd ref='-248791' />
-    <tag k='cctv' v='0' />
-    <tag k='closed' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='1' />
-    <tag k='lighting' v='1' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
   <way id='-149016' action='modify'>
     <nd ref='-240679' />
     <nd ref='-241459' />
@@ -90256,21 +89966,6 @@
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
   </way>
-  <way id='-149058' action='modify'>
-    <nd ref='-249132' />
-    <nd ref='-239352' />
-    <nd ref='-241116' />
-    <tag k='cctv' v='0' />
-    <tag k='closed' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='Tangerine Street' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
   <way id='-149059' action='modify'>
     <nd ref='-246457' />
     <nd ref='-241248' />
@@ -90452,21 +90147,6 @@
     <tag k='landmark' v='0' />
     <tag k='lighting' v='1' />
     <tag k='name' v='Upo Street' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
-  <way id='-149070' action='modify'>
-    <nd ref='-239242' />
-    <nd ref='-243925' />
-    <nd ref='-241085' />
-    <tag k='cctv' v='0' />
-    <tag k='closed' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='Bagong Silang Street' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
@@ -91011,21 +90691,6 @@
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
   </way>
-  <way id='-149104' action='modify'>
-    <nd ref='-245398' />
-    <nd ref='-245337' />
-    <nd ref='-243625' />
-    <tag k='cctv' v='0' />
-    <tag k='closed' v='0' />
-    <tag k='footway' v='footbridge' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='Emerald Footbridge' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
   <way id='-149105' action='modify'>
     <nd ref='-238146' />
     <nd ref='-240235' />
@@ -91090,20 +90755,6 @@
     <tag k='landmark' v='0' />
     <tag k='lighting' v='1' />
     <tag k='name' v='Calcite Street' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
-  <way id='-149109' action='modify'>
-    <nd ref='-248958' />
-    <nd ref='-248124' />
-    <tag k='cctv' v='0' />
-    <tag k='closed' v='0' />
-    <tag k='footway' v='footbridge' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='Emerald Footbridge' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
@@ -96386,48 +96037,6 @@
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
   </way>
-  <way id='-149430' action='modify'>
-    <nd ref='-241007' />
-    <nd ref='-242839' />
-    <nd ref='-236977' />
-    <nd ref='-236978' />
-    <nd ref='-236979' />
-    <nd ref='-236980' />
-    <nd ref='-236981' />
-    <nd ref='-236982' />
-    <nd ref='-236983' />
-    <nd ref='-236984' />
-    <nd ref='-236985' />
-    <nd ref='-236986' />
-    <nd ref='-236987' />
-    <nd ref='-236988' />
-    <nd ref='-236989' />
-    <nd ref='-236990' />
-    <nd ref='-236991' />
-    <nd ref='-236992' />
-    <nd ref='-236993' />
-    <nd ref='-236994' />
-    <nd ref='-236995' />
-    <nd ref='-232740' />
-    <nd ref='-236996' />
-    <nd ref='-236997' />
-    <nd ref='-236998' />
-    <nd ref='-236999' />
-    <nd ref='-237000' />
-    <nd ref='-237001' />
-    <nd ref='-237002' />
-    <nd ref='-237003' />
-    <tag k='cctv' v='0' />
-    <tag k='closed' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='Cinco Hermanos' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
   <way id='-149431' action='modify'>
     <nd ref='-242023' />
     <nd ref='-247277' />
@@ -97553,23 +97162,6 @@
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
   </way>
-  <way id='-149498' action='modify'>
-    <nd ref='-247393' />
-    <nd ref='-249159' />
-    <nd ref='-239380' />
-    <nd ref='-241144' />
-    <nd ref='-242920' />
-    <tag k='cctv' v='0' />
-    <tag k='closed' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='Sweden Street' />
-    <tag k='not_flood_hazard' v='1' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
   <way id='-149499' action='modify'>
     <nd ref='-246397' />
     <nd ref='-242834' />
@@ -98388,10 +97980,8 @@
     <nd ref='-242109' />
     <nd ref='-240727' />
     <nd ref='-243610' />
-    <nd ref='-249412' />
     <nd ref='-247094' />
     <nd ref='-243964' />
-    <nd ref='-238558' />
     <nd ref='-247345' />
     <tag k='cctv' v='0' />
     <tag k='closed' v='0' />
@@ -102170,21 +101760,6 @@
     <tag k='lighting' v='1' />
     <tag k='name' v='Montmartre Street' />
     <tag k='not_flood_hazard' v='0' />
-    <tag k='not_major_road' v='1' />
-    <tag k='pwd_friendly' v='0' />
-  </way>
-  <way id='-149783' action='modify'>
-    <nd ref='-247260' />
-    <nd ref='-249027' />
-    <nd ref='-239242' />
-    <tag k='cctv' v='0' />
-    <tag k='closed' v='0' />
-    <tag k='footway' v='sidewalk' />
-    <tag k='highway' v='footway' />
-    <tag k='landmark' v='0' />
-    <tag k='lighting' v='1' />
-    <tag k='name' v='A. De Leon Street' />
-    <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
   </way>

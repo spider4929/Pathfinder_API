@@ -38,10 +38,7 @@ def adjust_weight(length, row, profile):
     weight = length
     modifier = 1
     for safety_factor, user_preference in profile.items():
-        if row['closed'] == '1':
-            modifier = 999
-            break
-        elif row[safety_factor] == '0':
+        if row[safety_factor] == '0':
             modifier += user_preference
     return weight * modifier
 
@@ -301,7 +298,7 @@ def getSafetyFactorCoverage(steps, length, safety_factors, profile):
     return factor_coverage
 
 
-def report_update_graph(graph, edges, origin, destination):
+def report_update_graph(edges, origin, destination):
     client = pymongo.MongoClient(
         "mongodb+srv://team-5-design-project:WJh3Yqe7bLgGwTEr@pathfinder.9orhde9.mongodb.net/?retryWrites=true&w=majority")
 
@@ -330,7 +327,7 @@ def report_update_graph(graph, edges, origin, destination):
         for report in reports:
             if 'closure' in report['category']:
                 nearest_edge = eval(report['edges'])
-                edges.loc[(nearest_edge[0], nearest_edge[1]), 'closed'] = '1'
+                edges = edges.loc[edges.index != nearest_edge]
             elif 'not' in report['category']:
                 nearest_edge = eval(report['edges'])
                 category = report['category'][4:]
@@ -395,8 +392,8 @@ def pathfinder(source, goal, profile):
     weather_condition = api_response['weather'][0]['id']
 
     # retrieve map from database
-    # graph = osmnx.graph_from_xml('C:\\Users\\kjqb4\\Documents\\GitHub Projects\\design-project\\Pathfinder_API\\map_complete.osm', simplify=False)
-    graph = osmnx.graph_from_xml('map_complete.osm', simplify=False)
+    graph = osmnx.graph_from_xml('C:\\Users\\kjqb4\\Documents\\GitHub Projects\\design-project\\Pathfinder_API\\map_complete.osm', simplify=False)
+    # graph = osmnx.graph_from_xml('map_complete.osm', simplify=False)
 
     # get all edges for weight adjustment
     nodes, edges = osmnx.graph_to_gdfs(graph)
@@ -406,7 +403,7 @@ def pathfinder(source, goal, profile):
     adjusted_profile, conditions = api_profile(weather_condition, profile)
 
     # adjust safety factors on edges based on reports
-    edges = report_update_graph(graph, edges, origin, destination)
+    edges = report_update_graph(edges, origin, destination)
 
     # create category "weight" for use in path finding
     edges['weight'] = edges.apply(
