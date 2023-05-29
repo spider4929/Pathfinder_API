@@ -38,6 +38,9 @@ def adjust_weight(length, row, profile):
     weight = length
     modifier = 1
     for safety_factor, user_preference in profile.items():
+        if row['closed'] == '1':
+            modifier = 999999
+            break
         if row[safety_factor] == '0':
             modifier += user_preference
     return weight * modifier
@@ -327,15 +330,18 @@ def report_update_graph(edges, origin, destination):
         for report in reports:
             if 'closure' in report['category']:
                 nearest_edge = eval(report['edges'])
-                edges = edges.loc[edges.index != nearest_edge]
+                edges.loc[(nearest_edge[0], nearest_edge[1]), 'closed'] = '1'
+                edges.loc[(nearest_edge[1], nearest_edge[0]), 'closed'] = '1'
             elif 'not' in report['category']:
                 nearest_edge = eval(report['edges'])
                 category = report['category'][4:]
                 edges.loc[(nearest_edge[0], nearest_edge[1]), category] = '0'
+                edges.loc[(nearest_edge[1], nearest_edge[0]), category] = '0'
             else:
                 nearest_edge = eval(report['edges'])
                 category = report['category']
                 edges.loc[(nearest_edge[0], nearest_edge[1]), category] = '1'
+                edges.loc[(nearest_edge[1], nearest_edge[1]), category] = '1'
 
     return edges
 

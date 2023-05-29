@@ -73609,8 +73609,6 @@
     <tag k='pwd_friendly' v='0' />
   </way>
   <way id='-161681' action='modify'>
-    <nd ref='-286669' />
-    <nd ref='-285317' />
     <nd ref='-283438' />
     <nd ref='-288606' />
     <nd ref='-281777' />
@@ -108838,5 +108836,33 @@
     <tag k='lighting' v='1' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
+  </way>
+  <way id='-163947' action='modify'>
+    <nd ref='-286669' />
+    <nd ref='-285317' />
+    <tag k='cctv' v='0' />
+    <tag k='closed' v='0' />
+    <tag k='footway' v='sidewalk' />
+    <tag k='highway' v='footway' />
+    <tag k='landmark' v='1' />
+    <tag k='lighting' v='1' />
+    <tag k='name' v='Shoe Ave' />
+    <tag k='not_flood_hazard' v='1' />
+    <tag k='not_major_road' v='0' />
+    <tag k='pwd_friendly' v='1' />
+  </way>
+  <way id='-163948' action='modify'>
+    <nd ref='-285317' />
+    <nd ref='-283438' />
+    <tag k='cctv' v='0' />
+    <tag k='closed' v='0' />
+    <tag k='footway' v='sidewalk' />
+    <tag k='highway' v='footway' />
+    <tag k='landmark' v='1' />
+    <tag k='lighting' v='1' />
+    <tag k='name' v='Shoe Ave' />
+    <tag k='not_flood_hazard' v='1' />
+    <tag k='not_major_road' v='0' />
+    <tag k='pwd_friendly' v='1' />
   </way>
 </osm>
