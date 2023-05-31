@@ -342,12 +342,12 @@ def report_update_graph(edges, origin, destination):
                 edges.loc[(nearest_edge[1], nearest_edge[0]), 'closed'] = '1'
             elif 'not' in report['category']:
                 nearest_edge = eval(report['edges'])
-                category = report['category'][4:]
+                category = report_categories[report['category'][4:]]
                 edges.loc[(nearest_edge[0], nearest_edge[1]), category] = '0'
                 edges.loc[(nearest_edge[1], nearest_edge[0]), category] = '0'
             else:
                 nearest_edge = eval(report['edges'])
-                category = report['category']
+                category = report_categories[report['category']]
                 edges.loc[(nearest_edge[0], nearest_edge[1]), category] = '1'
                 edges.loc[(nearest_edge[1], nearest_edge[1]), category] = '1'
 
