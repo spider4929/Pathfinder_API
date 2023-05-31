@@ -152,11 +152,13 @@ def getRouteDirections(route, nodes, graph, safety_factors):
     before_maneuever = None
     before_name = None
     footway = None
+    present_factors = []
     bearing_before = 0
     bearing_after = 0
     count = 0
     # Start parsing
     for count, step in enumerate(steps):
+        before_factors = present_factors
         present_factors = []
         before_name = name
         before_maneuever = maneuever
@@ -211,7 +213,7 @@ def getRouteDirections(route, nodes, graph, safety_factors):
             safety_coverage_direction.append({'distance': distance,
                                               'factors_present': present_factors})
 
-            if before_name == name and before_maneuever == maneuever:
+            if before_name == name and before_maneuever == maneuever and before_factors == present_factors:
                 direction[-1]["distance"] += distance
                 for factor in present_factors:
                     if factor not in direction[-1]["factors_present"]:
@@ -355,8 +357,8 @@ def report_update_graph(edges, origin, destination):
 
 def get_nearest_edge(y_coord, x_coord):
 
-    # graph = osmnx.graph_from_xml('C:\\Users\\kjqb4\\Documents\\GitHub Projects\\design-project\\Pathfinder_API\\map_complete.osm', simplify=False)
-    graph = osmnx.graph_from_xml('map_complete.osm', simplify=False)
+    graph = osmnx.graph_from_xml('C:\\Users\\kjqb4\\Documents\\GitHub Projects\\design-project\\Pathfinder_API\\map_complete.osm', simplify=False)
+    # graph = osmnx.graph_from_xml('map_complete.osm', simplify=False)
     
     nearest_edges = osmnx.nearest_edges(
             graph, x_coord, y_coord, interpolate=None)
@@ -406,8 +408,8 @@ def pathfinder(source, goal, profile):
     weather_condition = api_response['weather'][0]['id']
 
     # retrieve map from database
-    # graph = osmnx.graph_from_xml('C:\\Users\\kjqb4\\Documents\\GitHub Projects\\design-project\\Pathfinder_API\\map_complete.osm', simplify=False)
-    graph = osmnx.graph_from_xml('map_complete.osm', simplify=False)
+    graph = osmnx.graph_from_xml('C:\\Users\\kjqb4\\Documents\\GitHub Projects\\design-project\\Pathfinder_API\\map_complete.osm', simplify=False)
+    # graph = osmnx.graph_from_xml('map_complete.osm', simplify=False)
 
     # get all edges for weight adjustment
     nodes, edges = osmnx.graph_to_gdfs(graph)
