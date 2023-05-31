@@ -451,7 +451,7 @@ def pathfinder(source, goal, profile):
         final_graph,
         origin_node_id[0],
         destination_node_id[0],
-        weight= lambda u, v, attrib: attrib[0]['leng'] if attrib[0]['closed'] != '1' else None
+        weight= lambda u, v, attrib: attrib[0]['length'] if attrib[0]['closed'] != '1' else None
     )
 
     route = route[1]
