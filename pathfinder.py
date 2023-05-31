@@ -38,9 +38,9 @@ def adjust_weight(length, row, profile):
     weight = length
     modifier = 1
     for safety_factor, user_preference in profile.items():
-        if row['closed'] == '1':
-            modifier = 999999
-            break
+        # if row['closed'] == '1':
+        #     modifier = 999999
+        #     break
         if row[safety_factor] == '0':
             modifier += user_preference
     return weight * modifier
@@ -436,14 +436,14 @@ def pathfinder(source, goal, profile):
         final_graph,
         origin_node_id[0],
         destination_node_id[0],
-        weight='weight'
+        weight= lambda u, v, attrib: attrib[0]['weight'] if attrib[0]['closed'] != '1' else None
     )
 
     shortest_route = nx.bidirectional_dijkstra(
         final_graph,
         origin_node_id[0],
         destination_node_id[0],
-        weight='length'
+        weight= lambda u, v, attrib: attrib[0]['length'] if attrib[0]['closed'] != '1' else None
     )
 
     route = route[1]
