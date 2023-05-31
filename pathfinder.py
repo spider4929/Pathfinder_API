@@ -458,10 +458,10 @@ def pathfinder(source, goal, profile):
     shortest_route = shortest_route[1]
 
     route_dir, route_safety_dir = getRouteDirections(
-        route, nodes, graph, list(adjusted_profile.keys()))
+        route, nodes, final_graph, list(adjusted_profile.keys()))
 
     shortest_route_dir, shortest_route_safety_dir = getRouteDirections(
-        shortest_route, nodes, graph, list(adjusted_profile.keys()))
+        shortest_route, nodes, final_graph, list(adjusted_profile.keys()))
 
     try:
         compare_route = getSafetyFactorCoverage(
