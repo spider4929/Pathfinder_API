@@ -324,6 +324,14 @@ def report_update_graph(edges, origin, destination):
 
     client.close()
 
+    report_categories = {
+        'landmark': 'landmark',
+        'lighting': 'lighting',
+        'pwd': 'pwd_friendly',
+        'cctv': 'cctv',
+        'flood': 'not_flood_hazard'
+    }
+
     if not reports:
         pass
     else:
@@ -417,7 +425,7 @@ def pathfinder(source, goal, profile):
     )
 
     final_graph = osmnx.graph_from_gdfs(
-        osmnx.graph_to_gdfs(graph, edges=False),
+        nodes,
         edges
     )
 
@@ -443,7 +451,7 @@ def pathfinder(source, goal, profile):
         final_graph,
         origin_node_id[0],
         destination_node_id[0],
-        weight= lambda u, v, attrib: attrib[0]['length'] if attrib[0]['closed'] != '1' else None
+        weight= lambda u, v, attrib: attrib[0]['leng'] if attrib[0]['closed'] != '1' else None
     )
 
     route = route[1]
