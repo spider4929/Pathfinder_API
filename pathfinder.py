@@ -351,7 +351,7 @@ def report_update_graph(edges, origin, destination):
                 nearest_edge = eval(report['edges'])
                 category = report_categories[report['category']]
                 edges.loc[(nearest_edge[0], nearest_edge[1]), category] = '1'
-                edges.loc[(nearest_edge[1], nearest_edge[1]), category] = '1'
+                edges.loc[(nearest_edge[1], nearest_edge[0]), category] = '1'
 
     return edges
 
