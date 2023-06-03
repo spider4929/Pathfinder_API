@@ -6,7 +6,6 @@
   <node id='-270327' lat='14.6699382' lon='121.0815813' />
   <node id='-270328' action='modify' lat='14.6341111' lon='121.0729669'>
     <tag k='highway' v='traffic_signals' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-270329' lat='14.6341716' lon='121.0729713' />
   <node id='-270330' lat='14.6348833' lon='121.073022' />
@@ -66,7 +65,6 @@
   <node id='-270384' lat='14.6683343' lon='121.0691376' />
   <node id='-270385' action='modify' lat='14.63169175763' lon='121.06081035452'>
     <tag k='highway' v='traffic_signals' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-270386' lat='14.6369436' lon='121.0741901' />
   <node id='-270387' lat='14.6368657' lon='121.0741872' />
@@ -175,7 +173,6 @@
   <node id='-270490' lat='14.6247513' lon='121.0690716' />
   <node id='-270491' action='modify' lat='14.61322443164' lon='121.06453136564'>
     <tag k='highway' v='traffic_signals' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-270492' lat='14.6132605' lon='121.0645131' />
   <node id='-270493' lat='14.6135098' lon='121.0643929' />
@@ -244,7 +241,6 @@
   <node id='-270556' lat='14.6373121' lon='121.0643213' />
   <node id='-270557' action='modify' lat='14.6291623' lon='121.0510419'>
     <tag k='highway' v='traffic_signals' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-270558' lat='14.6291697' lon='121.0511158' />
   <node id='-270559' lat='14.6291908' lon='121.0512953' />
@@ -618,7 +614,6 @@
   <node id='-270927' lat='14.62286945854' lon='121.05318587336' />
   <node id='-270928' action='modify' lat='14.62290742336' lon='121.05327133253'>
     <tag k='highway' v='traffic_signals' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-270929' lat='14.62479117277' lon='121.05719586994' />
   <node id='-270930' lat='14.6243692' lon='121.0574033' />
@@ -652,7 +647,6 @@
   <node id='-270958' lat='14.6726528' lon='121.0830717' />
   <node id='-270959' action='modify' lat='14.62012104201' lon='121.05946153558'>
     <tag k='highway' v='traffic_signals' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-270960' lat='14.6727227' lon='121.097922' />
   <node id='-270961' lat='14.6720264' lon='121.0976974' />
@@ -692,7 +686,6 @@
   <node id='-270995' lat='14.62661778516' lon='121.06040607178' />
   <node id='-270996' action='modify' lat='14.62658672927' lon='121.06034413619'>
     <tag k='highway' v='traffic_signals' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-270997' lat='14.62363874383' lon='121.07329066442' />
   <node id='-270998' lat='14.60503978216' lon='121.0700874914' />
@@ -729,7 +722,6 @@
   <node id='-271029' lat='14.6251313' lon='121.05703' />
   <node id='-271030' action='modify' lat='14.6249674319' lon='121.0571164184'>
     <tag k='highway' v='traffic_signals' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-271031' lat='14.6282090181' lon='121.06646897204' />
   <node id='-271032' lat='14.6280041' lon='121.0664013' />
@@ -806,7 +798,6 @@
   <node id='-271103' lat='14.61418830493' lon='121.06124908088' />
   <node id='-271104' action='modify' lat='14.6125783454' lon='121.06191028895'>
     <tag k='highway' v='milestone' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-271105' lat='14.6020556' lon='121.0871337' />
   <node id='-271106' lat='14.6022334' lon='121.0869004' />
@@ -867,7 +858,6 @@
   <node id='-271161' lat='14.60984668727' lon='121.08067073988' />
   <node id='-271162' action='modify' lat='14.61766940594' lon='121.05516492761'>
     <tag k='highway' v='traffic_signals' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-271163' lat='14.6413306' lon='121.0688696' />
   <node id='-271164' lat='14.6413735' lon='121.0689125' />
@@ -1029,12 +1019,10 @@
   <node id='-271320' lat='14.59961474732' lon='121.06018467976' />
   <node id='-271321' action='modify' lat='14.62768991029' lon='121.06329991043'>
     <tag k='highway' v='traffic_signals' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-271322' lat='14.62927630816' lon='121.06931051105' />
   <node id='-271323' action='modify' lat='14.62930200816' lon='121.0693726816'>
     <tag k='highway' v='traffic_signals' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-271324' lat='14.60149736743' lon='121.07876760675' />
   <node id='-271325' lat='14.60135539298' lon='121.07877905758' />
@@ -1077,7 +1065,6 @@
   <node id='-271362' action='modify' lat='14.66915767043' lon='121.0754259'>
     <tag k='footway' v='footbridge' />
     <tag k='not_major_road' v='0' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-271363' lat='14.6218971' lon='121.0503006' />
   <node id='-271364' lat='14.62096' lon='121.0596838' />
@@ -1146,7 +1133,6 @@
   <node id='-271427' lat='14.63140170239' lon='121.07436155645' />
   <node id='-271428' action='modify' lat='14.61745676405' lon='121.05517805767'>
     <tag k='highway' v='traffic_signals' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-271429' lat='14.6166156' lon='121.0555676' />
   <node id='-271430' lat='14.6165295' lon='121.0556067' />
@@ -1155,7 +1141,6 @@
   <node id='-271433' lat='14.613056' lon='121.0572024' />
   <node id='-271434' action='modify' lat='14.611628241' lon='121.05786640675'>
     <tag k='highway' v='traffic_signals' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-271435' lat='14.61967904403' lon='121.05463639692' />
   <node id='-271436' lat='14.61901804395' lon='121.05498059692' />
@@ -1488,7 +1473,6 @@
   <node id='-271763' lat='14.6025091' lon='121.0893646' />
   <node id='-271764' action='modify' lat='14.62767826857' lon='121.06325234049'>
     <tag k='highway' v='traffic_signals' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-271765' lat='14.6391429' lon='121.0782591' />
   <node id='-271766' lat='14.6197866' lon='121.054848' />
@@ -1560,13 +1544,11 @@
   <node id='-271832' lat='14.61391544978' lon='121.06747318221' />
   <node id='-271833' action='modify' lat='14.61389115891' lon='121.06737973006'>
     <tag k='highway' v='traffic_signals' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-271834' lat='14.61382024751' lon='121.06707456564' />
   <node id='-271835' action='modify' lat='14.61367940487' lon='121.06642039454' />
   <node id='-271836' action='modify' lat='14.61363074981' lon='121.06622627944'>
     <tag k='highway' v='traffic_signals' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-271837' lat='14.613419543' lon='121.06538258343' />
   <node id='-271838' lat='14.61314715667' lon='121.06422544036' />
@@ -1576,12 +1558,10 @@
   <node id='-271842' lat='14.61280801724' lon='121.06280949141' />
   <node id='-271843' action='modify' lat='14.61278813171' lon='121.06271974785'>
     <tag k='highway' v='traffic_signals' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-271844' lat='14.61239560117' lon='121.06113288492' />
   <node id='-271845' action='modify' lat='14.61237744088' lon='121.06105563006'>
     <tag k='highway' v='traffic_signals' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-271846' lat='14.61216134546' lon='121.06015470675' />
   <node id='-271847' lat='14.61204874093' lon='121.05966592454' />
@@ -1780,7 +1760,6 @@
   <node id='-272040' lat='14.6163529' lon='121.0667282' />
   <node id='-272041' action='modify' lat='14.6163938' lon='121.0667476'>
     <tag k='highway' v='mini_roundabout' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-272042' lat='14.67408207367' lon='121.0811877497' />
   <node id='-272043' lat='14.6403585' lon='121.0722947' />
@@ -1792,7 +1771,6 @@
   <node id='-272049' lat='14.6394731' lon='121.0757915' />
   <node id='-272050' action='modify' lat='14.62947201081' lon='121.06929475951'>
     <tag k='highway' v='traffic_signals' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-272051' lat='14.6101077' lon='121.0792858' />
   <node id='-272052' lat='14.6310395' lon='121.0706952' />
@@ -1817,7 +1795,6 @@
   <node id='-272071' lat='14.6263118377' lon='121.06022156872' />
   <node id='-272072' action='modify' lat='14.62639963132' lon='121.0604050362'>
     <tag k='highway' v='traffic_signals' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-272073' lat='14.6527611' lon='121.0804555' />
   <node id='-272074' lat='14.6526647' lon='121.0803479' />
@@ -1989,7 +1966,6 @@
   <node id='-272240' lat='14.59059756222' lon='121.06135477239' />
   <node id='-272241' action='modify' lat='14.60147445581' lon='121.07949845952'>
     <tag k='highway' v='traffic_signals' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-272242' lat='14.653505' lon='121.0750356' />
   <node id='-272243' lat='14.6534997' lon='121.0750976' />
@@ -2015,7 +1991,6 @@
   <node id='-272263' lat='14.6087845' lon='121.0800385' />
   <node id='-272264' action='modify' lat='14.634357' lon='121.0619897'>
     <tag k='highway' v='traffic_signals' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-272265' lat='14.6339772' lon='121.0623791' />
   <node id='-272266' lat='14.6339466' lon='121.0624087' />
@@ -2061,7 +2036,6 @@
   <node id='-272306' lat='14.64076044628' lon='121.07445516809' />
   <node id='-272307' action='modify' lat='14.64053896833' lon='121.07438905949'>
     <tag k='highway' v='traffic_signals' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-272308' lat='14.6554761' lon='121.0848217' />
   <node id='-272309' lat='14.6555257' lon='121.0848431' />
@@ -2086,7 +2060,6 @@
   <node id='-272328' lat='14.62324651612' lon='121.07166082548' />
   <node id='-272329' action='modify' lat='14.62320503454' lon='121.07153463006'>
     <tag k='highway' v='traffic_signals' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-272330' lat='14.62319126584' lon='121.07148537246' />
   <node id='-272331' lat='14.6230498556' lon='121.07097947669' />
@@ -2098,7 +2071,6 @@
   <node id='-272337' lat='14.62256573231' lon='121.06816464663' />
   <node id='-272338' action='modify' lat='14.62258300556' lon='121.06734651196'>
     <tag k='highway' v='traffic_signals' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-272339' lat='14.62258343231' lon='121.0672752589' />
   <node id='-272340' lat='14.62260721363' lon='121.0665504589' />
@@ -2132,7 +2104,6 @@
   <node id='-272368' lat='14.6055342' lon='121.0793477' />
   <node id='-272369' action='modify' lat='14.60552392904' lon='121.07926799511'>
     <tag k='highway' v='traffic_signals' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-272370' lat='14.6470262' lon='121.0741843' />
   <node id='-272371' lat='14.6471004' lon='121.0741866' />
@@ -2376,7 +2347,6 @@
   <node id='-272609' lat='14.64289151227' lon='121.07453179263' />
   <node id='-272610' action='modify' lat='14.64241566129' lon='121.07451809815'>
     <tag k='highway' v='traffic_signals' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-272611' lat='14.632124' lon='121.0699361' />
   <node id='-272612' lat='14.6321247' lon='121.069416' />
@@ -2435,7 +2405,6 @@
   <node id='-272665' lat='14.63098480967' lon='121.07399957239' />
   <node id='-272666' action='modify' lat='14.6094905053' lon='121.08040476381'>
     <tag k='highway' v='traffic_signals' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-272667' lat='14.61473576749' lon='121.07094778688' />
   <node id='-272668' lat='14.61466976202' lon='121.07087150082' />
@@ -2740,7 +2709,6 @@
   <node id='-272967' lat='14.6432385' lon='121.0831454' />
   <node id='-272968' action='modify' lat='14.61803965696' lon='121.05568047485'>
     <tag k='highway' v='traffic_signals' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-272969' lat='14.61807402385' lon='121.05565515093' />
   <node id='-272970' lat='14.61820053537' lon='121.0555881454' />
@@ -2853,7 +2821,6 @@
   <node id='-273077' lat='14.63164674776' lon='121.06066272024' />
   <node id='-273078' action='modify' lat='14.63164024776' lon='121.06066452024'>
     <tag k='highway' v='traffic_signals' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-273079' lat='14.63158854775' lon='121.06069492024' />
   <node id='-273080' lat='14.63149045446' lon='121.06074884615' />
@@ -3378,7 +3345,6 @@
   <node id='-273599' lat='14.6171264' lon='121.0560323' />
   <node id='-273600' action='modify' lat='14.61781093376' lon='121.05571059878'>
     <tag k='highway' v='traffic_signals' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-273601' lat='14.6285005' lon='121.0547032' />
   <node id='-273602' lat='14.6284561' lon='121.0547248' />
@@ -4580,7 +4546,6 @@
   <node id='-274798' lat='14.6257054' lon='121.0688029' />
   <node id='-274799' action='modify' lat='14.6646721' lon='121.0905905'>
     <tag k='highway' v='mini_roundabout' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-274800' lat='14.6152693' lon='121.0749235' />
   <node id='-274801' lat='14.61527307938' lon='121.07495387179' />
@@ -4712,7 +4677,6 @@
   <node id='-274927' lat='14.62109290466' lon='121.05212656748' />
   <node id='-274928' action='modify' lat='14.6055305' lon='121.07894743251'>
     <tag k='highway' v='traffic_signals' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-274929' lat='14.6746711' lon='121.0875329' />
   <node id='-274930' lat='14.6685864' lon='121.0759167' />
@@ -5202,7 +5166,6 @@
   <node id='-275414' action='modify' lat='14.6368582' lon='121.0741892'>
     <tag k='highway' v='bus_stop' />
     <tag k='name' v='ADMU Gate 2' />
-    <tag k='road_closed' v='0' />
   </node>
   <node id='-275415' lat='14.6574317' lon='121.0829294' />
   <node id='-275416' lat='14.6349491' lon='121.0760019' />
@@ -24753,11 +24716,14 @@
     <nd ref='-272100' />
     <nd ref='-272101' />
     <tag k='cctv' v='0' />
+    <tag k='footway' v='sidewalk' />
+    <tag k='highway' v='footway' />
     <tag k='landmark' v='0' />
     <tag k='lighting' v='1' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
+    <tag k='road_closed' v='0' />
   </way>
   <way id='-158645' action='modify'>
     <nd ref='-272102' />
@@ -25069,11 +25035,14 @@
     <nd ref='-272188' />
     <nd ref='-272189' />
     <tag k='cctv' v='0' />
+    <tag k='footway' v='sidewalk' />
+    <tag k='highway' v='footway' />
     <tag k='landmark' v='0' />
     <tag k='lighting' v='1' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
+    <tag k='road_closed' v='0' />
   </way>
   <way id='-158665' action='modify'>
     <nd ref='-272121' />
@@ -31454,11 +31423,14 @@
     <nd ref='-270807' />
     <nd ref='-272188' />
     <tag k='cctv' v='0' />
+    <tag k='footway' v='sidewalk' />
+    <tag k='highway' v='footway' />
     <tag k='landmark' v='0' />
     <tag k='lighting' v='1' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
+    <tag k='road_closed' v='0' />
   </way>
   <way id='-159067' action='modify'>
     <nd ref='-272228' />
@@ -32452,11 +32424,14 @@
     <nd ref='-273315' />
     <nd ref='-272192' />
     <tag k='cctv' v='0' />
+    <tag k='footway' v='sidewalk' />
+    <tag k='highway' v='footway' />
     <tag k='landmark' v='0' />
     <tag k='lighting' v='1' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='1' />
     <tag k='pwd_friendly' v='0' />
+    <tag k='road_closed' v='0' />
   </way>
   <way id='-159132' action='modify'>
     <nd ref='-271849' />
@@ -58490,7 +58465,7 @@
     <nd ref='-288270' />
     <nd ref='-284297' />
     <nd ref='-288916' />
-    <tag k='1' v='0' />
+    <tag k='cctv' v='0' />
     <tag k='done' v='1' />
     <tag k='footway' v='sidewalk' />
     <tag k='highway' v='footway' />
@@ -83914,7 +83889,7 @@
     <nd ref='-288270' />
     <nd ref='-278984' />
     <nd ref='-288331' />
-    <tag k='1' v='0' />
+    <tag k='cctv' v='0' />
     <tag k='done' v='0' />
     <tag k='footway' v='sidewalk' />
     <tag k='highway' v='footway' />
@@ -88346,7 +88321,7 @@
     <nd ref='-279116' />
     <nd ref='-285234' />
     <nd ref='-286451' />
-    <tag k='1' v='0' />
+    <tag k='cctv' v='0' />
     <tag k='done' v='1' />
     <tag k='footway' v='sidewalk' />
     <tag k='highway' v='footway' />
@@ -99973,7 +99948,7 @@
   <way id='-163281' action='modify'>
     <nd ref='-281370' />
     <nd ref='-282147' />
-    <tag k='1' v='0' />
+    <tag k='cctv' v='0' />
     <tag k='done' v='0' />
     <tag k='footway' v='sidewalk' />
     <tag k='highway' v='footway' />
