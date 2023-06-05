@@ -213,6 +213,10 @@ def getRouteDirections(route, nodes, graph, safety_factors):
                 instruction = getTurnDirection(
                     bearing_before, bearing_after, name)
 
+            if instruction == 'Cross the street' and direction[-1]['distance'] < 20:
+                direction.pop()
+                safety_coverage_direction.pop()
+
             safety_coverage_direction.append({'distance': distance,
                                               'factors_present': present_factors})
 
