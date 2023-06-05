@@ -129,7 +129,10 @@ def getTurnDirection(heading, true_bearing, name):
         name = ' '.join(name)
     if name == '':
         return instruction
-    return instruction + 'onto ' + name
+    try:
+        return instruction + 'onto ' + name
+    except:
+        return instruction
 
 
 def getRouteDirections(route, nodes, graph, safety_factors):
@@ -368,66 +371,6 @@ def get_nearest_edge(y_coord, x_coord):
     }
 
     return response, 200
-
-# def update_map():
-#     client = pymongo.MongoClient(
-#         "mongodb+srv://team-5-design-project:WJh3Yqe7bLgGwTEr@pathfinder.9orhde9.mongodb.net/?retryWrites=true&w=majority")
-
-#     db = client["test"]
-
-#     collection = db["reports"]
-#     db_report = collection.find()
-
-#     reports = []
-
-#     for report in db_report:
-#         reports.append(report)
-
-#     graph = osmnx.load_graphml('map_complete.graphml')
-#     nodes, edges = osmnx.graph_to_gdfs(graph)
-#     edges.sort_index()
-
-#     report_categories = {
-#         'landmark': 'landmark',
-#         'lighting': 'lighting',
-#         'pwd': 'pwd_friendly',
-#         'cctv': 'cctv',
-#         'flood': 'not_flood_hazard'
-#     }
-
-#     if not reports:
-#         pass
-#     else:
-#         for report in reports:
-#             if report['counter'] > 5:
-#                 print('Yes')
-#                 if 'closure' in report['category']:
-#                     nearest_edge = eval(report['edges'])
-#                     edges.loc[(nearest_edge[0], nearest_edge[1]), 'closed'] = '1'
-#                     edges.loc[(nearest_edge[1], nearest_edge[0]), 'closed'] = '1'
-#                 elif 'not' in report['category']:
-#                     nearest_edge = eval(report['edges'])
-#                     category = report_categories[report['category'][4:]]
-#                     edges.loc[(nearest_edge[0], nearest_edge[1]), category] = '0'
-#                     edges.loc[(nearest_edge[1], nearest_edge[0]), category] = '0'
-#                 else:
-#                     nearest_edge = eval(report['edges'])
-#                     category = report_categories[report['category']]
-#                     edges.loc[(nearest_edge[0], nearest_edge[1]), category] = '1'
-#                     edges.loc[(nearest_edge[1], nearest_edge[0]), category] = '1'
-
-#     final_graph = osmnx.graph_from_gdfs(
-#         nodes,
-#         edges
-#     )
-
-#     osmnx.save_graphml(final_graph, filepath='map_complete.graphml', gephi=False, encoding='utf-8')
-
-#     response = {
-#         'msg': 'Sucessful save'
-#     }
-
-#     return response, 200
 
 def pathfinder(source, goal, profile):
     """Main pathfinding function
