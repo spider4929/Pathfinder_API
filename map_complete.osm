@@ -41710,7 +41710,7 @@
     <tag k='name' v='Aurora Boulevard' />
     <tag k='not_flood_hazard' v='0' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
     <tag k='road_closed' v='0' />
   </way>
   <way id='-159666' action='modify'>
@@ -45372,7 +45372,7 @@
     <tag k='name' v='Aurora Boulevard' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
     <tag k='road_closed' v='0' />
   </way>
   <way id='-159901' action='modify'>
@@ -46968,7 +46968,7 @@
     <tag k='name' v='Aurora Boulevard' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
     <tag k='road_closed' v='0' />
   </way>
   <way id='-159998' action='modify'>
@@ -50535,7 +50535,7 @@
     <tag k='name' v='Aurora Boulevard' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
     <tag k='road_closed' v='0' />
   </way>
   <way id='-160217' action='modify'>
@@ -106054,7 +106054,7 @@
     <tag k='name' v='Aurora Boulevard' />
     <tag k='not_flood_hazard' v='0' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
     <tag k='road_closed' v='0' />
   </way>
   <way id='-163578' action='modify'>
@@ -106086,7 +106086,7 @@
     <tag k='name' v='Aurora Boulevard' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
     <tag k='road_closed' v='0' />
   </way>
   <way id='-163579' action='modify'>
@@ -106104,7 +106104,7 @@
     <tag k='name' v='Aurora Boulevard' />
     <tag k='not_flood_hazard' v='0' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
     <tag k='road_closed' v='0' />
   </way>
   <way id='-163580' action='modify'>
@@ -106121,7 +106121,7 @@
     <tag k='name' v='Aurora Boulevard' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
     <tag k='road_closed' v='0' />
   </way>
   <way id='-163581' action='modify'>
@@ -106137,7 +106137,7 @@
     <tag k='name' v='Aurora Boulevard' />
     <tag k='not_flood_hazard' v='0' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
     <tag k='road_closed' v='0' />
   </way>
   <way id='-163582' action='modify'>
@@ -106152,7 +106152,7 @@
     <tag k='name' v='Aurora Boulevard' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
     <tag k='road_closed' v='0' />
   </way>
   <way id='-163583' action='modify'>
@@ -106236,7 +106236,7 @@
     <tag k='name' v='Aurora Boulevard' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
     <tag k='road_closed' v='0' />
   </way>
   <way id='-163589' action='modify'>
@@ -106254,7 +106254,7 @@
     <tag k='name' v='Aurora Boulevard' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
     <tag k='road_closed' v='0' />
   </way>
   <way id='-163590' action='modify'>
@@ -106274,7 +106274,7 @@
     <tag k='name' v='Aurora Boulevard' />
     <tag k='not_flood_hazard' v='0' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
     <tag k='road_closed' v='0' />
   </way>
   <way id='-163591' action='modify'>
@@ -106292,7 +106292,7 @@
     <tag k='name' v='Aurora Boulevard' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
     <tag k='road_closed' v='0' />
   </way>
   <way id='-163592' action='modify'>
@@ -107338,7 +107338,7 @@
     <tag k='name' v='Aurora Boulevard' />
     <tag k='not_flood_hazard' v='0' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
     <tag k='road_closed' v='0' />
   </way>
   <way id='-163658' action='modify'>
@@ -107360,7 +107360,7 @@
     <tag k='name' v='Aurora Boulevard' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
     <tag k='road_closed' v='0' />
   </way>
   <way id='-163659' action='modify'>
@@ -107383,7 +107383,7 @@
     <tag k='name' v='Aurora Boulevard' />
     <tag k='not_flood_hazard' v='1' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
     <tag k='road_closed' v='0' />
   </way>
   <way id='-163660' action='modify'>
@@ -107400,7 +107400,7 @@
     <tag k='name' v='Aurora Boulevard' />
     <tag k='not_flood_hazard' v='0' />
     <tag k='not_major_road' v='0' />
-    <tag k='pwd_friendly' v='1' />
+    <tag k='pwd_friendly' v='0' />
     <tag k='road_closed' v='0' />
   </way>
   <way id='-163661' action='modify'>
