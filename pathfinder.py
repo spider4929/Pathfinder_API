@@ -30,8 +30,6 @@ def api_profile(weather, profile):
         new_profile.pop("lighting")
         case[1] = False
 
-    # case[1] = True
-    # Testing api with flood enabled
     return new_profile, case
 
 
@@ -349,7 +347,7 @@ def report_update_graph(edges, origin, destination):
                 edges.loc[(nearest_edge[1], nearest_edge[0]), 'road_closed'] = '1'
             elif 'not' in report['category']:
                 nearest_edge = eval(report['edges'])
-                category = report_categories[report['category']]
+                category = report_categories[report['category'][4:]]
                 edges.loc[(nearest_edge[0], nearest_edge[1]), category] = '0'
                 edges.loc[(nearest_edge[1], nearest_edge[0]), category] = '0'
             else:
