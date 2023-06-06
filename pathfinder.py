@@ -26,7 +26,7 @@ def api_profile(weather, profile):
     #     case[0] = False
 
     # Removes 'lighting' if time is day
-    if now in [18, 19, 20, 21, 22, 23, 0, 1, 2, 3, 4, 5, 6]:
+    if now not in [18, 19, 20, 21, 22, 23, 0, 1, 2, 3, 4, 5, 6]:
         new_profile.pop("lighting")
         case[1] = False
 
@@ -346,11 +346,13 @@ def report_update_graph(edges, origin, destination):
                 edges.loc[(nearest_edge[0], nearest_edge[1]), 'road_closed'] = '1'
                 edges.loc[(nearest_edge[1], nearest_edge[0]), 'road_closed'] = '1'
             elif 'not' in report['category']:
+                print('found the flood report')
                 nearest_edge = eval(report['edges'])
                 category = report_categories[report['category'][4:]]
                 edges.loc[(nearest_edge[0], nearest_edge[1]), category] = '0'
                 edges.loc[(nearest_edge[1], nearest_edge[0]), category] = '0'
             else:
+                print('didnt find the flood report')
                 nearest_edge = eval(report['edges'])
                 category = report_categories[report['category']]
                 edges.loc[(nearest_edge[0], nearest_edge[1]), category] = '1'
