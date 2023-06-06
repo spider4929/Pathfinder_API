@@ -19763,6 +19763,22 @@
   <node id='-289796' action='modify' lat='14.66106404066' lon='121.08784349334' />
   <node id='-289797' action='modify' lat='14.63571177347' lon='121.09576659336' />
   <node id='-289842' action='modify' lat='14.64334055293' lon='121.12160300026' />
+  <node id='-289880' action='modify' lat='14.62659952712' lon='121.05288484039' />
+  <node id='-289881' action='modify' lat='14.62677166607' lon='121.05339702944' />
+  <node id='-289882' action='modify' lat='14.62698111599' lon='121.05397471659' />
+  <node id='-289883' action='modify' lat='14.62636959737' lon='121.05240969352' />
+  <node id='-289884' action='modify' lat='14.62578926341' lon='121.05126070408' />
+  <node id='-289885' action='modify' lat='14.6255908193' lon='121.05074344574' />
+  <node id='-289886' action='modify' lat='14.62450404102' lon='121.05058430541' />
+  <node id='-289887' action='modify' lat='14.62541072034' lon='121.05014227615' />
+  <node id='-289888' action='modify' lat='14.62407962758' lon='121.05277591621' />
+  <node id='-289889' action='modify' lat='14.62501761874' lon='121.05490889573' />
+  <node id='-289890' action='modify' lat='14.62581844707' lon='121.05670669331' />
+  <node id='-289891' action='modify' lat='14.62604317625' lon='121.05734600488' />
+  <node id='-289892' action='modify' lat='14.62788611729' lon='121.05648620629' />
+  <node id='-289893' action='modify' lat='14.6276121378' lon='121.05586755401' />
+  <node id='-289894' action='modify' lat='14.62733630621' lon='121.05527375131' />
+  <node id='-289896' action='modify' lat='14.62745823005' lon='121.04984053593' />
   <way id='-158342' action='modify'>
     <nd ref='-270324' />
     <nd ref='-270325' />
@@ -20301,6 +20317,7 @@
   </way>
   <way id='-158374' action='modify'>
     <nd ref='-270529' />
+    <nd ref='-289891' />
     <nd ref='-270530' />
     <tag k='cctv' v='0' />
     <tag k='footway' v='sidewalk' />
@@ -20575,6 +20592,7 @@
     <nd ref='-270609' />
     <nd ref='-270610' />
     <nd ref='-270611' />
+    <nd ref='-289892' />
     <nd ref='-270529' />
     <tag k='cctv' v='0' />
     <tag k='footway' v='sidewalk' />
@@ -23080,6 +23098,7 @@
   <way id='-158547' action='modify'>
     <nd ref='-289643' />
     <nd ref='-271505' />
+    <nd ref='-289894' />
     <nd ref='-271506' />
     <nd ref='-271507' />
     <nd ref='-271508' />
@@ -27212,6 +27231,7 @@
   </way>
   <way id='-158799' action='modify'>
     <nd ref='-272870' />
+    <nd ref='-289884' />
     <nd ref='-272013' />
     <nd ref='-272871' />
     <nd ref='-289636' />
@@ -28204,6 +28224,7 @@
   </way>
   <way id='-158860' action='modify'>
     <nd ref='-273203' />
+    <nd ref='-289893' />
     <nd ref='-273204' />
     <tag k='cctv' v='0' />
     <tag k='footway' v='sidewalk' />
@@ -29552,6 +29573,7 @@
   </way>
   <way id='-158945' action='modify'>
     <nd ref='-273610' />
+    <nd ref='-289885' />
     <nd ref='-272012' />
     <tag k='cctv' v='0' />
     <tag k='footway' v='sidewalk' />
@@ -30418,6 +30440,7 @@
   </way>
   <way id='-159000' action='modify'>
     <nd ref='-273830' />
+    <nd ref='-289882' />
     <nd ref='-272411' />
     <tag k='cctv' v='0' />
     <tag k='footway' v='sidewalk' />
@@ -35584,6 +35607,7 @@
   </way>
   <way id='-159337' action='modify'>
     <nd ref='-275088' />
+    <nd ref='-289890' />
     <nd ref='-271029' />
     <tag k='cctv' v='0' />
     <tag k='footway' v='sidewalk' />
@@ -35716,6 +35740,7 @@
   </way>
   <way id='-159345' action='modify'>
     <nd ref='-272012' />
+    <nd ref='-289896' />
     <nd ref='-289637' />
     <tag k='cctv' v='0' />
     <tag k='footway' v='sidewalk' />
@@ -36497,6 +36522,7 @@
   </way>
   <way id='-159397' action='modify'>
     <nd ref='-270700' />
+    <nd ref='-289880' />
     <nd ref='-275099' />
     <nd ref='-289638' />
     <tag k='cctv' v='0' />
@@ -43499,6 +43525,8 @@
   </way>
   <way id='-159840' action='modify'>
     <nd ref='-272010' />
+    <nd ref='-289887' />
+    <nd ref='-289886' />
     <nd ref='-275243' />
     <tag k='cctv' v='0' />
     <tag k='footway' v='sidewalk' />
@@ -46288,6 +46316,7 @@
   </way>
   <way id='-160017' action='modify'>
     <nd ref='-270701' />
+    <nd ref='-289881' />
     <nd ref='-275100' />
     <nd ref='-289640' />
     <tag k='cctv' v='0' />
@@ -47603,6 +47632,7 @@
   </way>
   <way id='-160098' action='modify'>
     <nd ref='-271069' />
+    <nd ref='-289889' />
     <nd ref='-273830' />
     <tag k='cctv' v='0' />
     <tag k='footway' v='sidewalk' />
@@ -48629,6 +48659,7 @@
   </way>
   <way id='-160163' action='modify'>
     <nd ref='-270699' />
+    <nd ref='-289883' />
     <nd ref='-271300' />
     <tag k='cctv' v='0' />
     <tag k='footway' v='sidewalk' />
@@ -104353,6 +104384,7 @@
   </way>
   <way id='-163557' action='modify'>
     <nd ref='-275993' />
+    <nd ref='-289888' />
     <nd ref='-289632' />
     <tag k='cctv' v='1' />
     <tag k='footway' v='sidewalk' />
