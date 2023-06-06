@@ -319,7 +319,8 @@ def report_update_graph(edges, origin, destination):
     threshold = haversine(origin, dest)
 
     reports = []
-
+    if reports:
+        print('found reports')
     for report in db_report:
         coords = (report['coordinates']['latitude'], report['coordinates']['longitude'])
         if haversine(origin, coords) >= threshold:
@@ -336,8 +337,8 @@ def report_update_graph(edges, origin, destination):
         'cctv': 'cctv',
         'flood': 'not_flood_hazard'
     }
-
     if not reports:
+        print('i deleted everything')
         pass
     else:
         for report in reports:
