@@ -30,6 +30,8 @@ def api_profile(weather, profile):
         new_profile.pop("lighting")
         case[1] = False
 
+    case[1] = True
+    # Testing api with flood enabled
     return new_profile, case
 
 
