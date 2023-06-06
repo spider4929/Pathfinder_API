@@ -21,9 +21,9 @@ def api_profile(weather, profile):
         now = now - 24
 
     # Removes 'flood_hazard' if weather is clear
-    # if weather not in [201, 202, 211, 212, 221, 501, 502, 503, 504, 511, 521, 522, 531]:
-    #     new_profile.pop("not_flood_hazard")
-    #     case[0] = False
+    if weather not in [201, 202, 211, 212, 221, 501, 502, 503, 504, 511, 521, 522, 531]:
+        new_profile.pop("not_flood_hazard")
+        case[0] = False
 
     # Removes 'lighting' if time is day
     if now not in [18, 19, 20, 21, 22, 23, 0, 1, 2, 3, 4, 5, 6]:
@@ -319,8 +319,7 @@ def report_update_graph(edges, origin, destination):
     threshold = haversine(origin, dest)
 
     reports = []
-    if reports:
-        print('found reports')
+
     for report in db_report:
         coords = (report['coordinates']['latitude'], report['coordinates']['longitude'])
         if haversine(origin, coords) >= threshold:
@@ -337,8 +336,8 @@ def report_update_graph(edges, origin, destination):
         'cctv': 'cctv',
         'flood': 'not_flood_hazard'
     }
+
     if not reports:
-        print('i deleted everything')
         pass
     else:
         for report in reports:
@@ -347,13 +346,11 @@ def report_update_graph(edges, origin, destination):
                 edges.loc[(nearest_edge[0], nearest_edge[1]), 'road_closed'] = '1'
                 edges.loc[(nearest_edge[1], nearest_edge[0]), 'road_closed'] = '1'
             elif 'not' in report['category']:
-                print('found the flood report')
                 nearest_edge = eval(report['edges'])
                 category = report_categories[report['category'][4:]]
                 edges.loc[(nearest_edge[0], nearest_edge[1]), category] = '0'
                 edges.loc[(nearest_edge[1], nearest_edge[0]), category] = '0'
             else:
-                print('didnt find the flood report')
                 nearest_edge = eval(report['edges'])
                 category = report_categories[report['category']]
                 edges.loc[(nearest_edge[0], nearest_edge[1]), category] = '1'
@@ -424,7 +421,7 @@ def pathfinder(source, goal, profile):
     adjusted_profile, conditions = api_profile(weather_condition, profile)
 
     # adjust safety factors on edges based on reports
-    # edges = report_update_graph(edges, origin, destination)
+    edges = report_update_graph(edges, origin, destination)
 
     # create category "weight" for use in path finding
     edges['weight'] = edges.apply(
