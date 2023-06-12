@@ -2,7 +2,7 @@ def post_worker_init(worker):
     # Called just after a worker has been initialized
     worker.log.info("Worker spawned (pid: %s)", worker.pid)
 
-workers = 4  # Increase the number of workers here
+workers = 4
 worker_class = "gthread"  # Use the 'gthread' worker class for better performance
 threads = 4  # Number of threads per worker
 
