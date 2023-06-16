@@ -346,12 +346,12 @@ def report_update_graph(edges, origin, destination, optional_id=None):
                 edges.loc[(nearest_edge[0], nearest_edge[1]), 'road_closed'] = '1'
                 edges.loc[(nearest_edge[1], nearest_edge[0]), 'road_closed'] = '1'
             if 'closure' in report['category']:
-                if report['counter'] >= 5:
-                    nearest_edge = eval(report['edges'])
-                    edges.loc[(nearest_edge[0], nearest_edge[1]), 'road_closed'] = '1'
-                    edges.loc[(nearest_edge[1], nearest_edge[0]), 'road_closed'] = '1'
-                else:
-                    pass
+                # if report['counter'] >= 5:
+                nearest_edge = eval(report['edges'])
+                edges.loc[(nearest_edge[0], nearest_edge[1]), 'road_closed'] = '1'
+                edges.loc[(nearest_edge[1], nearest_edge[0]), 'road_closed'] = '1'
+                # else:
+                #     pass
             elif 'not' in report['category']:
                 nearest_edge = eval(report['edges'])
                 category = report_categories[report['category'][4:]]
