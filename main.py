@@ -16,6 +16,7 @@ def find_path():
     orig = args['sourceCoords']
     dest = args['destCoords']
     prefs = args['preferences']
+    optional_id = request.args.get('id')
 
     y_orig = float(orig[1])
     x_orig = float(orig[0])
@@ -31,7 +32,10 @@ def find_path():
         else:
             user_pref[item['name']] = item['value']/5
 
-    route = pathfinder([y_orig, x_orig], [y_dest, x_dest], user_pref)
+    if optional_id:
+        route = pathfinder([y_orig, x_orig], [y_dest, x_dest], user_pref, optional_id)
+    else:
+        route = pathfinder([y_orig, x_orig], [y_dest, x_dest], user_pref)
 
     now = datetime.now()
 
