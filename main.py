@@ -34,6 +34,7 @@ def find_path():
 
     if optional_id:
         route = pathfinder([y_orig, x_orig], [y_dest, x_dest], user_pref, optional_id)
+        print(f'did an id route with {optional_id}')
     else:
         route = pathfinder([y_orig, x_orig], [y_dest, x_dest], user_pref)
 
