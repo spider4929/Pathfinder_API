@@ -306,7 +306,7 @@ def getSafetyFactorCoverage(steps, length, safety_factors, profile):
     return factor_coverage
 
 
-def report_update_graph(edges, origin, destination):
+def report_update_graph(edges, origin, destination, optional_id=None):
     client = pymongo.MongoClient(
         "mongodb+srv://team-5-design-project:WJh3Yqe7bLgGwTEr@pathfinder.9orhde9.mongodb.net/?retryWrites=true&w=majority")
 
@@ -341,6 +341,10 @@ def report_update_graph(edges, origin, destination):
         pass
     else:
         for report in reports:
+            if optional_id and optional_id == report['_id']:
+                nearest_edge = eval(report['edges'])
+                edges.loc[(nearest_edge[0], nearest_edge[1]), 'road_closed'] = '1'
+                edges.loc[(nearest_edge[1], nearest_edge[0]), 'road_closed'] = '1'
             if 'closure' in report['category']:
                 if report['counter'] >= 5:
                     nearest_edge = eval(report['edges'])
@@ -375,7 +379,7 @@ def get_nearest_edge(y_coord, x_coord):
 
     return response, 200
 
-def pathfinder(source, goal, profile):
+def pathfinder(source, goal, profile, optional_id=None):
     """Main pathfinding function
     Takes 'source', 'goal' and 'profile' as parameters.
     'source' is the source coordinates in [lng,lat]
@@ -424,7 +428,10 @@ def pathfinder(source, goal, profile):
     adjusted_profile, conditions = api_profile(weather_condition, profile)
 
     # adjust safety factors on edges based on reports
-    edges = report_update_graph(edges, origin, destination)
+    if optional_id:
+        edges = report_update_graph(edges, origin, destination, optional_id)
+    else:
+        edges = report_update_graph(edges, origin, destination)
 
     # create category "weight" for use in path finding
     edges['weight'] = edges.apply(
