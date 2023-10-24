@@ -7,6 +7,8 @@ from datetime import datetime
 import requests
 import pymongo
 from haversine import haversine
+import os
+from dotenv import load_dotenv
 
 #### FUNCTIONS ####
 
@@ -306,9 +308,8 @@ def getSafetyFactorCoverage(steps, length, safety_factors, profile):
     return factor_coverage
 
 
-def report_update_graph(edges, origin, destination, optional_id=None):
-    client = pymongo.MongoClient(
-        "mongodb+srv://team-5-design-project:WJh3Yqe7bLgGwTEr@pathfinder.9orhde9.mongodb.net/?retryWrites=true&w=majority")
+def report_update_graph(edges, origin, destination, mongo_uri, optional_id=None):
+    client = pymongo.MongoClient(mongo_uri)
 
     db = client["test"]
 
@@ -367,7 +368,6 @@ def report_update_graph(edges, origin, destination, optional_id=None):
 
 def get_nearest_edge(y_coord, x_coord):
 
-    # graph = osmnx.graph_from_xml('C:\\Users\\kjqb4\\Documents\\GitHub Projects\\design-project\\Pathfinder_API\\map_complete.osm', simplify=False)
     graph = osmnx.graph_from_xml('map_complete.osm', simplify=False)
     
     nearest_edges = osmnx.nearest_edges(
@@ -393,6 +393,12 @@ def pathfinder(source, goal, profile, optional_id=None):
                       'cctv', 'landmark', 'lighting', 'not_major_road']
     osmnx.settings.useful_tags_way = safety_factors + ['name', 'footway', 'road_closed']
 
+    # load .env variables
+    load_dotenv()
+
+    mongo_uri = os.getenv("MONGO_URI")
+    api_key = os.getenv("OPENWEATHER_API_KEY")
+
     # comes from application request
     origin = {
         "y": source[0],  # 14.635749969867808,
@@ -406,7 +412,7 @@ def pathfinder(source, goal, profile, optional_id=None):
     params = {
         'lat': source[0],
         'long': source[1],
-        'API_key': '998183354bb6d9e4f0bf9a1ce02a8014'
+        'API_key': api_key
     }
 
     api_result = requests.get(
@@ -417,7 +423,6 @@ def pathfinder(source, goal, profile, optional_id=None):
     weather_condition = api_response['weather'][0]['id']
 
     # retrieve map from database
-    # graph = osmnx.graph_from_xml('C:\\Users\\kjqb4\\Documents\\GitHub Projects\\design-project\\Pathfinder_API\\map_complete.osm', simplify=False)
     graph = osmnx.graph_from_xml('map_complete.osm', simplify=False)
 
     # get all edges for weight adjustment
@@ -429,9 +434,9 @@ def pathfinder(source, goal, profile, optional_id=None):
 
     # adjust safety factors on edges based on reports
     if optional_id:
-        edges = report_update_graph(edges, origin, destination, optional_id)
+        edges = report_update_graph(edges, origin, destination, mongo_uri, optional_id)
     else:
-        edges = report_update_graph(edges, origin, destination)
+        edges = report_update_graph(edges, origin, destination, mongo_uri)
 
     # create category "weight" for use in path finding
     edges['weight'] = edges.apply(
